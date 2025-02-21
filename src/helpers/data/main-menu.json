@@ -1,0 +1,76 @@
+[
+	{
+		"title": "Ana Sayfa",
+		"link": "/"
+	},
+	{
+		"title": "Hizmetlerimiz",
+		"link": "/our-services",
+        "subLinks":[
+            {
+                "title":"Dil Okulu",
+                "link":"/language-schools"
+            },
+            {
+                "title":"Yaz Kampı (Junior)",
+                "link":"/summer-camp"
+            },
+            {
+                "title":"Lise",
+                "link":"/highschool"
+            },
+            {
+                "title":"Üniversite (Lisans)",
+                "link":"/university"
+            },
+            {
+                "title":"Yüksek Lisans (Master)",
+                "link":"/master"
+            },
+            {
+                "title":"Doktora",
+                "link":"/doctorate"
+            },
+            {
+                "title":"Lise Çift Diploma",
+                "link":"/highschool-double-graduate"
+            },
+            {
+                "title":"Foundation",
+                "link":"/foundation"
+            },
+            {
+                "title":"Sertifika",
+                "link":"/certificate"
+            },
+            {
+                "title":"Work & Study",
+                "link":"/work-study"
+            },
+            {
+                "title":"Sınav Hazırlıkları (IELTS, TOEFL)",
+                "link":"/exams"
+            },
+            {
+                "title":"Vize",
+                "link":"/midterm"
+            }
+        ]
+	},
+	{
+		"title": "Şubeler",
+		"link": "/offices"
+	},
+	{
+		"title": "İletişim",
+		"link": "/contact"
+	},
+	{
+		"title": "Hakkımızda",
+		"link": "/about-us"
+	},
+	{
+		"title": "Bilgi Al",
+		"link": "/info"
+	}
+]
