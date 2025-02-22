@@ -1,3 +1,4 @@
+import { title } from "process";
 import { Value } from "sass";
 
 export const appConfig = {
@@ -43,18 +44,32 @@ export const appConfig = {
 			facebook: {
 				url: "https://www.facebook.com/smyrnaedu",
 				icon: "pi pi-facebook",
+				title:"Follow on Facebook"
 			},
 			instagram: {
 				url: "https://www.instagram.com/smyrnaedu/",
 				icon: "pi pi-instagram",
+				title:"Follow on Instagram"
 			},
 			linkedin: {
 				url: "https://www.linkedin.com/company/smyrna-edu/",
 				icon: "pi pi-linkedin",
+				title:"Follow on Linkedin"
 			},
 			youtube: {
 				url: "https://www.youtube.com/@Smyrna_EDU",
 				icon: "pi pi-youtube",
+				title:"Follow on Youtube"
+			},
+			email: {
+				url: "mailto:info@symirnaedu.com",
+				icon: "pi pi-envelope",
+				title:"Send Us an Email"
+			},
+			phone: {
+				url: "tel:+905413355335",
+				icon: "pi pi-phone",
+				title:"Call Us"
 			},
 		},
 	},

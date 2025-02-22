@@ -1,0 +1,47 @@
+@use "../../../styles/variables" as *;
+@use "../../../styles/mixins" as *;
+
+.topbar{
+    background-color:$secondaryColor-grey;
+    color:$mainColor-blue;
+    padding:0;
+    @include flexbox($ai: center);
+
+    .container{
+        @include flexbox($ai: center);
+
+        .nav-link{
+            padding: 5px 8px;
+
+            &:hover{
+                color: $mainColor-red;
+            }
+
+            i{
+                font-size: 14px;
+            }
+        }
+
+        .topBar-right{
+
+            @include flexbox($ai: center, $fd:row, $gap:1rem);
+            
+            a{
+                @include flexbox($ai: center);
+                text-decoration: none;
+                cursor: pointer;
+
+                &:hover{
+                    color: $mainColor-red;
+                }
+            }
+
+            i{
+                margin-right: 7px;
+                font-size: 13px;
+            }
+        }
+    }
+
+    
+}
