@@ -1,0 +1,27 @@
+@use "../../../styles/variables" as *;
+@use "../../../styles/mixins" as *;
+
+
+.card{
+    border: none;
+    @include borderRadius(0);
+    background-color: $mainColor-white;
+    
+    .p-menubar{
+        background-color: transparent;
+        border: none;
+        @include borderRadius(0);
+        @include flexbox($ai:center, $jc:space-between);
+
+        ul.p-menubar-root-list{
+            margin: 0;
+            
+            a{
+                text-decoration: none;
+                color: $mainColor-blue;
+                font-weight: 700;
+                padding: 0.75rem 0.55rem;
+            }
+        }
+    }
+}

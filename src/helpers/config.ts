@@ -1,5 +1,7 @@
-import { title } from "process";
-import { Value } from "sass";
+import { FaPhone, FaFacebookF, FaHeadphones, FaWhatsapp, FaEnvelope, FaMapMarkerAlt, FaLinkedinIn, FaYoutube } from "react-icons/fa";
+import { AiFillInstagram } from "react-icons/ai";
+import { IoLogoYoutube } from "react-icons/io";
+import { AiOutlineMail } from "react-icons/ai";
 
 export const appConfig = {
 	project: {
@@ -12,27 +14,27 @@ export const appConfig = {
 		info: {
 			phone1: {
 				value: "+90 (232) 935 81 44",
-				icon: "pi pi-phone",
+				icon: FaPhone,
 				link: "tel:+902329358144",
 			},
 			phone2: {
 				value: "90 541 335 53 35",
-				icon: "pi pi-headphones",
+				icon: FaHeadphones,
 				link: "tel:+905413355335",
 			},
             whatsapp:{
                 value:"+90 (555) 152 12 22 (Whatsapp)",
-                icon:"pi-whatsapp",
+                icon: FaWhatsapp,
                 link:"https://wa.me/905551521222"
             },
 			email: {
 				value: "info@symirnaedu.com",
-				icon: "pi pi-envelope",
+				icon:  AiOutlineMail,
 				link: "mailto:info@symirnaedu.com",
 			},
 			address: {
 				value: "Folkart Towers, Adalet Mah. Manas Blv. No:47 K:34 D:6-7-8A Kule Bayraklı İZMİR",
-				icon: "pi pi-address-book",
+				icon: FaMapMarkerAlt,
 				link: "https://maps.app.goo.gl/qtpaSoB9X6tL49Y28",
 			},
 		},
@@ -43,32 +45,32 @@ export const appConfig = {
 		socialMedia: {
 			facebook: {
 				url: "https://www.facebook.com/smyrnaedu",
-				icon: "pi pi-facebook",
+				icon: FaFacebookF,
 				title:"Follow on Facebook"
 			},
 			instagram: {
 				url: "https://www.instagram.com/smyrnaedu/",
-				icon: "pi pi-instagram",
+				icon: AiFillInstagram,
 				title:"Follow on Instagram"
 			},
 			linkedin: {
 				url: "https://www.linkedin.com/company/smyrna-edu/",
-				icon: "pi pi-linkedin",
+				icon: FaLinkedinIn,
 				title:"Follow on Linkedin"
 			},
 			youtube: {
 				url: "https://www.youtube.com/@Smyrna_EDU",
-				icon: "pi pi-youtube",
+				icon: IoLogoYoutube,
 				title:"Follow on Youtube"
 			},
 			email: {
 				url: "mailto:info@symirnaedu.com",
-				icon: "pi pi-envelope",
+				icon: FaEnvelope,
 				title:"Send Us an Email"
 			},
 			phone: {
 				url: "tel:+905413355335",
-				icon: "pi pi-phone",
+				icon: FaPhone,
 				title:"Call Us"
 			},
 		},

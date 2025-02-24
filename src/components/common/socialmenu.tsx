@@ -5,8 +5,8 @@ import { Nav } from "react-bootstrap";
 
 type SocialMediaItem = {
   url: string;
-  icon: string;
-  title: string
+  icon: React.ElementType; // Use React.ElementType for the icon type
+  title: string;
 };
 
 type SocialMenuProps = React.ComponentProps<typeof Nav>;
@@ -18,7 +18,7 @@ const SocialMenu: React.FC<SocialMenuProps> = (props) => {
     <Nav {...props}>
       {menuItems.map(([key, value]) => (
         <Nav.Link href={value.url} key={key} title={value.title}>
-          <i className={value.icon}></i>
+          <value.icon />
         </Nav.Link>
       ))}
     </Nav>

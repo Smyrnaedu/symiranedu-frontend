@@ -3,6 +3,8 @@ import { Container } from 'react-bootstrap';
 import SocialMenu from '../socialmenu';
 import "./topbar.scss"
 import Link from 'next/link';
+import { MdEditDocument } from 'react-icons/md';
+import { IoDocumentText } from 'react-icons/io5';
 
 const Topbar = () => {
     return (
@@ -11,12 +13,12 @@ const Topbar = () => {
 				<SocialMenu/>
 				<div className='topBar-right'>
 					<Link href="/kvkk">
-					<i className='pi pi-pen-to-square'></i>
+					<MdEditDocument />
 						KVKK
 					</Link>
 					 {" | "}
 					 <Link href="/blog">
-					 <i className='pi pi-file'></i>
+					 <IoDocumentText />
 						Blog
 					</Link>
 				</div>

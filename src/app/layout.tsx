@@ -3,6 +3,7 @@ import type { Metadata } from "next";
 import "@/styles/index.scss"
 import { appConfig } from "@/helpers/config";
 import Topbar from "@/components/common/header/topbar";
+import MainMenuBar from "@/components/common/header/main-menubar";
 
 export const metadata: Metadata = {
   title: {
@@ -21,6 +22,7 @@ export default function RootLayout({
     <html className={poppins.variable}>
       <body>
         <Topbar/>
+        <MainMenuBar/>
         {children}
       </body>
     </html>
