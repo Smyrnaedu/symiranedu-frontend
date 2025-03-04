@@ -1,0 +1,56 @@
+@use "../../styles/variables" as *;
+@use "../../styles/mixins" as *;
+
+.main-slider {
+  .carousel-item {
+    height: calc(100vh - 80px);
+  }
+  img {
+    display: block;
+    height: 100%;
+    width: 100%;
+    margin: 0 auto;
+    opacity: 0.8;
+    object-fit: cover;
+  }
+  .carousel-caption {
+    bottom: 18%;
+    @include transform(translateY(50%));
+    @include borderRadius(5px);
+    color: $mainColor-black;
+    padding: 20px;
+
+    h3 {
+      font-size: 2.75rem;
+    }
+    p {
+      font-size: 1.2rem;
+    }
+
+    @media (max-width: 1200px) {
+      bottom: 20%;
+      h3 {
+        font-size: 2.5rem;
+      }
+      p {
+        font: 1.1rem;
+      }
+    }
+
+    @media (max-width: 992px) {
+      bottom: 50%;
+      @include transform(translateY(50%));
+      @include borderRadius(5px);
+      @include shadow(box, 0 5px 10px $mainColor-black-op-30);
+      background-color: $mainColor-white-op-20;
+      
+
+      h3 {
+        font-size: 2rem;
+      }
+      p {
+        font-size: 1rem;
+      }
+    }
+  }
+}
