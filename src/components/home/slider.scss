@@ -43,7 +43,6 @@
       @include borderRadius(5px);
       @include shadow(box, 0 5px 10px $mainColor-black-op-30);
       background-color: $mainColor-white-op-20;
-      
 
       h3 {
         font-size: 2rem;
@@ -51,6 +50,12 @@
       p {
         font-size: 1rem;
       }
+    }
+  }
+  a {
+    .carousel-control-prev-icon,
+    .carousel-control-next-icon {
+     color: $mainColor-black !important;
     }
   }
 }
