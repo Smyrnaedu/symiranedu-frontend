@@ -4,6 +4,7 @@ import "@/styles/index.scss"
 import { appConfig } from "@/helpers/config";
 import Topbar from "@/components/common/header/topbar";
 import MainMenuBar from "@/components/common/header/main-menubar";
+import Footer from "@/components/footer/footer";
 
 export const metadata: Metadata = {
   title: {
@@ -24,6 +25,7 @@ export default function RootLayout({
         <Topbar/>
         <MainMenuBar/>
         {children}
+        <Footer/>
       </body>
     </html>
   );

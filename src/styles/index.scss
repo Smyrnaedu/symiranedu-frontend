@@ -4,3 +4,8 @@
 @import "bootstrap/scss/bootstrap";
 @import "primeicons/primeicons.css";
 @import "primereact/resources/themes/lara-light-cyan/theme.css";
+
+.nav-link.active {
+    font-weight: 700;
+  }
+  

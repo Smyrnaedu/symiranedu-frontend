@@ -1,14 +1,49 @@
-import React from 'react';
-import MainMenu from './main-menu';
-import "./main-menubar.scss"
+"use client";
+import React from "react";
+import { Container, Navbar, Offcanvas } from "react-bootstrap";
+import MainMenu from "./main-menu";
 
-// 1. React.FC Kullanımı
-const MainMenuBar: React.FC = () => {
+import Image from "next/image";
+import { appConfig } from "@/helpers/config";
+import MainLogo from "./main-logo";
+import ButtonContactUs from "./contact-us-button";
+
+const MainMenubar: React.FC = () => {
   return (
-    <div>
-      <MainMenu />
-    </div>
+    <Navbar
+      expand="lg"
+      className="bg-body-tertiary shadow"
+      sticky="top"
+      collapseOnSelect
+   
+    >
+      <Container>
+        <MainLogo />
+        <Navbar.Toggle aria-controls="main-menubar" />
+        <Navbar.Offcanvas
+          id="main-menubar"
+          aria-labelledby="main-menubar-title"
+          placement="end"
+        >
+          <Offcanvas.Header closeButton>
+            <Offcanvas.Title id="main-menubar-title">
+              <Image
+                src="/image/logo/symrnaEDU.png"
+                width={135}
+                height={34}
+                alt={appConfig.project?.name || "Logo"}
+              />
+            </Offcanvas.Title>
+          </Offcanvas.Header>
+          <Offcanvas.Body>
+            <MainMenu className="justify-content-center flex-grow-1" />
+            <ButtonContactUs />
+          
+          </Offcanvas.Body>
+        </Navbar.Offcanvas>
+      </Container>
+    </Navbar>
   );
 };
 
-export default MainMenuBar;
+export default MainMenubar;
