@@ -5,27 +5,30 @@ import "./footer.scss";
 import { appConfig } from "@/helpers/config";
 import MainMenu from "../common/header/main-menu";
 import SocialMenu from "../common/socialmenu";
+import SocialMenuFooter from "./social-menu-footer";
 import ContactMenu from "./contact-info";
+
 
 const Footer: React.FC = () => {
   return (
     <footer>
       <Container>
         <Row>
-          <Col xs={12}>
+          <Col xs={12} >
             <MainLogo />
             <p className="mt-3">{appConfig.project?.description}</p>
           </Col>
-          <Col xs={6} lg>
+          <Col xs={12}  md={6}  lg={4} >
             <h3>Links</h3>
-            <MainMenu className="flex-column" />
+            <MainMenu className="flex-column footer-menu"  />
           </Col>
-          <Col xs={6} lg>
+          <Col xs={12} md={6} lg={4}>
             <h3>Social</h3>
-            <SocialMenu className="flex-column" />
+            <SocialMenuFooter className="flex-column footer-menu footer-social-menu" />
           </Col>
-          <Col lg>
+          <Col xs={12} lg >
             <h3>Contact</h3>
+            <ContactMenu className="flex-column footer-menu" />
           
           </Col>
         </Row>

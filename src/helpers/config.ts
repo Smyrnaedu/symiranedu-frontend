@@ -59,31 +59,37 @@ export const appConfig = {
         url: "https://www.facebook.com/smyrnaedu",
         icon: FaFacebookF,
         title: "Follow on Facebook",
+        text: "Facebook"
       },
       instagram: {
         url: "https://www.instagram.com/smyrnaedu/",
         icon: AiFillInstagram,
         title: "Follow on Instagram",
+         text: "Instagram"
       },
       linkedin: {
         url: "https://www.linkedin.com/company/smyrna-edu/",
         icon: FaLinkedinIn,
         title: "Follow on Linkedin",
+        text: "Linkedin"
       },
       youtube: {
         url: "https://www.youtube.com/@Smyrna_EDU",
         icon: IoLogoYoutube,
         title: "Follow on Youtube",
+        text: "Youtube"
       },
       email: {
         url: "mailto:info@symirnaedu.com",
         icon: FaEnvelope,
         title: "Send Us an Email",
+        text: "Email"
       },
       phone: {
         url: "tel:+905413355335",
         icon: FaPhone,
         title: "Call Us",
+        text: "Phone"
       },
     },
   },

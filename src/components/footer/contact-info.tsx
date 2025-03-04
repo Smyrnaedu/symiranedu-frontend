@@ -18,14 +18,14 @@ type Props = {
 };
 
 // appConfig.contact.info nesnesinin güvenli şekilde kullanılması
-const menuItems = Object.entries(appConfig.contact.info as ContactInfo);
+const menuItems = Object.entries(appConfig.contact.info);
 
 const ContactMenu: React.FC<Props> = ({ className }) => {
   return (
     <Nav className={className}>
       {menuItems.map(([key, item]) => (
-        <Nav.Link href={item.url} key={key}>
-          <i className={item.icon}></i> {item.value}
+        <Nav.Link href={item.link} key={key}>
+          <item.icon /> {item.value}
         </Nav.Link>
       ))}
     </Nav>
