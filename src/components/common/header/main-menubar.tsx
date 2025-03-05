@@ -12,7 +12,7 @@ const MainMenubar: React.FC = () => {
   return (
     <Navbar
       expand="lg"
-      className="bg-body-tertiary shadow"
+      className="bg-body-tertiary shadow menu-links"
       sticky="top"
       collapseOnSelect
    

@@ -1,26 +1,28 @@
 [
-    {
-        "title":"America",
-        "link":"/countries/america"
-    },
-    {
-        "title":"İngiltere",
-        "link":"/countries/england"
-    },
-    {
-        "title":"Kanada",
-        "link":"/countries/canada"
-    },
-    {
-        "title":"Avustralya",
-        "link":"/countries/austrailia"
-    },
-    {
-        "title":"İrlanda",
-        "link":"/countries/ireland"
-    },
-    {
-        "title":"Almanya",
-        "link":"/countries/germany"
-    }
+  {
+    "title": "İzmir",
+    "link": "/campuses/izmir"
+  },
+  {
+    "title": "İstanbul(Asya)",
+    "link": "/campuses/istanbul-asia"
+  },
+  {
+    "title": "İstanbul(Avrupa)",
+    "link": "/campuses/istanbul-europe"
+  },
+  {
+    "title": "Ankara",
+    "link": "/campuses/ankara"
+  },
+  {
+    "title": "Denizli",
+    "link": "/campuses/denizli"
+  },
+  {
+    "title": "Ingiltere",
+    "link": "/campuses/england"
+      
+  }
+    
 ]

@@ -1,6 +1,7 @@
 /* COMMON */
 $mainColor-blue: #083060;
 $mainColor-red: #D90F1A;
+$mainColor-red2: #a21510;
 $mainColor-white: #FFFFFF;
 $mainColor-black: #000000;
 $mainColor-black-op-50:rgba(0, 0, 0, 0.50);
@@ -16,8 +17,23 @@ $vendors: ("", "-webkit-", "-moz-", "-ms-", "-o-");
 
 /* BOOTSTRAP */
 $font-family-sans-serif: var(--font-poppins);
-$primary: $mainColor-blue;
+$primary: $mainColor-white;
 $secondary: $mainColor-red;
 // $navbar-light-color: $color3;
 // $navbar-light-hover-color: $color2;
 // $navbar-light-active-color:$color2;
+$container-max-widths: (
+  sm: 540px,
+  md: 770px,
+  lg: 1010px,
+  xl: 1190px,
+  xxl: 1500px
+) !default;
+
+
+
+
+
+
+
+

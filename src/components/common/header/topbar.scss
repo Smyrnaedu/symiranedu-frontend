@@ -2,10 +2,11 @@
 @use "../../../styles/mixins" as *;
 
 .topbar{
-    background-color:$secondaryColor-grey;
-    color:$mainColor-blue;
-    padding:0;
+    background-color:$mainColor-black;
+    color:$mainColor-white;
+    padding:15px;
     @include flexbox($ai: center);
+    font-size: 26px;
 
     .container{
         @include flexbox($ai: center);
@@ -24,7 +25,8 @@
 
         .topBar-right{
 
-            @include flexbox($ai: center, $fd:row, $gap:1rem);
+            @include flexbox($ai: center, $fd:row, $gap:2.5rem);
+            font-size: 20px;
             
             a{
                 @include flexbox($ai: center);
@@ -39,6 +41,9 @@
             i{
                 margin-right: 7px;
                 font-size: 13px;
+            }
+            span{
+                margin-left: 10px;
             }
         }
     }

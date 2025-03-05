@@ -1,16 +1,14 @@
 import {
   FaPhone,
-  FaFacebookF,
   FaHeadphones,
   FaWhatsapp,
-  FaEnvelope,
   FaMapMarkerAlt,
-  FaLinkedinIn,
-  FaYoutube,
+  FaInstagram,
 } from "react-icons/fa";
-import { AiFillInstagram } from "react-icons/ai";
-import { IoLogoYoutube } from "react-icons/io";
+
 import { AiOutlineMail } from "react-icons/ai";
+import { PiYoutubeLogoBold } from "react-icons/pi";
+import { FiFacebook } from "react-icons/fi";
 
 export const appConfig = {
   project: {
@@ -55,41 +53,24 @@ export const appConfig = {
         "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3124.432440660259!2d27.174208276583524!3d38.454576671822004!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14bbd9967f699849%3A0x91903638a6455e45!2sSMYRNA%20EDU!5e0!3m2!1str!2str!4v1740147251682!5m2!1str!2str",
     },
     socialMedia: {
-      facebook: {
-        url: "https://www.facebook.com/smyrnaedu",
-        icon: FaFacebookF,
-        title: "Follow on Facebook",
-        text: "Facebook"
-      },
       instagram: {
         url: "https://www.instagram.com/smyrnaedu/",
-        icon: AiFillInstagram,
+        icon: FaInstagram,
         title: "Follow on Instagram",
-         text: "Instagram"
+        text: "Instagram",
       },
-      linkedin: {
-        url: "https://www.linkedin.com/company/smyrna-edu/",
-        icon: FaLinkedinIn,
-        title: "Follow on Linkedin",
-        text: "Linkedin"
+      facebook: {
+        url: "https://www.facebook.com/smyrnaedu",
+        icon: FiFacebook,
+        title: "Follow on Facebook",
+        text: "Facebook",
       },
+
       youtube: {
         url: "https://www.youtube.com/@Smyrna_EDU",
-        icon: IoLogoYoutube,
+        icon: PiYoutubeLogoBold,
         title: "Follow on Youtube",
-        text: "Youtube"
-      },
-      email: {
-        url: "mailto:info@symirnaedu.com",
-        icon: FaEnvelope,
-        title: "Send Us an Email",
-        text: "Email"
-      },
-      phone: {
-        url: "tel:+905413355335",
-        icon: FaPhone,
-        title: "Call Us",
-        text: "Phone"
+        text: "Youtube",
       },
     },
   },

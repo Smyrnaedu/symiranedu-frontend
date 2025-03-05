@@ -1,11 +1,12 @@
 import { Spacer } from "@/components/common/spacer";
-import Slider from "@/components/home/slider";
+import Banner from "@/components/home/banner";
 
 export default function Home() {
   return (
     <>
-    <Slider />
-    <Spacer/>
+      <Spacer height={50} />
+      <Banner />
+      <Spacer />
     </>
   );
 }

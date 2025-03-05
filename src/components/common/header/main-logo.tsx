@@ -6,9 +6,9 @@ const MainLogo: React.FC = () => {
   return (
     <Link href="/">
       <Image
-        src="/image/logo/symrnaEDU.png"
-        width={135}
-        height={34}
+        src="/image/logo/icon-red.png"
+        width={80}
+        height={67}
         alt="Main-Logo"
         priority
       />

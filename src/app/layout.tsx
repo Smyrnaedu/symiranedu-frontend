@@ -1,4 +1,4 @@
-import { poppins } from "@/helpers/fonts";
+import { manrope } from "@/helpers/fonts";
 import type { Metadata } from "next";
 import "@/styles/index.scss";
 import { appConfig } from "@/helpers/config";
@@ -22,7 +22,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html className={poppins.variable}>
+    <html className={manrope.variable}>
       <body>
         <Topbar />
         <MainMenuBar />
