@@ -1,0 +1,30 @@
+.page-header{
+    position: relative;
+
+    img{
+        width: 100% !important;
+        height: 350px !important;
+        object-fit: cover;
+        object-position: center;
+
+        &::after{
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5);
+        }
+    }
+
+    span{
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translateX(-50%) translateY(-50%);
+        z-index: 2;
+        color: red;
+        font-size: 3rem;
+        content:""
+    }
+}
