@@ -18,7 +18,7 @@ const MainMenubar: React.FC = () => {
    
     >
       <Container>
-        <MainLogo />
+        <MainLogo src="/image/logo/icon-red.png" width={80} height={67}/>
         <Navbar.Toggle aria-controls="main-menubar" />
         <Navbar.Offcanvas
           id="main-menubar"

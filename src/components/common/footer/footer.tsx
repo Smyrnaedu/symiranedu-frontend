@@ -13,7 +13,7 @@ const Footer: React.FC = () => {
       <Container>
         <Row>
           <Col xs={12}>
-            <MainLogo />
+            <MainLogo src="/image/logo/symrnaEDU.png" width={234} height={60}/>
             <p className="mt-3">{appConfig.project?.description}</p>
           </Col>
           <Col xs={12} md={6} lg={4}>

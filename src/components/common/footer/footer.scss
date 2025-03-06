@@ -1,9 +1,23 @@
 @use "../../../styles/variables" as *;
+@use "../../../styles/_mixins.scss" as *;
 
 footer {
   background-color: $secondaryColor-grey;
   color: $mainColor-blue;
   padding: 70px 0;
+
+  .footer-menu{
+    a{
+      &.nav-link{
+        color: $mainColor-blue;
+
+        &:hover{
+          color: $mainColor-red;
+        }
+
+      }
+    }
+  }
 
   @media (max-width: 992px) {
     .row {
@@ -30,9 +44,7 @@ footer {
       }
 
       &.footer-social-menu{
-        justify-content: space-between;
-        align-items: center;
-
+        @include flexbox($jc:center, $ai:center, $gap:2rem)
       }
     
     }
