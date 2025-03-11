@@ -2,11 +2,10 @@
 @use "../../../styles/mixins" as *;
 
 .topbar{
-    background-color:$mainColor-black;
+    background-color:$mainColor2;
     color:$mainColor-white;
-    padding:15px;
     @include flexbox($ai: center);
-    font-size: 26px;
+    font-size: 18px;
 
     .container{
         @include flexbox($ai: center);
@@ -23,10 +22,10 @@
             }
         }
 
-        .topBar-right{
+        .topBar-left{
 
             @include flexbox($ai: center, $fd:row, $gap:2.5rem);
-            font-size: 20px;
+            font-size: 14px;
             
             a{
                 @include flexbox($ai: center);
@@ -34,7 +33,7 @@
                 cursor: pointer;
 
                 &:hover{
-                    color: $mainColor-red;
+                    color: $mainColor1;
                 }
             }
 
@@ -44,6 +43,25 @@
             }
             span{
                 margin-left: 10px;
+            }
+        }
+
+        .topbar-right{
+            @include flexbox($ai: center, $jc:center, $fd:row);
+
+            a{
+                &.try-yourself{
+                    text-decoration: none;
+                    border: 1px solid $mainColor-white;
+                    padding: 0.3rem 0.8rem;
+                    font-size: 12px;
+                    border-radius: 20px;
+
+                    &:hover{
+                        background-color:$mainColor-white;
+                        color: $mainColor1;
+                    }
+                }
             }
         }
     }

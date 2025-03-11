@@ -1,9 +1,9 @@
 import React from "react";
 
-const HighSchoolPage: React.FC = () => {
+const HighschoolPage: React.FC = () => {
   return (
-    <div>HighSchoolPage</div>
+    <div>HighschoolPage</div>
   );
 };
 
-export default HighSchoolPage;
+export default HighschoolPage;

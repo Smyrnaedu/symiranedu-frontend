@@ -3,7 +3,10 @@
     "title": "Ana Sayfa",
     "link": "/"
   },
-
+  {
+    "title": "Hakkımızda",
+    "link": "/about-us"
+  },
   {
     "title": "Akademik Programlar",
     "link": "/academic-programs",
@@ -45,11 +48,11 @@
     "subLinks": [
       {
         "title": "Yaz Okulları",
-        "link": "/summer-school"
+        "link": "/summer-schools"
       },
       {
         "title": "Dil Okulları",
-        "link": "/language-school"
+        "link": "/language-schools"
       },
       {
         "title": "Work and Study",
@@ -128,49 +131,45 @@
     ]
   },
   {
-    "title":"Uluslarası Sınavlar",
-    "link":"/international-exams",
-    "subLinks":[
+    "title": "Uluslarası Sınavlar",
+    "link": "/international-exams",
+    "subLinks": [
       {
-        "title":"IELTS",
-        "link":"/ielts"
+        "title": "IELTS",
+        "link": "/ielts"
       },
       {
-        "title":"TOEFL",
-        "link":"/toefl"
+        "title": "TOEFL",
+        "link": "/toefl"
       },
       {
-        "title":"PTE",
-        "link":"/pte"
+        "title": "PTE",
+        "link": "/pte"
       },
       {
-        "title":"GMAT",
-        "link":"/gmat"
+        "title": "GMAT",
+        "link": "/gmat"
       },
       {
-        "title":"GRE",
-        "link":"/gre"
+        "title": "GRE",
+        "link": "/gre"
       },
       {
-        "title":"SAT",
-        "link":"/sat"
+        "title": "SAT",
+        "link": "/sat"
       },
       {
         "title": "AP",
         "link": "/ap"
       },
       {
-        "title":"Dualingo",
-        "link":"/dualingo"
+        "title": "Dualingo",
+        "link": "/dualingo"
       }
     ]
   },
   {
     "title": "İletişim",
     "link": "/contact"
-  },
-  {
-    "title": "Hakkımızda",
-    "link": "/about-us"
   }
 ]

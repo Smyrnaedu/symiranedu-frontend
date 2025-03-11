@@ -1,9 +1,9 @@
 import React from "react";
 
-const LanguageShoolsPage: React.FC = () => {
+const LanguageSchools: React.FC = () => {
   return (
-    <div>LanguageShoolsPage</div>
+    <div>LanguageSchools</div>
   );
 };
 
-export default LanguageShoolsPage;
+export default LanguageSchools;
