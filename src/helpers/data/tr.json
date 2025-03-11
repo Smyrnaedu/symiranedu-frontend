@@ -1,0 +1,134 @@
+[
+  {
+    "Home": {
+      "banner-title": "Smyrna Edu ile Yurtdışı Eğitim Yolculuğu!",
+      "banner-buton": "Ücretsiz Danışmanlık İçin Randevu",
+      "banner-description": "Gitmek istediğin ülkeyi ve almak istediğin eğitimi seç, fiyat teklifi al ve bizimle iletişime geç! Bütçene uygun dil okulu ve üniversite için anlık fiyatlar alın! Kendinize en uygun programları araştırın!",
+
+      "student-reviews-sub-title": "Başarı Hikayeleri",
+      "student-reviews-title": "Hayallerini Gerçekleştiren Öğrencilerimiz",
+      "students": [
+        {
+          "name": "Ahmet",
+          "image": "img.jpg",
+          "description": "Smyrna Edu ile yurtdışı eğitim yolculuğumu başarıyla tamamladım. İngiltere’de dil eğitimi almak istiyordum ve Smyrna Edu sayesinde bütçeme uygun bir okul buldum. Teşekkürler Smyrna Edu!"
+        },
+        {
+          "name": "Ayşe",
+          "image": "image-1.jpg",
+          "description": "Smyrna Edu ile yurtdışı eğitim yolculuğumu başarıyla tamamladım. İngiltere’de dil eğitimi almak istiyordum ve Smyrna Edu sayesinde bütçeme uygun bir okul buldum. Teşekkürler Smyrna Edu!"
+        },
+        {
+          "name": "Mehmet",
+          "image": "image-2.jpg",
+          "description": "Smyrna Edu ile yurtdışı eğitim yolculuğumu başarıyla tamamladım. İngiltere’de dil eğitimi almak istiyordum ve Smyrna Edu sayesinde bütçeme uygun bir okul buldum. Teşekkürler Smyrna Edu!"
+        }
+      ],
+
+      "process-sub-title": "Teklifler",
+      "process-title": "Bizimle Yurtdışında Eğitim Alın!",
+      "process-steps": [
+        {
+          "process-step-sub-title": "Araştırma ve Keşif",
+          "process-step-title": "Yeni ülkeler, üniversiteler ve programlar keşfedin.",
+          "process-step-description": " Size uygun ayrıcalıkları araştırma fırsatı yakalayın.",
+          "process-step-image": "img.jpg"
+        },
+        {
+          "process-step-sub-title": "Eğitim Danışmanlığı",
+          "process-step-title": "Hedeflerinizi belirleyin!",
+          "process-step-description": "Danışmanlarımız rehberliğinde doğru kararlar verin! Uygun üniversiteleri ve programları bulun.",
+          "process-step-image": "img.jpg"
+        },
+        {
+          "process-step-sub-title": "Sınav Hazırlığı",
+          "process-step-title": "IELTS – TOEFL gibi sınavlar için hazır olun.",
+          "process-step-description": "IELTS, TOEFL, PTE, GMAT, GRE ve SAT için canlı derslere katılın.",
+          "process-step-image": "img.jpg"
+        },
+        {
+          "process-step-sub-title": "Üniversitelerle Tanışın",
+          "process-step-title": "Dünyaca Ünlü Üniversitelerle Etkileşim Kurun.",
+          "process-step-description": "Üniversite temsilcileri ile birebir iletişime geçin ve sürecinizi güvence altına alın.",
+          "process-step-image": "img.jpg"
+        },
+        {
+          "process-step-sub-title": "Finans",
+          "process-step-title": "Uçak bileti ve sağlık sigortanızı ayarlayın.",
+          "process-step-description": "Uçak bileti ve sağlık sigortası gibi süreçlere takılmadan sadece hedefinize odaklanın.",
+          "process-step-image": "img.jpg"
+        },
+        {
+          "process-step-sub-title": "Küresel Ödemeler",
+          "process-step-title": "Öğrenim ücretlerinde para birimlerine takılmayın!",
+          "process-step-description": "Smyrna EDU aracılığıyla yurtdışına güvenli para transferi yapın.",
+          "process-step-image": "img.jpg"
+        },
+        {
+          "process-step-sub-title": "Vize Başvuru Süreci",
+          "process-step-title": "Sorunsuz bir yolculuğa hazır olun.",
+          "process-step-description": "Vize süreç yönetimini bize bırakın ve sorunsuz yolculuğun tadını çıkarın.",
+          "process-step-image": "img.jpg"
+        },
+        {
+          "process-step-sub-title": "Öğrenci Konaklama",
+          "process-step-title": "Evinizden uzakta evinizi bulun.",
+          "process-step-description": "Yaşam tarzınıza uygun en iyi konaklama seçeneklerini keşfedin.",
+          "process-step-image": "img.jpg"
+        },
+        {
+          "process-step-sub-title": "Üniversiteye Kayıt",
+          "process-step-title": "Hayallerinizdeki akademik kariyere başlayın!",
+          "process-step-description": "Yurt dışında eğitim görmelerine yardımcı olduğumuz yüzlerce öğrencinin arasında yerinizi alın.",
+          "process-step-image": "img.jpg"
+        }
+      ],
+
+      "university-partners-title": [
+        {
+          "university-partner-name": "Penn University of Pennsylvania",
+          "university-partner-image": "img.jpg"
+        },
+        {
+          "university-partner-name": "Columbia University",
+          "university-partner-image": "img.jpg"
+        },
+        {
+          "university-partner-name": "Penn University of Pennsylvania",
+          "university-partner-image": "img.jpg"
+        },
+        {
+          "university-partner-name": "Dartmouth University",
+          "university-partner-image": "img.jpg"
+        },
+        {
+          "university-partner-name": "Yale University",
+          "university-partner-image": "img.jpg"
+        },
+        {
+          "university-partner-name": "Cornell University",
+          "university-partner-image": "img.jpg"
+        },
+        {
+          "university-partner-name": "Brown University",
+          "university-partner-image": "img.jpg"
+        },
+        {
+          "university-partner-name": "Princeton University",
+          "university-partner-image": "img.jpg"
+        }
+      ],
+      "sss": [
+        {
+          "sss-main-title": "Sıkça Sorulan Sorular",
+          "sss-text": [
+            {
+              "sss-sub-title": "Sıkça Sorulan Sorular",
+              "sss-description": "Sıkça sorulan sorulara cevap bulmak için tıklayın"
+            }
+          ]
+        }
+      ]
+    }
+  }
+]
