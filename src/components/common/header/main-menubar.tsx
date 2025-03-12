@@ -15,10 +15,9 @@ const MainMenubar: React.FC = () => {
       className="bg-body-tertiary shadow menu-links"
       sticky="top"
       collapseOnSelect
-   
     >
       <Container>
-        <MainLogo src="/image/logo/icon-red.png" width={80} height={67}/>
+        <MainLogo src="/image/logo/icon-red.png" width={80} height={67} />
         <Navbar.Toggle aria-controls="main-menubar" />
         <Navbar.Offcanvas
           id="main-menubar"
@@ -38,7 +37,6 @@ const MainMenubar: React.FC = () => {
           <Offcanvas.Body>
             <MainMenu className="justify-content-center flex-grow-1" />
             <ButtonContactUs />
-          
           </Offcanvas.Body>
         </Navbar.Offcanvas>
       </Container>

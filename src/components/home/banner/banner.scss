@@ -1,21 +1,27 @@
-@use "../../styles/variables" as *;
-@use "../../styles/mixins" as *;
+@use "../../../styles/variables" as *;
+@use "../../../styles/mixins" as *;
 
 .banner {
-  width: 100% !important;
+  width: 100vw !important;
   height: 100vh !important;
   position: relative;
 
-  .banner-image{
-    width: 110%;
-    height: auto;
+  .banner-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100%;
     object-fit: cover;
     object-position: right;
+    z-index: -1;
   }
-
   .banner-text-wrapper{
     position: absolute;
     top: 13%;
+    background: transparent;
+    max-width: 750px;
+    margin-left: 3rem;
 
     .banner-text{
       max-width: 566px;
@@ -27,7 +33,7 @@
       font-size: 60px;
       line-height: 76px;
       letter-spacing: 0%;
-      color: $mainColor-red2;
+      color: $mainColor-red;
       & span {
         background: linear-gradient(92.36deg, #e10613 1.98%, #a21510 61.41%);
         -webkit-background-clip: text;
