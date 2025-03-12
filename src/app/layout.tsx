@@ -7,7 +7,6 @@ import MainMenuBar from "@/components/common/header/main-menubar";
 import Footer from "@/components/common/footer/footer";
 import FooterSub from "@/components/common/footer/footer-sub";
 
-
 export const metadata: Metadata = {
   title: {
     template: `%s| ${appConfig.project.name}`,
@@ -24,11 +23,13 @@ export default function RootLayout({
   return (
     <html className={manrope.variable}>
       <body>
-        <Topbar />
-        <MainMenuBar />
-        {children}
-        <Footer />
-        <FooterSub />
+        <main>
+          <Topbar />
+          <MainMenuBar />
+          {children}
+          <Footer />
+          <FooterSub />
+        </main>
       </body>
     </html>
   );

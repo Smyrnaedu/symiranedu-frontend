@@ -1,10 +1,10 @@
 import { Spacer } from "@/components/common/spacer";
-import Banner from "@/components/home/banner";
+import Banner from "@/components/home/banner/banner";
+import { Container } from "react-bootstrap";
 
 export default function Home() {
   return (
     <>
-      <Spacer height={50} />
       <Banner />
       <Spacer />
     </>
