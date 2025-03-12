@@ -27,7 +27,7 @@ const MainMenu: React.FC<MainMenuProps> = ({ className }) => {
   const pathname = usePathname();
 
   return (
-    <Nav className={`me-auto ${className || ""}`}>
+    <Nav className={`me-auto navbar ${className || ""}`}>
       {menuItems.map((item: MainMenuItem) =>
         item.subLinks ? (
           <NavDropdown title={item.title} key={item.link}>

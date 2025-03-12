@@ -33,24 +33,30 @@
         /* Sağ uç tamamen şeffaf */
     );
     z-index: 0;
+
+    @media (max-width:576px){
+      background: none;
+      background-color: rgba(255, 255, 255, 0.593);
+    }
   }
 
   .banner-text-wrapper {
     position: absolute;
     top: 13%;
     background: transparent;
-    max-width: 750px;
+    max-width: 600px;
     z-index: 2;
+    margin-left: 6rem;
 
     .banner-text {
-      max-width: 566px;
+      max-width: 400px;
       margin-top: 20px;
     }
 
     h2 {
       font-weight: 700;
-      font-size: 60px;
-      line-height: 76px;
+      font-size: 50px;
+      line-height: 66px;
       letter-spacing: 0%;
       color: $mainColor-red;
       & span {
@@ -61,5 +67,10 @@
         font-weight: 700;
       }
     }
-  }
+
+    @media (max-width:576px) {
+        margin-left: 1rem!important;
+        text-align: center;
+      }
+    }
 }

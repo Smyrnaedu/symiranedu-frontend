@@ -1,0 +1,36 @@
+@use "../../../styles/variables" as *;
+@use "../../../styles/" as *;
+
+.main-menu{
+    display: flex;
+    align-items: center;
+    
+    .navbar{
+        a{
+            &.nav-link{
+                font-size: 16px;
+            }
+        }
+    }
+
+    a{
+        &.login-btn{
+            text-decoration: none;
+            background-color: $mainColor1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 0 10px;
+            font-size: 14px;
+            width: 100px;
+            height: 40px;
+            border-radius: 15px;
+            border: 2px solid $mainColor1;
+
+            &:hover{
+                background-color: $mainColor-white;
+                color: $mainColor1;
+            }
+        }
+    }
+}

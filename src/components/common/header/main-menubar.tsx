@@ -2,17 +2,16 @@
 import React from "react";
 import { Container, Navbar, Offcanvas } from "react-bootstrap";
 import MainMenu from "./main-menu";
-
 import Image from "next/image";
 import { appConfig } from "@/helpers/config";
 import MainLogo from "./main-logo";
-import ButtonContactUs from "./contact-us-button";
+import "./main-menu.scss";
 
 const MainMenubar: React.FC = () => {
   return (
     <Navbar
       expand="lg"
-      className="bg-body-tertiary shadow menu-links"
+      className="bg-body-tertiary shadow menu-links main-menu"
       sticky="top"
       collapseOnSelect
     >
@@ -34,9 +33,11 @@ const MainMenubar: React.FC = () => {
               />
             </Offcanvas.Title>
           </Offcanvas.Header>
-          <Offcanvas.Body>
+          <Offcanvas.Body className="align-items-center">
             <MainMenu className="justify-content-center flex-grow-1" />
-            <ButtonContactUs />
+            <a href="/login" className="login-btn">
+              Giriş Yap
+            </a>
           </Offcanvas.Body>
         </Navbar.Offcanvas>
       </Container>
