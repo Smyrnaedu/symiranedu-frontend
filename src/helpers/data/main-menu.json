@@ -13,32 +13,32 @@
     "subLinks": [
       {
         "title": "Lise",
-        "link": "/highschool"
+        "link": "/academic-programs/highschool"
       },
 
       {
         "title": "Lisans",
-        "link": "/undergraduate"
+        "link": "/academic-programs/undergraduate"
       },
       {
         "title": "Yüksek Lisans",
-        "link": "/master"
+        "link": "/academic-programs/master"
       },
       {
         "title": "Docorate",
-        "link": "/doctorate"
+        "link": "/academic-programs/doctorate"
       },
       {
         "title": "Online Üniversite",
-        "link": "/online-university"
+        "link": "/academic-programs/online-university"
       },
       {
         "title": "Exchange",
-        "link": "/exchange"
+        "link": "/academic-programs/exchange"
       },
       {
         "title": "IVY League",
-        "link": "/ivy-league"
+        "link": "/academic-programs/ivy-league"
       }
     ]
   },
@@ -48,23 +48,23 @@
     "subLinks": [
       {
         "title": "Yaz Okulları",
-        "link": "/summer-schools"
+        "link": "/preparation-programs/summer-schools"
       },
       {
         "title": "Dil Okulları",
-        "link": "/language-schools"
+        "link": "/preparation-programs/language-schools"
       },
       {
         "title": "Work and Study",
-        "link": "/work-and-study"
+        "link": "/preparation-programs/work-and-study"
       },
       {
         "title": "Foundation",
-        "link": "/foundation"
+        "link": "/preparation-programs/foundation"
       },
       {
         "title": "Pathway",
-        "link": "/pathway"
+        "link": "/preparation-programs/pathway"
       }
     ]
   },
@@ -74,59 +74,59 @@
     "subLinks": [
       {
         "title": "Amerika",
-        "link": "/america"
+        "link": "/countries/america"
       },
       {
         "title": "İngiltere",
-        "link": "/england"
+        "link": "/countries/england"
       },
       {
         "title": "Almanya",
-        "link": "/germany"
+        "link": "/countries/germany"
       },
       {
         "title": "Kanada",
-        "link": "/canada"
+        "link": "/countries/canada"
       },
       {
         "title": "İtalya",
-        "link": "/italy"
+        "link": "/countries/italy"
       },
       {
         "title": "Fransa",
-        "link": "/france"
+        "link": "/countries/france"
       },
       {
         "title": "Çekya",
-        "link": "/czech-republic"
+        "link": "/countries/czech-republic"
       },
       {
         "title": "Macaristan",
-        "link": "/hungary"
+        "link": "/countries/hungary"
       },
       {
         "title": "Litvanya",
-        "link": "/lithuania"
+        "link": "/countries/lithuania"
       },
       {
         "title": "Dubai",
-        "link": "/dubai"
+        "link": "/countries/dubai"
       },
       {
         "title": "Hollanda",
-        "link": "/netherlands"
+        "link": "/countries/netherlands"
       },
       {
         "title": "Avustralya",
-        "link": "/australia"
+        "link": "/countries/australia"
       },
       {
         "title": "İrlanda",
-        "link": "/ireland"
+        "link": "/countries/ireland"
       },
       {
         "title": "Polonya",
-        "link": "/poland"
+        "link": "/countries/poland"
       }
     ]
   },
@@ -136,35 +136,35 @@
     "subLinks": [
       {
         "title": "IELTS",
-        "link": "/ielts"
+        "link": "/international-exams/ielts"
       },
       {
         "title": "TOEFL",
-        "link": "/toefl"
+        "link": "/international-exams/toefl"
       },
       {
         "title": "PTE",
-        "link": "/pte"
+        "link": "/international-exams/pte"
       },
       {
         "title": "GMAT",
-        "link": "/gmat"
+        "link": "/international-exams/gmat"
       },
       {
         "title": "GRE",
-        "link": "/gre"
+        "link": "/international-exams/gre"
       },
       {
         "title": "SAT",
-        "link": "/sat"
+        "link": "/international-exams/sat"
       },
       {
         "title": "AP",
-        "link": "/ap"
+        "link": "/international-exams/ap"
       },
       {
         "title": "Dualingo",
-        "link": "/dualingo"
+        "link": "/international-exams/dualingo"
       }
     ]
   }
