@@ -1,0 +1,23 @@
+@use "../../styles/variables" as *;
+@use "../../styles/mixins" as *;
+
+.section-header {
+  font-size: .8rem;
+  margin-bottom: 1.5rem;
+
+  position: relative;
+
+  span {
+    color: $mainColor-red2 !important;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -1.3px;
+    width: 10rem;
+    height: 3px;
+    background-color: $mainColor-red2;
+  }
+}
