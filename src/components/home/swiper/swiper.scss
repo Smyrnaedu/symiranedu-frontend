@@ -7,6 +7,7 @@
   position: relative;
 
 
+
   .student-wrapper {
     @include flexbox($fd: row, $ai: center, $jc: space-between, $gap: 1rem);
     transition: transform 0.3s ease-in-out;
@@ -16,6 +17,7 @@
       object-fit: cover;
       margin-right: 10px;
       padding: 1.5rem;
+
       position: relative;
       top: 0;
       left: 0;
@@ -23,6 +25,7 @@
       height: 312px !important;
       border: 1px solid $mainColor1;
       @include borderRadius(0.75rem);
+
 
       h3.student__title {
         color: $mainColor-black;
@@ -36,6 +39,9 @@
         color: $mainColor-black;
         text-align: left;
         margin-bottom: 2rem; 
+
+        margin-bottom: 2rem; /* Reduced margin to avoid overlap with button */
+
       }
 
       .student_img {
@@ -44,10 +50,13 @@
         right: 1px;
         width: 40%;
         height: auto;
+
       
+
+        @include borderRadius(0.75rem);
+
       }
 
-      /* Button Style */
     }
   }
 

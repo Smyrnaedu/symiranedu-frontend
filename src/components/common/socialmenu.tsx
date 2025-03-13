@@ -15,9 +15,9 @@ const menuItems: [string, SocialMediaItem][] = Object.entries(appConfig.contact.
 
 const SocialMenu: React.FC<SocialMenuProps> = (props) => {
   return (
-    <Nav {...props}>
+    <Nav {...props} className="social-menu">
       {menuItems.map(([key, value]) => (
-        <Nav.Link href={value.url} key={key} title={value.title}>
+        <Nav.Link href={value.url} key={key}>
           <value.icon />
         </Nav.Link>
       ))}

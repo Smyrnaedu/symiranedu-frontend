@@ -28,7 +28,11 @@ const Student: React.FC<StudentProps> = ({
     >
       {students.map((student) => (
         <div
+
           className="student__item"
+
+    
+
           key={student.id}
           style={{ minWidth: `${itemWidth}px` }}
         >
