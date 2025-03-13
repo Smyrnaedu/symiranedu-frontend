@@ -7,9 +7,9 @@ interface MeetingButtonProps {
 
 const MeetingButton: React.FC<MeetingButtonProps> = ({ title }) => {
   return (
-    <Button className="btn btn-secondary">
+    <a className="btn btn-secondary">
       {title}
-    </Button>
+    </a>
   );
 };
 

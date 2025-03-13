@@ -1,68 +1,88 @@
 @use "../../../styles/variables" as *;
 @use "../../../styles/mixins" as *;
 
-.topbar{
-    background-color:$mainColor2;
-    color:$mainColor-white;
+.topbar {
+  background-color: $mainColor2;
+  color: $mainColor-white;
+  @include flexbox($ai: center);
+  font-size: 18px;
+
+  .container {
     @include flexbox($ai: center);
-    font-size: 18px;
 
-    .container{
-        @include flexbox($ai: center);
+    .nav-link {
+      padding: 5px 8px;
 
-        .nav-link{
-            padding: 5px 8px;
+      &:hover {
+        color: $mainColor-red;
+      }
 
-            &:hover{
-                color: $mainColor-red;
-            }
-
-            i{
-                font-size: 14px;
-            }
-        }
-
-        .topBar-left{
-
-            @include flexbox($ai: center, $fd:row, $gap:2.5rem);
-            font-size: 14px;
-            
-            a{
-                @include flexbox($ai: center);
-                text-decoration: none;
-                cursor: pointer;
-
-                &:hover{
-                    color: $mainColor1;
-                }
-            }
-
-            i{
-                margin-right: 7px;
-                font-size: 13px;
-            }
-            span{
-                margin-left: 10px;
-            }
-        }
-
-        .topbar-right{
-            @include flexbox($ai: center, $jc:center, $fd:row);
-
-            a{
-                &.try-yourself{
-                    text-decoration: none;
-                    border: 1px solid $mainColor-white;
-                    padding: 0.3rem 0.8rem;
-                    font-size: 12px;
-                    border-radius: 20px;
-
-                    &:hover{
-                        background-color:$mainColor-white;
-                        color: $mainColor1;
-                    }
-                }
-            }
-        }
+      i {
+        font-size: 14px;
+      }
     }
+
+    .topBar-left {
+      @include flexbox($ai: center, $fd: row, $gap: 2.5rem);
+      font-size: 14px;
+
+      a {
+        @include flexbox($ai: center);
+        text-decoration: none;
+        cursor: pointer;
+
+        &:hover {
+          color: $mainColor1;
+        }
+      }
+
+      i {
+        margin-right: 7px;
+        font-size: 13px;
+      }
+      span {
+        margin-left: 10px;
+      }
+
+      @media(max-width:576px){
+        gap: 1rem;
+
+        span{
+            margin-left: 5px;
+        }
+      }
+    }
+
+    .topbar-right {
+      @include flexbox($ai: center, $jc: center, $fd: row);
+
+      a {
+        &.try-yourself {
+          text-decoration: none;
+          border: 1px solid $mainColor-white;
+          padding: 0.3rem 0.8rem;
+          font-size: 12px;
+          border-radius: 20px;
+          text-align: center;
+
+          &:hover {
+            background-color: $mainColor-white;
+            color: $mainColor1;
+          }
+        }
+      }
+
+      @media (max-width: 576px) {
+        nav {
+          .nav-link {
+            padding: 5px!important;
+          }
+        }
+      }
+    }
+
+    @media(max-width:500px){
+        flex-direction: column;
+    }
+  }
 }
