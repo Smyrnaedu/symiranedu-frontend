@@ -22,7 +22,7 @@ const Topbar = () => {
         </div>
         <div className="topbar-right">
           <SocialMenu />
-          <a href="/dualingo" className="try-yourself">
+          <a href="/international-exams/dualingo" className="try-yourself">
             Kendini Dene
           </a>
         </div>

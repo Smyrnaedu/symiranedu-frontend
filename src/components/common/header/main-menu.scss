@@ -31,6 +31,10 @@
                 background-color: $mainColor-white;
                 color: $mainColor1;
             }
+
+            @media(max-width:768px){
+                z-index: 2;
+            }
         }
     }
 }

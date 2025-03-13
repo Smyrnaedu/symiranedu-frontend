@@ -29,7 +29,7 @@ const Banner = () => {
       <div className="banner-text-wrapper">
         <h2 className={arimo.variable}>{title}</h2>
         <p className="banner-text">{description}</p>
-        <MeetingButton title={buttonText} />
+        <MeetingButton title={buttonText}/>
       </div>
     </Container>
   );
