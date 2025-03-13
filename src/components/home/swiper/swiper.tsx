@@ -17,27 +17,29 @@ interface StudentProps {
 const Student: React.FC<StudentProps> = ({
   students,
   currentIndex = 0,
-  itemWidth = 243,
+  itemWidth = 305, // Updated to match the width in the CSS
 }) => {
   return (
     <div
       className="student-wrapper"
       style={{
-        display: "flex",
-        transition: "transform 0.3s ease-in-out",
-        transform: `translateX(-${currentIndex * itemWidth}px)`,
+        transform: `translateX(-${currentIndex * itemWidth +12}px)`,
       }}
     >
       {students.map((student) => (
         <div
-          className="student__item "
+
+          className="student__item"
+
+    
+
           key={student.id}
-          style={{ minWidth: `${itemWidth}px`, margin: "20px 20px 20px 0" }}
+          style={{ minWidth: `${itemWidth}px` }}
         >
           <Image
             src={`/image/students/${student.image}`}
-            width={120}
-            height={180}
+            width={180}
+            height={240}
             alt={student.name}
             className="student_img"
           />

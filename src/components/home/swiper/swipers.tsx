@@ -47,7 +47,8 @@ const Students: React.FC = () => {
         title={homeData.Home["student-reviews-sub-title"]}
         spans={homeData.Home["student-reviews-title"]}
       />
-    
+
+      <div className="students__container">
         <Student students={students} currentIndex={currentIndex} />
 
       <div>
