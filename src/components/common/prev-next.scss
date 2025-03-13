@@ -1,0 +1,26 @@
+@use "../../styles/variables" as *;
+@use "../../styles/mixins" as *;
+
+.swiper-button-next,
+.swiper-button-prev {
+  @include flexbox(row, center, center);
+  background-color: $mainColor1 !important;
+  color: $mainColor-white !important;
+  @include borderRadius(50%);
+  width: 40px;
+  height: 40px;
+
+  position: absolute;
+  top: 20px; // Yükseklik konumunu ayarlayın
+  right: 50px; // Konumu sağa yerleştir
+  z-index: 10; // Diğer elemanların üstünde kalması için
+}
+
+.swiper-button-prev {
+  left: initial;
+  right: 5.5rem;
+}
+
+.swiper-button-next {
+  right: 2.5rem;
+}
