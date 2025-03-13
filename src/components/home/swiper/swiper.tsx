@@ -21,7 +21,7 @@ const Student: React.FC<StudentProps> = ({
 }) => {
   return (
     <div
-      className="category-wrapper"
+      className="student-wrapper"
       style={{
         display: "flex",
         transition: "transform 0.3s ease-in-out",
@@ -30,7 +30,7 @@ const Student: React.FC<StudentProps> = ({
     >
       {students.map((student) => (
         <div
-          className="category__item text-decoration-none"
+          className="student__item "
           key={student.id}
           style={{ minWidth: `${itemWidth}px`, margin: "20px 20px 20px 0" }}
         >
@@ -39,10 +39,10 @@ const Student: React.FC<StudentProps> = ({
             width={120}
             height={180}
             alt={student.name}
-            className="category_img"
+            className="student_img"
           />
-          <h3 className="category__title">{student.name}</h3>
-          <p className="category__description">{student.description}</p>
+          <h3 className="student__title">{student.name}</h3>
+          <p className="student__description">{student.description}</p>
         </div>
       ))}
     </div>

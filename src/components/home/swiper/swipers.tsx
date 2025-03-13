@@ -42,14 +42,14 @@ const Students: React.FC = () => {
   };
 
   return (
-    <Container className="categories position-relative">
+    <Container className="students position-relative">
       <SectionHeader
         title={homeData.Home["student-reviews-sub-title"]}
         spans={homeData.Home["student-reviews-title"]}
       />
-      <div className="categories__container">
+    
         <Student students={students} currentIndex={currentIndex} />
-      </div>
+
       <div>
         <PrevNext onNext={handleNext} onPrevious={handlePrevious} />
       </div>

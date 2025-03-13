@@ -7,8 +7,17 @@
 
   position: relative;
 
-  span {
-    color: $mainColor-red2 !important;
+  h2{
+    font-size: 2.3rem;
+    font-weight: 700;
+    color: $mainColor2;
+    margin-bottom: 1rem;
+  }
+
+  p {
+    color: $mainColor2 !important;
+    margin-bottom: .5rem;
+    
   }
 
   &::before {
@@ -16,8 +25,8 @@
     position: absolute;
     left: 0;
     bottom: -1.3px;
-    width: 10rem;
-    height: 3px;
-    background-color: $mainColor-red2;
+    width: 11rem;
+    height: 5px;
+    background-color: $mainColor1;
   }
 }

@@ -2,87 +2,61 @@
 @use "../../../styles/mixins" as *;
 
 /*=============== CATEGORIES ===============*/
-.categories {
+.students {
   overflow: hidden;
   position: relative;
 
-  .categories__container {
-    margin-top: 2rem !important;
-  }
+  .student-wrapper {
+    @include flexbox($fd: row, $ai: center, $jc: space-between, $gap: 1.5rem);
 
-  .category__item {
-    position: relative;
-    text-align: left;
-    border: 1px solid $mainColor-red;
-    padding: 1.5rem;
-    @include borderRadius(1.5rem);
-    width: 100%; /* Ensure cards take full width of their container */
-    margin: 0 20px 20px 0; /* Prevent overlap between cards */
-    cursor: pointer;
-    overflow: hidden;
-    background-image: linear-gradient($mainColor1, $mainColor4, $mainColor5);
+    .student__item {
+      object-fit: cover;
+      margin-right: 10px;
+      position: relative;
+      top: 0;
+      left: 0;
+      width: 360px !important;
+      height: 312px !important;
 
-    h3.category__title {
-      color: $mainColor-black;
-      font-size: 1.5rem;
-      margin-bottom: 1rem;
-    }
-
-    .category__description {
-      font-size: 1rem;
-      color: $mainColor-black;
-      text-align: left;
-      margin-bottom: 2rem; /* Reduced margin to avoid overlap with button */
-    }
-
-    .category_img {
-      position: absolute;
-      bottom: 1px;
-      right: 1px;
-      width: 50%;
-      height: auto;
-      @include borderRadius(0.75rem);
-    }
-
-    /* Button Style */
-    .category__button {
-      position: absolute;
-      bottom: 20px; /* Adjust button's vertical position */
-      left: 20px; /* Adjust button's horizontal position */
-      padding: 0.5rem 1rem;
-      background-color: $mainColor-red;
-      color: white;
-      border: none;
-      border-radius: 0.5rem;
-      cursor: pointer;
-      transition: background-color 0.3s ease;
-
-      &:hover {
-        background-color: darken($mainColor-red, 10%);
+      h3.student__title {
+        color: $mainColor-black;
+        font-size: 1.2rem;
+        font-weight: 700;
+        margin-bottom: 1rem;
       }
+
+      .student__description {
+        font-size: 0.8rem;
+        color: $mainColor-black;
+        text-align: left;
+        margin-bottom: 2rem; /* Reduced margin to avoid overlap with button */
+      }
+
+      .student_img {
+        position: absolute;
+        bottom: 1px;
+        right: 1px;
+        width: 40%;
+        height: auto;
+        @include borderRadius(0.75rem);
+      }
+
+      /* Button Style */
     }
-  }
-
-  .swiper-wrapper {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-  }
-
-  .categories__pagination {
-    @include flexbox(row, center, center, 1rem);
   }
 
   /* Responsive Settings */
   @media (min-width: 1400px) {
-    .swiper-slide {
-      width: calc(25% - 1rem); /* 4 items per row */
+    .student__item {
+      .swiper-slide {
+        width: calc(25% - 1rem); /* 4 items per row */
+      }
     }
   }
 
   @media (max-width: 1400px) {
     .swiper-slide {
-      width: calc(33.33% - 1rem); /* 3 items per row */
+      width: calc(25% - 1rem); /* 4 items per row */
     }
   }
 
@@ -121,12 +95,12 @@
       width: 100% !important; /* 1 item per row */
     }
 
-    .category__item {
+    .student__item {
       padding: 0.75rem;
-      h3.category__title {
+      h3.student__title {
         font-size: 1rem;
       }
-      .category__description {
+      .student__description {
         font-size: 0.85rem;
       }
     }

@@ -4,7 +4,7 @@
 .swiper-button-next,
 .swiper-button-prev {
   @include flexbox(row, center, center);
-  background-color: $mainColor1 !important;
+  background-color: $mainColor2 !important;
   color: $mainColor-white !important;
   @include borderRadius(50%);
   width: 40px;
@@ -18,9 +18,9 @@
 
 .swiper-button-prev {
   left: initial;
-  right: 5.5rem;
+  right: 4.5rem;
 }
 
 .swiper-button-next {
-  right: 2.5rem;
+  right: 1.5rem;
 }
