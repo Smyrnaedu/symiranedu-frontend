@@ -16,7 +16,7 @@ const MainMenubar: React.FC = () => {
       collapseOnSelect
     >
       <Container>
-        <MainLogo src="/image/logo/icon-red.png" width={80} height={67} />
+        <MainLogo src="/image/logo/icon-red.png" width={60} height={50} />
         <Navbar.Toggle aria-controls="main-menubar" />
         <Navbar.Offcanvas
           id="main-menubar"
