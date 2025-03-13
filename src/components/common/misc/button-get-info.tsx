@@ -1,4 +1,3 @@
-import { appConfig } from "@/helpers/config";
 import React from "react";
 
 const GetInfoButton: React.FC = () => {

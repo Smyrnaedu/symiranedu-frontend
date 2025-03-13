@@ -1,5 +1,4 @@
 import { arimo } from "@/helpers/fonts";
-import Image from "next/image";
 import React from "react";
 import { Container } from "react-bootstrap";
 import "./banner.scss";
