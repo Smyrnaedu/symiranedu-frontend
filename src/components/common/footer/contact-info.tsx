@@ -4,13 +4,13 @@ import React from "react";
 import { Nav } from "react-bootstrap";
 
 // Menü itemleri için TypeScript türleri tanımlandı
-type ContactInfo = {
-  [key: string]: {
-    url: string;
-    icon: string;
-    value: string;
-  };
-};
+// type ContactInfo = {
+//   [key: string]: {
+//     url: string;
+//     icon: string;
+//     value: string;
+//   };
+// };
 
 // Props tipi
 type Props = {
