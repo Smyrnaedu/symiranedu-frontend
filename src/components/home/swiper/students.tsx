@@ -5,7 +5,7 @@ import "./swiper.scss";
 import { Container } from "react-bootstrap";
 import { SectionHeader } from "@/components/common/section-header";
 import data from "@/helpers/data/tr.json" assert { type: "json" };
-import Student from "./swiper";
+import Student from "./student";
 import PrevNext from "@/components/common/prev-next";
 
 // Define the type for a student object
