@@ -13,6 +13,7 @@ interface StudentType {
   name: string;
   image?: string;
   description: string;
+  profilImg: string;
 }
 
 interface HomeData {

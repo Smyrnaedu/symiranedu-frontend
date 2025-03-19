@@ -6,17 +6,25 @@
 @import "slick-carousel/slick/slick-theme.css";
 @import "primereact/resources/themes/lara-light-cyan/theme.css";
 
-body{
+body {
   margin: 0;
   padding: 0;
-  box-sizing:border-box ;
+  box-sizing: border-box;
   overflow-x: hidden;
 }
 
 .nav-link.active {
-    font-weight: 700;
+  font-weight: 700;
+}
+
+.menu-links {
+  font-size: 20px !important;
+}
+
+.accordion-header {
+  .accordion-button:not(.collapsed) {
+    background-color:$mainColor3-op-30 !important; 
+    color: $mainColor-black !important;
+    font-weight: 600;
   }
-  
-  .menu-links{
-    font-size: 20px !important;
-  }
+}
