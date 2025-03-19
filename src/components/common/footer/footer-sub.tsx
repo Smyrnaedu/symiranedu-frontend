@@ -2,7 +2,7 @@ import React from "react";
 
 const FooterSub: React.FC = () => {
   return (
-    <div className="text-center bg-primary text-light p-2 " style={{fontSize:"12px"}}>
+    <div className="text-center  p-2 " style={{fontSize:"12px", backgroundColor:"#f0f0f0;", color: "#083060"}}>
       Copyright 2025 © SmyrnaEDU <br />
       Team
     </div>
