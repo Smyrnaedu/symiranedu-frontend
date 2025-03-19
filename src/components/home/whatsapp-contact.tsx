@@ -25,13 +25,13 @@ const WhatsAppContact: React.FC = () => {
         right: "20px",
         padding: "15px",
         cursor: "pointer",
-        zIndex: 9999, // Üst katmanda yer almasını sağlamak için
+        zIndex: 9999, 
       }}
       onKeyDown={(e) => {
         if (e.key === "Enter" || e.key === " ") {
           handleClick();
         }
-      }} // Add support for keyboard navigation
+      }} 
     >
       <RiWhatsappFill
         style={{
