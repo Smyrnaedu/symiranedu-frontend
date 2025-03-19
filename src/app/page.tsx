@@ -12,7 +12,7 @@ export default function Home() {
       <Banner />
       <Spacer />
       <Sliders/>
-      <Spacer/>
+      <Spacer height={90}/>
       <Accordions/>
       <Spacer/>
     </>
