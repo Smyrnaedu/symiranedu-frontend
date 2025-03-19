@@ -1,5 +1,6 @@
 import { Spacer } from "@/components/common/spacer";
 import Banner from "@/components/home/banner/banner";
+import Accordions from "@/components/home/faq/accordions";
 import Sliders from "@/components/home/swiper/sliders";
 
 
@@ -11,6 +12,8 @@ export default function Home() {
       <Banner />
       <Spacer />
       <Sliders/>
+      <Spacer/>
+      <Accordions/>
       <Spacer/>
     </>
   );

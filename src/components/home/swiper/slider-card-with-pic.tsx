@@ -13,6 +13,7 @@ interface StudentType {
   name: string;
   image?: string;
   description: string;
+  profilImg: string;
 }
 
 const SliderCardWithPic: React.FC<Props> = ({ title, student }: Props) => {
@@ -31,7 +32,7 @@ const SliderCardWithPic: React.FC<Props> = ({ title, student }: Props) => {
       </CardBody>
       <CardFooter className="d-flex align-items-center">
         <Avatar
-          image={`/image/students/${student.image}`}
+          image={`/image/students/${student.profilImg}`}
           className="avatar"
           size="large"
           shape="circle"
