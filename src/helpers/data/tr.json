@@ -70,97 +70,128 @@
         }
       ],
 
-      "process-sub-title": "Teklifler",
-      "process-title": "Bizimle Yurtdışında Eğitim Alın!",
-      "process-steps": [
+      "processSubTitle": "Teklifler",
+      "processTitle": "Bizimle Yurtdışında Eğitim Alın!",
+      "processSteps": [
         {
-          "process-step-sub-title": "Araştırma ve Keşif",
-          "process-step-title": "Yeni ülkeler, üniversiteler ve programlar keşfedin.",
-          "process-step-description": " Size uygun ayrıcalıkları araştırma fırsatı yakalayın.",
-          "process-step-image": "img.jpg"
+          "processStepSubtitle": "Araştırma ve Keşif",
+          "processStepTitle": "Yeni ülkeler, üniversiteler ve programlar keşfedin.",
+          "processStepDescription": " Size uygun ayrıcalıkları araştırma fırsatı yakalayın.",
+          "processStepImage": "seacrh.jpg"
         },
         {
-          "process-step-sub-title": "Eğitim Danışmanlığı",
-          "process-step-title": "Hedeflerinizi belirleyin!",
-          "process-step-description": "Danışmanlarımız rehberliğinde doğru kararlar verin! Uygun üniversiteleri ve programları bulun.",
-          "process-step-image": "img.jpg"
+          "processStepSubtitle": "Eğitim Danışmanlığı",
+          "processStepTitle": "Hedeflerinizi belirleyin!",
+          "processStepDescription": "Danışmanlarımız rehberliğinde doğru kararlar verin! Uygun üniversiteleri ve programları bulun.",
+          "processStepImage": "education-expert.jpg"
         },
         {
-          "process-step-sub-title": "Sınav Hazırlığı",
-          "process-step-title": "IELTS – TOEFL gibi sınavlar için hazır olun.",
-          "process-step-description": "IELTS, TOEFL, PTE, GMAT, GRE ve SAT için canlı derslere katılın.",
-          "process-step-image": "img.jpg"
+          "processStepSubtitle": "Sınav Hazırlığı",
+          "processStepTitle": "IELTS – TOEFL gibi sınavlar için hazır olun.",
+          "processStepDescription": "IELTS, TOEFL, PTE, GMAT, GRE ve SAT için canlı derslere katılın.",
+          "processStepImage": "exam-preparation.jpg"
         },
         {
-          "process-step-sub-title": "Üniversitelerle Tanışın",
-          "process-step-title": "Dünyaca Ünlü Üniversitelerle Etkileşim Kurun.",
-          "process-step-description": "Üniversite temsilcileri ile birebir iletişime geçin ve sürecinizi güvence altına alın.",
-          "process-step-image": "img.jpg"
+          "processStepSubtitle": "Üniversitelerle Tanışın",
+          "processStepTitle": "Dünyaca Ünlü Üniversitelerle Etkileşim Kurun.",
+          "processStepDescription": "Üniversite temsilcileri ile birebir iletişime geçin ve sürecinizi güvence altına alın.",
+          "processStepImage": "meeting.jpg"
         },
         {
-          "process-step-sub-title": "Finans",
-          "process-step-title": "Uçak bileti ve sağlık sigortanızı ayarlayın.",
-          "process-step-description": "Uçak bileti ve sağlık sigortası gibi süreçlere takılmadan sadece hedefinize odaklanın.",
-          "process-step-image": "img.jpg"
+          "processStepSubtitle": "Finans",
+          "processStepTitle": "Uçak bileti ve sağlık sigortanızı ayarlayın.",
+          "processStepDescription": "Uçak bileti ve sağlık sigortası gibi süreçlere takılmadan sadece hedefinize odaklanın.",
+          "processStepImage": "finance.jpg"
         },
         {
-          "process-step-sub-title": "Küresel Ödemeler",
-          "process-step-title": "Öğrenim ücretlerinde para birimlerine takılmayın!",
-          "process-step-description": "Smyrna EDU aracılığıyla yurtdışına güvenli para transferi yapın.",
-          "process-step-image": "img.jpg"
+          "processStepSubtitle": "Küresel Ödemeler",
+          "processStepTitle": "Öğrenim ücretlerinde para birimlerine takılmayın!",
+          "processStepDescription": "Smyrna EDU aracılığıyla yurtdışına güvenli para transferi yapın.",
+          "processStepImage": "global-payments.jpg"
         },
         {
-          "process-step-sub-title": "Vize Başvuru Süreci",
-          "process-step-title": "Sorunsuz bir yolculuğa hazır olun.",
-          "process-step-description": "Vize süreç yönetimini bize bırakın ve sorunsuz yolculuğun tadını çıkarın.",
-          "process-step-image": "img.jpg"
+          "processStepSubtitle": "Vize Başvuru Süreci",
+          "processStepTitle": "Sorunsuz bir yolculuğa hazır olun.",
+          "processStepDescription": "Vize süreç yönetimini bize bırakın ve sorunsuz yolculuğun tadını çıkarın.",
+          "processStepImage": "visa-application.jpg"
         },
         {
-          "process-step-sub-title": "Öğrenci Konaklama",
-          "process-step-title": "Evinizden uzakta evinizi bulun.",
-          "process-step-description": "Yaşam tarzınıza uygun en iyi konaklama seçeneklerini keşfedin.",
-          "process-step-image": "img.jpg"
+          "processStepSubtitle": "Öğrenci Konaklama",
+          "processStepTitle": "Evinizden uzakta evinizi bulun.",
+          "processStepDescription": "Yaşam tarzınıza uygun en iyi konaklama seçeneklerini keşfedin.",
+          "processStepImage": "student-accomodation.jpg"
         },
         {
-          "process-step-sub-title": "Üniversiteye Kayıt",
-          "process-step-title": "Hayallerinizdeki akademik kariyere başlayın!",
-          "process-step-description": "Yurt dışında eğitim görmelerine yardımcı olduğumuz yüzlerce öğrencinin arasında yerinizi alın.",
-          "process-step-image": "img.jpg"
+          "processStepSubtitle": "Üniversiteye Kayıt",
+          "processStepTitle": "Hayallerinizdeki akademik kariyere başlayın!",
+          "processStepDescription": "Yurt dışında eğitim görmelerine yardımcı olduğumuz yüzlerce öğrencinin arasında yerinizi alın.",
+          "processStepImage": "university-enrollment.jpg"
         }
       ],
 
-      "university-partners-title": [
+      "universityPartnersTitle":"Üniversite Paydaşlarımız",
+      "universityPartnersSubtitle":"IVY League Üniversiteleri",
+      "universityPartners": [
         {
-          "university-partner-name": "Penn University of Pennsylvania",
-          "university-partner-image": "img.jpg"
+          "id":1,
+          "universityPartnerName": "Penn University of Pennsylvania",
+          "universityPartnerImage": "universityOfPennsylvania.png"
         },
         {
-          "university-partner-name": "Columbia University",
-          "university-partner-image": "img.jpg"
+          "id":2,
+          "universityPartnerName": "Columbia University",
+          "universityPartnerImage": "columbiaUniversity.png"
         },
         {
-          "university-partner-name": "Penn University of Pennsylvania",
-          "university-partner-image": "img.jpg"
+          "id":3,
+          "universityPartnerName": "Brown University",
+          "universityPartnerImage": "brownUniversity.png"
         },
         {
-          "university-partner-name": "Dartmouth University",
-          "university-partner-image": "img.jpg"
+          "id":4,
+          "universityPartnerName": "Dartmouth University",
+          "universityPartnerImage": "dartmouthUniversity.png"
         },
         {
-          "university-partner-name": "Yale University",
-          "university-partner-image": "img.jpg"
+          "id":5,
+          "universityPartnerName": "Yale University",
+          "universityPartnerImage": "yaleUniversity.png"
         },
         {
-          "university-partner-name": "Cornell University",
-          "university-partner-image": "img.jpg"
+          "id":6,
+          "universityPartnerName": "Princeton University",
+          "universityPartnerImage": "princetonUniversity.png"
         },
         {
-          "university-partner-name": "Brown University",
-          "university-partner-image": "img.jpg"
+          "id":7,
+          "universityPartnerName": "Cornell University",
+          "universityPartnerImage": "cornellUniversity.png"
         },
         {
-          "university-partner-name": "Princeton University",
-          "university-partner-image": "img.jpg"
+          "id":8,
+          "universityPartnerName": "Hardvard University",
+          "universityPartnerImage": "harvardUniversity.png"
+        },
+        {
+          "id":9,
+          "universityPartnerName": "Oxford University",
+          "universityPartnerImage": "oxfordUniversity.png"
+        
+        },
+        {
+          "id":10,
+          "universityPartnerName": "Bocconi University",
+          "universityPartnerImage": "bocconiUniversity.png"
+        },
+        {
+          "id":11,
+          "universityPartnerName": "Chicago University",
+          "universityPartnerImage": "chicagoUniversity.png"
+        },
+        {
+          "id":12,
+          "universityPartnerName": "Colorado University",
+          "universityPartnerImage": "coloradoUniversity.png"
         }
       ],
       "sss": [

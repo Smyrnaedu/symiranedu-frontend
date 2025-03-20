@@ -1,0 +1,35 @@
+@use "../../../styles/variables" as *;
+@use "../../../styles/mixins" as *;
+
+.university-patners{
+
+    .row{
+        .university-col{
+            @include flexbox($ai:center, $jc:center, $gap:1rem);
+            text-align: center;
+
+            .motion-div{
+
+                .image-wrapper{
+                    height: 175px;
+                    width: 175px;
+                    @include flexbox($ai:center, $jc:center, $gap:1rem);
+
+                    .university-logo{
+
+                        object-fit: cover;
+                        object-position: start;
+                        width: auto;
+                        height: auto;
+                    }
+                }
+    
+                h6{
+                    text-align: center;
+                    font-size: 1.1rem;
+                }
+            }
+        }
+    }
+
+}
