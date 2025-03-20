@@ -4,8 +4,8 @@
 .section-header {
   font-size: 0.8rem;
   margin-bottom: 1.5rem;
-
   position: relative;
+  
   h2 {
     font-size: 1.7rem;
     font-weight: 700;
@@ -18,20 +18,13 @@
 
   p {
     color: $mainColor1 !important;
-
-    h2 {
-      font-size: 2.3rem;
-      font-weight: 700;
-      color: $mainColor2;
-      margin-bottom: 1rem;
-    }
+    display: inline-block;
 
     &::before {
       content: "";
       position: absolute;
       left: 0;
       bottom: -1.3px;
-
       width: 10rem;
       height: 3px;
       background-color: $mainColor3;
