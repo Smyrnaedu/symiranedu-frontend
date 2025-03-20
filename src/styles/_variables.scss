@@ -22,6 +22,7 @@ $container-max-widths: (
   xxl: 1350px
 ) !default;
 
+$mainColor3-op-30:rgba($mainColor3, 0.40);
 
 
 $vendors: ("", "-webkit-", "-moz-", "-ms-", "-o-");

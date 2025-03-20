@@ -12,52 +12,61 @@
           "id": 1,
           "name": "Ahmet",
           "image": "image-01.png",
-          "description": "Smyrna Edu ile yurtdışı eğitim yolculuğumu başarıyla tamamladım. İngiltere’de dil eğitimi almak istiyordum ve Smyrna Edu sayesinde bütçeme uygun bir okul buldum. Teşekkürler Smyrna Edu!"
+          "description": "Smyrna Edu ile yurtdışı eğitim yolculuğumu başarıyla tamamladım. İngiltere’de dil eğitimi almak istiyordum ve Smyrna Edu sayesinde bütçeme uygun bir okul buldum. Teşekkürler Smyrna Edu!",
+          "profilImg": "image-01.png"
         },
         {
           "id": 2,
           "name": "Abuzer",
-          "description": "Smyrna Edu ile yurtdışı eğitim yolculuğumu başarıyla tamamladım. İngiltere’de dil eğitimi almak istiyordum ve Smyrna Edu sayesinde bütçeme uygun bir okul buldum. Teşekkürler Smyrna Edu!"
+          "description": "Smyrna Edu ile yurtdışı eğitim yolculuğumu başarıyla tamamladım. İngiltere’de dil eğitimi almak istiyordum ve Smyrna Edu sayesinde bütçeme uygun bir okul buldum. Teşekkürler Smyrna Edu!",
+          "profilImg": "image-02.png"
         },
         {
           "id": 3,
           "name": "Ayşe",
           "image": "image-02.png",
-          "description": "Smyrna Edu ile yurtdışı eğitim yolculuğumu başarıyla tamamladım. İngiltere’de dil eğitimi almak istiyordum ve Smyrna Edu sayesinde bütçeme uygun bir okul buldum. Teşekkürler Smyrna Edu!"
+          "description": "Smyrna Edu ile yurtdışı eğitim yolculuğumu başarıyla tamamladım. İngiltere’de dil eğitimi almak istiyordum ve Smyrna Edu sayesinde bütçeme uygun bir okul buldum. Teşekkürler Smyrna Edu!",
+          "profilImg": "image-03.png"
         },
-        
+
         {
           "id": 4,
           "name": "Abuzer",
-          "description": "Smyrna Edu ile yurtdışı eğitim yolculuğumu başarıyla tamamladım. İngiltere’de dil eğitimi almak istiyordum ve Smyrna Edu sayesinde bütçeme uygun bir okul buldum. Teşekkürler Smyrna Edu!"
+          "description": "Smyrna Edu ile yurtdışı eğitim yolculuğumu başarıyla tamamladım. İngiltere’de dil eğitimi almak istiyordum ve Smyrna Edu sayesinde bütçeme uygun bir okul buldum. Teşekkürler Smyrna Edu!",
+          "profilImg": "image-04.png"
         },
         {
           "id": 5,
           "name": "Mehmet",
           "image": "image-03.png",
-          "description": "Smyrna Edu ile yurtdışı eğitim yolculuğumu başarıyla tamamladım. İngiltere’de dil eğitimi almak istiyordum ve Smyrna Edu sayesinde bütçeme uygun bir okul buldum. Teşekkürler Smyrna Edu!"
+          "description": "Smyrna Edu ile yurtdışı eğitim yolculuğumu başarıyla tamamladım. İngiltere’de dil eğitimi almak istiyordum ve Smyrna Edu sayesinde bütçeme uygun bir okul buldum. Teşekkürler Smyrna Edu!",
+          "profilImg": "image-01.png"
         },
         {
           "id": 6,
           "name": "Fatma",
           "image": "image-04.png",
-          "description": "Smyrna Edu ile yurtdışı eğitim yolculuğumu başarıyla tamamladım. İngiltere’de dil eğitimi almak istiyordum ve Smyrna Edu sayesinde bütçeme uygun bir okul buldum. Teşekkürler Smyrna Edu!"
+          "description": "Smyrna Edu ile yurtdışı eğitim yolculuğumu başarıyla tamamladım. İngiltere’de dil eğitimi almak istiyordum ve Smyrna Edu sayesinde bütçeme uygun bir okul buldum. Teşekkürler Smyrna Edu!",
+          "profilImg": "image-02.png"
         },
         {
           "id": 7,
           "name": "Abuzer",
-          "description": "Smyrna Edu ile yurtdışı eğitim yolculuğumu başarıyla tamamladım. İngiltere’de dil eğitimi almak istiyordum ve Smyrna Edu sayesinde bütçeme uygun bir okul buldum. Teşekkürler Smyrna Edu!"
+          "description": "Smyrna Edu ile yurtdışı eğitim yolculuğumu başarıyla tamamladım. İngiltere’de dil eğitimi almak istiyordum ve Smyrna Edu sayesinde bütçeme uygun bir okul buldum. Teşekkürler Smyrna Edu!",
+          "profilImg": "image-03.png"
         },
         {
           "id": 8,
           "name": "Fatma",
           "image": "image-04.png",
-          "description": "Smyrna Edu ile yurtdışı eğitim yolculuğumu başarıyla tamamladım. İngiltere’de dil eğitimi almak istiyordum ve Smyrna Edu sayesinde bütçeme uygun bir okul buldum. Teşekkürler Smyrna Edu!"
+          "description": "Smyrna Edu ile yurtdışı eğitim yolculuğumu başarıyla tamamladım. İngiltere’de dil eğitimi almak istiyordum ve Smyrna Edu sayesinde bütçeme uygun bir okul buldum. Teşekkürler Smyrna Edu!",
+          "profilImg": "image-04.png"
         },
         {
           "id": 9,
           "name": "Abuzer",
-          "description": "Smyrna Edu ile yurtdışı eğitim yolculuğumu başarıyla tamamladım. İngiltere’de dil eğitimi almak istiyordum ve Smyrna Edu sayesinde bütçeme uygun bir okul buldum. Teşekkürler Smyrna Edu!"
+          "description": "Smyrna Edu ile yurtdışı eğitim yolculuğumu başarıyla tamamladım. İngiltere’de dil eğitimi almak istiyordum ve Smyrna Edu sayesinde bütçeme uygun bir okul buldum. Teşekkürler Smyrna Edu!",
+          "profilImg": "image-01.png"
         }
       ],
 
@@ -159,8 +168,72 @@
           "sss-main-title": "Sıkça Sorulan Sorular",
           "sss-text": [
             {
-              "sss-sub-title": "Sıkça Sorulan Sorular",
-              "sss-description": "Sıkça sorulan sorulara cevap bulmak için tıklayın"
+              "sss-sub-title": "Neden yurtdışında eğitim almalıyım?",
+              "sss-description": "Yurtdışında eğitim almak, dünya çapında kaliteli bir eğitim alma, dil becerilerini geliştirme, farklı kültürleri deneyimleme ve kariyer fırsatlarını artırma imkânı sunar. Pek çok üniversite daha iyi akademik programlar, uluslararası ağ kurma fırsatları ve öğrencilerin daha bağımsız ve topluma uyumlu hale gelmesini sağlayan avantajlar sunar."
+            },
+            {
+              "sss-sub-title": "Yurtdışında okumak için gereksinimler nelerdir?",
+              "sss-description": "Gereksinimler ülkeye, üniversiteye ve programa göre değişir. Ancak genel olarak aşağıdaki maddelere dikkat etmelisiniz:",
+              "sss-list": [
+                {
+                  "li-text": "Lise diploması veya lisans diploması (başvurduğunuz programa bağlı olarak)"
+                },
+                {
+                  "li-text": "İngilizce yeterlilik belgesi (IELTS, TOEFL veya Duolingo English Test)"
+                },
+                { "li-text": "Geçerli bir pasaport ve öğrenci vizesi" },
+                {
+                  "li-text": "Eğitim ve yaşam masraflarınızı karşılayabileceğinize dair mali kanıt"
+                },
+                {
+                  "li-text": "Niyet mektubu ve referans mektupları (üniversite başvuruları için)"
+                }
+              ]
+            },
+            {
+              "sss-sub-title": "Yurtdışında eğitim almak ne kadar maliyetlidir?",
+              "sss-description": "Maliyetler ülkeye, üniversiteye ve yaşam tarzına göre değişir. Yıllık öğrenim ücretleri 2.000 € ile 50.000 € arasında değişebilirken, yaşam masrafları da ülkeden ülkeye farklılık gösterir. Bazı ülkeler burs, yarı zamanlı çalışma fırsatları ve uygun maliyetli eğitim seçenekleri sunar. Sizlere, maliyetleri en aza indirme konusunda rehberlik ediyoruz."
+            },
+            {
+              "sss-sub-title": "Yurtdışında okurken çalışabilir miyim?",
+              "sss-description": "Evet! Birçok ülke, uluslararası öğrencilere eğitimleri sırasında yarı zamanlı çalışma imkanı tanır. Birkaç örnek olarak:",
+              "sss-list": [
+                {
+                  "li-text": "İngiltere: Dönem içinde haftada en fazla 20 saat"
+                },
+                {
+                  "li-text": "Kanada: Dönem içinde haftada en fazla 20 saat, tatillerde tam zamanlı"
+                },
+                {
+                  "li-text": "Avustralya: Yeni düzenlemelere göre haftada en fazla 24 saat"
+                },
+                {
+                  "li-text": "ABD: Genellikle sadece kampüs içi işler (bazı staj istisnaları hariç)"
+                }
+              ],
+              "sss-note": "Her ülkenin belirli kuralları vardır ve bu süreçte öğrencilere rehberlik ediyoruz."
+            },
+            {
+              "sss-sub-title": "IELTS veya TOEFL gibi bir İngilizce yeterlilik sınavına girmem gerekir mi?",
+              "sss-description": "Çoğu üniversite ve dil okulu İngilizce yeterlilik belgesi talep eder. IELTS, TOEFL veya Duolingo English Test en yaygın kabul edilen sınavlardır. Ancak bazı üniversiteler, dil yeterliliği olmayan öğrenciler için hazırlık programları veya mülakat gibi alternatifler sunmaktadır."
+            },
+            {
+              "sss-sub-title": "Başvuru süreci ne kadar sürer?",
+              "sss-description": "Başvuru süreci genellikle 2 ila 8 ay arasında sürer. Bu süreç; belgelerin toplanmasını, son başvuru tarihlerine uymayı, öğrenci vizesi almayı ve seyahat hazırlıklarını içerir. Süreci mümkün olduğunca erken başlatmanızı öneririz."
+            },
+            {
+              "sss-sub-title": "Yurtdışında okumak için vize gereksinimleri nelerdir?",
+              "sss-description": "Vize gereksinimleri ülkeye göre değişir, ancak genel olarak şu belgeler gereklidir:",
+              "sss-list": [
+                { "li-text": "Üniversite veya dil okulundan kabul mektubu" },
+                {
+                  "li-text": "Eğitim ve yaşam masraflarınızı karşılayabileceğinize dair mali kanıt"
+                },
+                { "li-text": "Geçerli bir pasaport" },
+                { "li-text": "Bazı ülkelerde sağlık sigortası" },
+                { "li-text": "Bazı ülkeler için vize mülakatı (örneğin, ABD)" }
+              ],
+              "sss-note": "Vize başvuru sürecinde öğrencilere baştan sona destek sağlıyoruz."
             }
           ]
         }
