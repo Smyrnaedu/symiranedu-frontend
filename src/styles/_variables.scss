@@ -14,6 +14,14 @@ $mainColor-black-op-70:rgba(0, 0, 0, 0.70);
 $mainColor-black-op-30:rgba(0, 0, 0, 0.30);
 $mainColor-white-op-20: rgba($mainColor-white, 0.30);
 $secondaryColor-grey:#F0F0F0;
+$container-max-widths: (
+  sm: 540px,
+  md: 770px,
+  lg: 1010px,
+  xl: 1190px,
+  xxl: 1350px
+) !default;
+
 $mainColor3-op-30:rgba($mainColor3, 0.40);
 
 
