@@ -43,7 +43,7 @@ const UniversityPartners = () => {
       />
       <Row>
         {universityPartners.map((item) => (
-          <Col key={item.id} xl={2} lg={3} className="mb-3 university-col">
+          <Col key={item.id} sm xl={2} lg={3} className="mb-3 university-col">
             <motion.div
               className="p-4 motion-div"
               initial="hidden"
