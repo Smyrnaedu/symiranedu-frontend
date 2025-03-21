@@ -43,7 +43,7 @@ const UniversityPartners = () => {
       />
       <Row>
         {universityPartners.map((item) => (
-          <Col key={item.id} md={2} className="mb-3 university-col">
+          <Col key={item.id} xl={2} lg={3} className="mb-3 university-col">
             <motion.div
               className="p-4 motion-div"
               initial="hidden"
@@ -51,8 +51,6 @@ const UniversityPartners = () => {
               variants={cardVariants}
               custom={item.id}
               whileHover={{ scale: 1.2 }}
-                onHoverStart={e => {}}
-                onHoverEnd={e => {}}
             >
               <div className="image-wrapper">
               <Image src={`/image/university-logos/${item.universityPartnerImage || "default-image.png"}`} width={100} height={100} alt={item.universityPartnerName || "University logo"} className="university-logo"/>

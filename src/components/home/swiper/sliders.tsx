@@ -4,7 +4,7 @@ import React, { useRef } from "react";
 import Slider from "react-slick";
 import data from "@/helpers/data/tr.json" assert { type: "json" };
 import { Spacer } from "@/components/common/spacer";
-import SliderCardWithoutPic from "./slider-card-without-pic";
+import StudentReviewSliderCard from "./student-review-slider-card";
 import SliderCardWithPic from "./slider-card-with-pic"; // Resimli card componenti
 import { IoIosArrowBack, IoIosArrowForward } from "react-icons/io";
 
@@ -79,11 +79,7 @@ const Sliders: React.FC = () => {
       <Spacer height={10} />
       <Slider ref={sliderRef} {...settings} className="slider">
         {students.map((student) =>
-          student.image ? (
-            <SliderCardWithPic key={student.id} title={student.name} student={student} />
-          ) : (
-            <SliderCardWithoutPic key={student.id} title={student.name} student={student} />
-          )
+          <StudentReviewSliderCard key={student.id} title={student.name} student={student} />
         )}
       </Slider>
     </div>

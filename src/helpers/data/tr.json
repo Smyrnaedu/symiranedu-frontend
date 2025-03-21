@@ -10,63 +10,44 @@
       "students": [
         {
           "id": 1,
-          "name": "Ahmet",
+          "name": "Abdullah Erdoğan",
           "image": "image-01.png",
-          "description": "Smyrna Edu ile yurtdışı eğitim yolculuğumu başarıyla tamamladım. İngiltere’de dil eğitimi almak istiyordum ve Smyrna Edu sayesinde bütçeme uygun bir okul buldum. Teşekkürler Smyrna Edu!",
+          "description": "Kesinlikle çok tecrübeli bir ekip olduğunuzu söyleyebilirim. Sizlerle çalışmak çok keyifliydi. Hizmetleriniz için çok teşekkür ederim.",
           "profilImg": "image-01.png"
         },
         {
           "id": 2,
-          "name": "Abuzer",
-          "description": "Smyrna Edu ile yurtdışı eğitim yolculuğumu başarıyla tamamladım. İngiltere’de dil eğitimi almak istiyordum ve Smyrna Edu sayesinde bütçeme uygun bir okul buldum. Teşekkürler Smyrna Edu!",
+          "name": "Alp Ayanoğlu",
+          "description": "İşlerinde çok başarılı ve ilgili insanlarla çok güzeldi aklınızda soru işareti olmadan tercih edebilirsiniz. Herkese teşekkürler.",
           "profilImg": "image-02.png"
         },
         {
           "id": 3,
-          "name": "Ayşe",
+          "name": "Elif Bozacı",
           "image": "image-02.png",
-          "description": "Smyrna Edu ile yurtdışı eğitim yolculuğumu başarıyla tamamladım. İngiltere’de dil eğitimi almak istiyordum ve Smyrna Edu sayesinde bütçeme uygun bir okul buldum. Teşekkürler Smyrna Edu!",
+          "description": "Birçok şirketle görüştüm aralarında en iyi hizmeti veren buydu. Herkesin en azından ilk görüşmeye gitmesini isterim. Niye böyle dediğimi o zaman anlayacaksınız.",
           "profilImg": "image-03.png"
         },
 
         {
           "id": 4,
-          "name": "Abuzer",
-          "description": "Smyrna Edu ile yurtdışı eğitim yolculuğumu başarıyla tamamladım. İngiltere’de dil eğitimi almak istiyordum ve Smyrna Edu sayesinde bütçeme uygun bir okul buldum. Teşekkürler Smyrna Edu!",
+          "name": "Gülçin Esmer",
+          "description": "Firmanın yurtdışı danışmanlığı konusundaki uzmanlığı ver yardımseverliği gerçekten etkileyici. Yurt dışında eğitim almayı düşünenler için kesinlikle mükemmel, yol gösterici ekip.",
           "profilImg": "image-04.png"
         },
         {
           "id": 5,
-          "name": "Mehmet",
+          "name": "Mustafa Sarıtaş",
           "image": "image-03.png",
-          "description": "Smyrna Edu ile yurtdışı eğitim yolculuğumu başarıyla tamamladım. İngiltere’de dil eğitimi almak istiyordum ve Smyrna Edu sayesinde bütçeme uygun bir okul buldum. Teşekkürler Smyrna Edu!",
+          "description": "Mentörlük hizmeti ve yurtdışı eğitim danışmanlığı konusunda oldukça iyi bir şirket. Emekleri için Smyrna Edu'ya teşekkür ediyorum.",
           "profilImg": "image-01.png"
         },
         {
           "id": 6,
-          "name": "Fatma",
+          "name": "Tayfun Kerimoğlu",
           "image": "image-04.png",
-          "description": "Smyrna Edu ile yurtdışı eğitim yolculuğumu başarıyla tamamladım. İngiltere’de dil eğitimi almak istiyordum ve Smyrna Edu sayesinde bütçeme uygun bir okul buldum. Teşekkürler Smyrna Edu!",
+          "description": "Gayet profesyonel ekibiyle, güleryüzüyle ve içtenliği ile danışmanlık hizmeti veren bir kuruluş. Çıktığınızda kafanızda kariyeriniz ile ilgili soru kalmıyor.",
           "profilImg": "image-02.png"
-        },
-        {
-          "id": 7,
-          "name": "Abuzer",
-          "description": "Smyrna Edu ile yurtdışı eğitim yolculuğumu başarıyla tamamladım. İngiltere’de dil eğitimi almak istiyordum ve Smyrna Edu sayesinde bütçeme uygun bir okul buldum. Teşekkürler Smyrna Edu!",
-          "profilImg": "image-03.png"
-        },
-        {
-          "id": 8,
-          "name": "Fatma",
-          "image": "image-04.png",
-          "description": "Smyrna Edu ile yurtdışı eğitim yolculuğumu başarıyla tamamladım. İngiltere’de dil eğitimi almak istiyordum ve Smyrna Edu sayesinde bütçeme uygun bir okul buldum. Teşekkürler Smyrna Edu!",
-          "profilImg": "image-04.png"
-        },
-        {
-          "id": 9,
-          "name": "Abuzer",
-          "description": "Smyrna Edu ile yurtdışı eğitim yolculuğumu başarıyla tamamladım. İngiltere’de dil eğitimi almak istiyordum ve Smyrna Edu sayesinde bütçeme uygun bir okul buldum. Teşekkürler Smyrna Edu!",
-          "profilImg": "image-01.png"
         }
       ],
 

@@ -63,23 +63,60 @@
   scroll-snap-align: start;
   padding: 0;
   border: none;
+  z-index: 0;
+  overflow: hidden;
 
   .card-body{
     background-color:$mainColor3;
-    @include borderRadius(5px 5px 0 0)
+    @include borderRadius(5px 5px 0 0);
+
+    &::after{
+      content: "";
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(14, 13, 13, 0.096);
+      z-index: 2;
+      top: 150px;
+      left: 50px;
+      border-radius: 25px;
+      transform: rotate(15deg);
+    }
   }
 
 
   .card-content {
+    @include flexbox($ai:center, $jc:center);
+    position: relative;
     height: 180px;
     overflow: hidden;   
-    color: $mainColor-black;
-    font-size: 14px;
+    color: $mainColor-white;
+    font-size: 16px;
     text-align: center;
     margin-top: 20px;
-    
-  }
 
+    &::before,
+    &::after {
+        font-size: 60px; // Tırnakların boyutu
+        color: $mainColor-white; // Tırnak rengini içeriğe uyumlu hale getir
+        font-weight: bold;
+        position: absolute;
+        width: 25px;
+        height: 25px;
+    }
+
+    &::before {
+        content: "“"; // Açılış çift tırnak
+        top: 0;
+        left: 0;
+    }
+
+    &::after {
+        content: "”"; // Kapanış çift tırnak
+        bottom: 35px;
+        right: 0;
+    }
+}
 
   .title {
     color: $mainColor-red;
@@ -93,23 +130,37 @@
     gap: 10px;
     padding-top: 12px;
     background: $mainColor-white !important;
+    z-index: 2;
 
-    .avatar {
+    .photo-holder{
+      @include flexbox($ai:center, $jc:center);
       width: 40px;
       height: 40px;
-      margin-right: 10px;
+      @include borderRadius(50%);
+      font-size: 20px;
+      color: $mainColor-white;
     }
 
-    .name {
-      font-weight: bold;
-      color: $mainColor-black;
-      margin-bottom: 4px;
-    }
+    // .avatar {
+    //   width: 40px;
+    //   height: 40px;
+    //   margin-right: 10px;
+    // }
 
-    .role {
-      color: $mainColor-black-op-50;
-      font-size: 12px;
-      margin-bottom: 4px;
+    .info{
+      @include flexbox($ai:flex-start, $jc:center, $fd:column);
+
+      .name {
+        font-weight: bold;
+        color: $mainColor-black;
+        margin-bottom: 4px;
+      }
+  
+      .role {
+        color: $mainColor-black-op-50;
+        font-size: 12px;
+        margin-bottom: 4px;
+      }
     }
   }
 }
