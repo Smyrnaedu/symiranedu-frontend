@@ -26,7 +26,7 @@ const StudentReviewSliderCard: React.FC<Props> = ({
     "#0076A8",
     "#F05656",
     "#EF7E1A",
-    "#D60032",
+    "#0076A8",
   ];
 
   function getfirstLetter(name:string){
@@ -35,11 +35,11 @@ const StudentReviewSliderCard: React.FC<Props> = ({
 
   return (
     <Card className="slider-card">
-      <CardBody style={{ backgroundColor: colors[student.id] }}>
+      <CardBody style={{ backgroundColor: colors[student.id - 1] }}>
         <CardText className="card-content">{student.description}</CardText>
       </CardBody>
       <CardFooter>
-        <div className="photo-holder" style={{backgroundColor: colors[student.id]}}>
+        <div className="photo-holder" style={{backgroundColor: colors[student.id - 1]}}>
           <span>{getfirstLetter(title)}</span>
         </div>
         {/* <Avatar
