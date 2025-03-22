@@ -32,4 +32,16 @@
         }
     }
 
+    .university-slider{
+        .motion-div{
+            @include flexbox($ai:center, $jc:center, $fd:column, $gap:2rem);
+
+            .image-wrapper{
+                img{
+                    object-fit: contain;
+                    object-position: center;
+                }
+            }
+        }
+    }
 }

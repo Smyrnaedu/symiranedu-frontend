@@ -24,7 +24,7 @@ const Accordions: React.FC = () => {
   return (
     <Container>
       <SectionHeader title="sss" spans={sssTitle}/>
-      <Accordion defaultActiveKey="0">
+      <Accordion defaultActiveKey="null">
         {sssData.map((item, index) => (
           <AccordionItem
             key={index}

@@ -35,7 +35,7 @@ const StudentReviewSliderCard: React.FC<Props> = ({
 
   return (
     <Card className="slider-card">
-      <CardBody style={{ backgroundColor: colors[student.id - 1] }}>
+      <CardBody style={{backgroundColor: colors[student.id - 1]}}>
         <CardText className="card-content">{student.description}</CardText>
       </CardBody>
       <CardFooter>
