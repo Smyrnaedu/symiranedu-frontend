@@ -1,9 +1,83 @@
 @use "../../../styles/variables" as *;
 @use "../../../styles/mixins" as *;
 
-.process-subtitle{
-    color: $mainColor1;
-    font-size: 1rem;
-    
+.process-wrapper {
+    position: relative;
+    padding: 50px 0;
 
+    // Dikey kesikli çizgi
+    .process-section{
+        &::before {
+            content: "";
+            position: absolute;
+            top: 280px;
+            bottom: 50px;
+            left: 50%;
+            width: 2px;
+            background: repeating-linear-gradient(
+                to bottom,
+                #ccc,
+                #ccc 5px,
+                transparent 5px,
+                transparent 10px
+            );
+            transform: translateX(-50%);
+            z-index: 2;
+        }
+    
+        .row {
+            @include flexbox($ai: center, $jc: center);
+            position: relative;
+            z-index: 1;
+    
+            .col {
+                max-width: 600px;
+
+                .process-subtitle {
+                    color: $mainColor1;
+                    font-size: 1rem;
+        
+                    .subtitle-point{
+                        display: block;
+                        position: absolute;
+                        left: 50%;
+                        transform: translateX(-50%);
+                        width: 13px;
+                        height: 13px;
+                        background-color: $mainColor3;
+                        z-index: 5;
+                        border-radius: 50%;
+                    }
+                }
+    
+                &:first-child {
+                    @include flexbox($ai: flex-end, $jc: flex-start, $fd: column);
+                    padding-right: 4rem;
+                    text-align: right;
+                }
+    
+                &:nth-child(2) {
+                    @include flexbox($ai: flex-start, $jc: flex-start, $fd: column);
+                    padding: 4rem;
+                    text-align: left;
+                }
+    
+                img {
+                    max-height: 350px;
+                    width: auto;
+                }
+    
+                @media (max-width: 576px) {
+                    &:first-child {
+                        padding-right: 0;
+                        text-align: center;
+                    }
+                    &:nth-child(2) {
+                        padding: 0;
+                        text-align: center;
+                    }
+                }
+            }
+        }
+    }
 }
