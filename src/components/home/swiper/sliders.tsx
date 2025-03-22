@@ -5,7 +5,6 @@ import Slider from "react-slick";
 import data from "@/helpers/data/tr.json" assert { type: "json" };
 import { Spacer } from "@/components/common/spacer";
 import StudentReviewSliderCard from "./student-review-slider-card";
-import SliderCardWithPic from "./slider-card-with-pic"; // Resimli card componenti
 import { IoIosArrowBack, IoIosArrowForward } from "react-icons/io";
 
 interface StudentType {
@@ -35,13 +34,15 @@ const Sliders: React.FC = () => {
     infinite: true,
     slidesToShow: 3,
     slidesToScroll: 1,
+    autoplay: true, 
+    autoplaySpeed: 5000,
     speed: 500,
     arrows: false,
     responsive: [
       {
         breakpoint: 1200,
         settings: {
-          slidesToShow: 3, // Büyük ekranlarda kaymaları engelle
+          slidesToShow: 3,
         },
       },
       {
@@ -61,7 +62,6 @@ const Sliders: React.FC = () => {
 
   return (
     <div className="slider-container container">
-      {/* ✅ Header ve butonları aynı hizada konumlandır */}
       <div className="slider-header">
         <SectionHeader
           title={homeData.Home["student-reviews-sub-title"]}

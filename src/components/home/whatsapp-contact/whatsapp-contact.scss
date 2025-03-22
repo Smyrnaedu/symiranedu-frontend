@@ -1,0 +1,18 @@
+.whatsapp-wrapper {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  padding: 15px;
+  cursor: pointer;
+  z-index: 9999;
+
+  .whatsapp-icon {
+    font-size: 4rem;
+    color: #25D366;
+
+    &:hover{
+        transform: scale(1.1);
+        transition: all 0.3s linear;
+    }
+  }
+}

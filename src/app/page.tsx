@@ -4,7 +4,7 @@ import Accordions from "@/components/home/faq/accordions";
 import ProcessSection from "@/components/home/process/process";
 import Sliders from "@/components/home/swiper/sliders";
 import UniversityPartners from "@/components/home/university-partners/uni-cards";
-import WhatssappContact from "@/components/home/whatsapp-contact";
+import WhatssappContact from "@/components/home/whatsapp-contact/whatsapp-contact";
 
 
 
