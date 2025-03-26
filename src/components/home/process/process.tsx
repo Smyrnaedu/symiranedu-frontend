@@ -28,9 +28,21 @@ const ProcessSection: React.FC = () => {
   const homeData: HomeData = data[0] as unknown as HomeData;
   const universityPartners: ProcessType[] = homeData?.Home?.processSteps || [];
 
-  const sectionRef = useRef<HTMLElement | null>(null); // ✏️ Artık section etiketine bağlayacağız
+  const sectionRef = useRef<HTMLElement | null>(null);
   const [scrollOffset, setScrollOffset] = useState(0);
   const [showLine, setShowLine] = useState(false);
+  const [isMobile, setIsMobile] = useState(false);
+
+  useEffect(() => {
+    const handleResize = () => {
+      setIsMobile(window.innerWidth <= 768);
+    };
+
+    window.addEventListener("resize", handleResize);
+    handleResize(); // İlk yüklemede kontrol et
+
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -39,7 +51,6 @@ const ProcessSection: React.FC = () => {
       const rect = sectionRef.current.getBoundingClientRect();
       const sectionTop = rect.top;
       const sectionHeight = rect.height;
-
       const screenCenter = window.innerHeight / 2;
 
       if (sectionTop < window.innerHeight && rect.bottom > 0) {
@@ -58,7 +69,8 @@ const ProcessSection: React.FC = () => {
     };
 
     window.addEventListener("scroll", handleScroll);
-    handleScroll(); // initial
+    handleScroll(); // Sayfa ilk açıldığında kontrol et
+
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
@@ -82,7 +94,7 @@ const ProcessSection: React.FC = () => {
               className="scroll-plane-inside"
               style={{ top: `${scrollOffset - 12}px` }}
             >
-              <FaPlane className="middle-plane"/>
+              <FaPlane className="middle-plane" />
             </div>
           </div>
         )}
@@ -90,13 +102,35 @@ const ProcessSection: React.FC = () => {
         {universityPartners.map((step, index) => (
           <Row
             key={step.id || index}
-            className={`align-items-center py-4  ${
-              index % 2 === 0 ? "bg-light" : "bg-white"
-            }`}
+            className={`align-items-center py-4 ${index % 2 === 0 ? "bg-light" : "bg-white"}`}
             xs={1}
             md={2}
           >
-            {index % 2 === 0 ? (
+            {isMobile ? (
+              // 🟢 Mobilde (768px altında) tüm satırlar resim -> yazı olacak
+              <>
+                <Col>
+                  <Image
+                    src={`/image/process/${step.processStepImage}`}
+                    alt={step.processStepTitle || "Process Image"}
+                    width={500}
+                    height={500}
+                    className="img-fluid object-cover"
+                  />
+                </Col>
+                <Col>
+                  <div className="card-text-wrapper">
+                    <span className="process-subtitle">
+                      <span className="subtitle-point"></span>
+                      {step.processStepSubtitle}
+                    </span>
+                    <h3>{step.processStepTitle}</h3>
+                    <p>{step.processStepDescription}</p>
+                  </div>
+                </Col>
+              </>
+            ) : index % 2 === 0 ? (
+              // 🟢 Masaüstünde (768px üstü) çift indeksli satırlar (resim -> yazı)
               <>
                 <Col>
                   <Image
@@ -119,6 +153,7 @@ const ProcessSection: React.FC = () => {
                 </Col>
               </>
             ) : (
+              // 🟢 Masaüstünde tek indeksli satırlar (yazı -> resim)
               <>
                 <Col>
                   <div className="card-text-wrapper">
