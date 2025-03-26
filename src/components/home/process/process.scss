@@ -6,7 +6,9 @@
     padding: 50px 0;
 
     // Dikey kesikli çizgi
-    .process-section{
+    .process-section {
+        position: relative;
+
         &::before {
             content: "";
             position: absolute;
@@ -24,50 +26,82 @@
             transform: translateX(-50%);
             z-index: 2;
         }
-    
+
         .row {
             @include flexbox($ai: center, $jc: center);
             position: relative;
             z-index: 1;
-    
+
             .col {
                 max-width: 600px;
 
-                .process-subtitle {
-                    color: $mainColor1;
-                    font-size: 1rem;
-        
-                    .subtitle-point{
-                        display: block;
-                        position: absolute;
-                        left: 50%;
-                        transform: translateX(-50%);
-                        width: 13px;
-                        height: 13px;
-                        background-color: $mainColor3;
-                        z-index: 5;
-                        border-radius: 50%;
+                .card-text-wrapper{
+
+                    .process-subtitle {
+                        color: $mainColor1;
+                        font-size: 1rem;
+    
+                        .subtitle-point {
+                            display: block;
+                            position: absolute;
+                            left: 50%;
+                            transform: translateX(-50%);
+                            width: 13px;
+                            height: 13px;
+                            background-color: $mainColor3;
+                            z-index: 5;
+                            border-radius: 50%;
+
+                            @media(max-width:768px){
+                                left: 58px;
+                            }
+                        }
+                    }
+
+                    @media(max-width:768px){
+                        text-align: left;
+                        padding: 0 4rem;
+                    }
+
+                    @media(max-width:400px){
+                        padding: 0 2rem 0 5rem;
                     }
                 }
-    
+
                 &:first-child {
                     @include flexbox($ai: flex-end, $jc: flex-start, $fd: column);
                     padding-right: 4rem;
                     text-align: right;
+
+                    @media (max-width: 768px){
+                        @include flexbox($ai: center, $jc: center);
+                        padding: 0;
+                    }
                 }
-    
+
                 &:nth-child(2) {
                     @include flexbox($ai: flex-start, $jc: flex-start, $fd: column);
                     padding: 4rem;
                     text-align: left;
+
+                    @media (max-width: 768px){
+                        @include flexbox($ai: center, $jc: center);
+                        padding:0;
+                    }
                 }
-    
+
                 img {
                     max-height: 350px;
                     width: auto;
+
+                    @media (max-width: 768px){
+                        max-height: 250px;
+                        margin:3rem 0;
+                        padding-left:3rem;
+                    }
                 }
-    
-                @media (max-width: 576px) {
+
+                @media (max-width: 768px) {
                     &:first-child {
                         padding-right: 0;
                         text-align: center;
@@ -76,6 +110,59 @@
                         padding: 0;
                         text-align: center;
                     }
+                }
+            }
+        }
+
+        .scroll-visuals {
+            position: absolute;
+            top: 0;
+            left: 50%;
+            width: 0;
+            pointer-events: none;
+            z-index: 10;
+
+            .scroll-line-inside {
+                position: absolute;
+                top: 0;
+                left: -1.5px;
+                width: 3px;
+                background-color: $mainColor3;
+                transition: all 0.5s ease;
+            }
+
+            .scroll-plane-inside {
+                position: absolute;
+                transform: translateX(-50%);
+                transition: all 0.5s ease;
+
+                .middle-plane {
+                    color: $mainColor3;
+                    font-size: 2rem;
+                    transform: rotate(90deg);
+                }
+            }
+        }
+    }
+
+    // 📱 Mobil (sm ve altı) görünüm için sola hizalama
+    @media (max-width: 768px) {
+        .process-section {
+            &::before {
+                left: 45px;
+                transform: none;
+            }
+
+            .scroll-visuals {
+                left: 45px;
+
+                .scroll-line-inside {
+                    left: 0;
+                }
+
+                .scroll-plane-inside {
+                    transform: none;
+                    left: -15px;
                 }
             }
         }
