@@ -1,0 +1,44 @@
+[
+    {
+        "id":1,
+        "blogTextTitle":"Burada Başlık Var",
+        "blogText":"Burada blog yazısının ilk 20 kelimesi, olacak. Ama şu anda kaç kelime var bilöiyorum.",
+        "image":"blog.jpg",
+        "blogDate":"12.12.2025"
+    },
+    {
+        "id":2,
+        "blogTextTitle":"Burada Başlık Var",
+        "blogText":"Burada blog yazısının ilk 20 kelimesi, olacak. Ama şu anda kaç kelime var bilöiyorum.",
+        "image":"blog.jpg",
+        "blogDate":"12.12.2025"
+    },
+    {
+        "id":3,
+        "blogTextTitle":"Burada Başlık Var",
+        "blogText":"Burada blog yazısının ilk 20 kelimesi, olacak. Ama şu anda kaç kelime var bilöiyorum.",
+        "image":"blog.jpg",
+        "blogDate":"12.12.2025"
+    },
+    {
+        "id":4,
+        "blogTextTitle":"Burada Başlık Var",
+        "blogText":"Burada blog yazısının ilk 20 kelimesi, olacak. Ama şu anda kaç kelime var bilöiyorum.",
+        "image":"blog.jpg",
+        "blogDate":"12.12.2025"
+    },
+    {
+        "id":5,
+        "blogTextTitle":"Burada Başlık Var",
+        "blogText":"Burada blog yazısının ilk 20 kelimesi, olacak. Ama şu anda kaç kelime var bilöiyorum.",
+        "image":"blog.jpg",
+        "blogDate":"12.12.2025"
+    },
+    {
+        "id":6,
+        "blogTextTitle":"Burada Başlık Var",
+        "blogText":"Burada blog yazısının ilk 20 kelimesi, olacak. Ama şu anda kaç kelime var bilöiyorum.",
+        "image":"blog.jpg",
+        "blogDate":"12.12.2025"
+    }
+]

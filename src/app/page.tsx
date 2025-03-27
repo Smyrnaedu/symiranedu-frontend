@@ -1,5 +1,6 @@
 import { Spacer } from "@/components/common/spacer";
 import Banner from "@/components/home/banner/banner";
+import BlogSection from "@/components/home/blog/blog";
 import Accordions from "@/components/home/faq/accordions";
 import ProcessSection from "@/components/home/process/process";
 import Sliders from "@/components/home/swiper/sliders";
@@ -19,6 +20,8 @@ export default function Home() {
       <ProcessSection/>
       <Spacer/>
       <UniversityPartners/>
+      <Spacer/>
+      <BlogSection/>
       <Spacer/>
       <Accordions/>
       <Spacer/>

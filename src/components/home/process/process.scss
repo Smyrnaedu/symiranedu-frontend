@@ -12,8 +12,8 @@
         &::before {
             content: "";
             position: absolute;
-            top: 280px;
-            bottom: 50px;
+            top: 145px;
+            bottom: 185px;
             left: 50%;
             width: 2px;
             background: repeating-linear-gradient(
@@ -25,6 +25,10 @@
             );
             transform: translateX(-50%);
             z-index: 2;
+
+            @media(max-width:768px){
+                top: 385px;
+            }
         }
 
         .row {
@@ -116,7 +120,7 @@
 
         .scroll-visuals {
             position: absolute;
-            top: 0;
+            top: 130px;
             left: 50%;
             width: 0;
             pointer-events: none;
