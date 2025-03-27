@@ -145,6 +145,17 @@
         }
     }
 
+    .process-header{
+        .section-header {
+            margin-bottom: 0;
+            h2{
+                margin-bottom: 0;
+            }
+          
+        }
+       
+    }
+
     // 📱 Mobil (sm ve altı) görünüm için sola hizalama
     @media (max-width: 768px) {
         .process-section {

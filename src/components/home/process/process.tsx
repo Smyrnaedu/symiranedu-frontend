@@ -76,11 +76,15 @@ const ProcessSection: React.FC = () => {
 
   return (
     <section className="container-fluid process-wrapper">
-      <div className="container">
+      <div className="container-fluid bg-light p-5">
+        <div className="container process-header">
         <SectionHeader
           spans={homeData.Home["processTitle"]}
           title={homeData.Home["processSubTitle"]}
+         
+          
         />
+        </div>
       </div>
 
       <section className="process-section" ref={sectionRef}>
