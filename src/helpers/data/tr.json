@@ -109,7 +109,8 @@
           "processStepImage": "university-enrollment.png"
         }
       ],
-
+      "blogSubtitle":"Duyurular & Haberler",
+      "blogTitle":"Blog",
       "universityPartnersTitle":"Üniversite Paydaşlarımız",
       "universityPartnersSubtitle":"IVY League Üniversiteleri",
       "universityPartners": [

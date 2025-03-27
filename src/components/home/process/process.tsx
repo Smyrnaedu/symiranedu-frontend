@@ -50,7 +50,7 @@ const ProcessSection: React.FC = () => {
 
       const rect = sectionRef.current.getBoundingClientRect();
       const sectionTop = rect.top;
-      const sectionHeight = rect.height;
+      const sectionHeight = rect.height -335;
       const screenCenter = window.innerHeight / 2;
 
       if (sectionTop < window.innerHeight && rect.bottom > 0) {
@@ -76,7 +76,7 @@ const ProcessSection: React.FC = () => {
 
   return (
     <section className="container-fluid process-wrapper">
-      <div className="container-fluid bg-light p-5">
+      <div className="container-fluid bg-light py-5">
         <div className="container process-header">
         <SectionHeader
           spans={homeData.Home["processTitle"]}
