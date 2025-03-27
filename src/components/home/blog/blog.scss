@@ -1,0 +1,111 @@
+@use "../../../styles/variables" as *;
+@use "../../../styles/mixins" as *;
+
+.blog-slider-container {
+  padding: 20px;
+
+  .blog-header {
+    @include flexbox($ai: center, $jc: space-between);
+
+    .blog-buttons {
+      @include flexbox($ai: center, $jc: space-between, $gap: 1rem);
+
+      button {
+        width: 2.7rem;
+        height: 2.7rem;
+        @include flexbox($ai: center, $jc: center);
+        @include borderRadius(10px);
+        background-color: $mainColor-white;
+        border: 2px solid $mainColor1;
+        color: $mainColor1;
+        font-size: 1.3rem;
+        padding: 0;
+        margin: 0;
+
+        svg {
+          margin: 0;
+          padding: 0;
+        }
+
+        @media (max-width: 768px) {
+          width: 2rem;
+          height: 2rem;
+          font-size: 1.1rem;
+        }
+      }
+    }
+  }
+
+  .blog-slider {
+    display: flex !important;
+  }
+
+  .slick-slider {
+    display: flex !important;
+    justify-content: center;
+
+    .slick-list {
+      .slick-track {
+        display: flex;
+        gap: 1rem;
+        margin-bottom: 0.3rem;
+      }
+    }
+  }
+
+  a.blog-card {
+    max-width: 450px;
+    height: 100%;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    padding: 20px;
+    scroll-snap-align: start;
+    z-index: 0;
+    overflow: hidden;
+    text-decoration: none;
+    color: $mainColor-black;
+    position: relative;
+
+    &:hover {
+      transform: translateY(-5px);
+    }
+
+    .badge {
+      position: absolute;
+      top: 60px;
+      right: 60px;
+      font-size: 0.8rem;
+      padding: 5px 10px;
+      @include borderRadius(5px);
+    }
+
+    img {
+      width: 100%;
+      max-width: 100%;
+      height: auto;
+      @include borderRadius(5px 5px 0 0);
+      object-fit: cover;
+    }
+
+    .card-body {
+      background-color: $mainColor-white;
+      max-width: 100%;
+      padding: 20px;
+      @include borderRadius(0 0 5px 5px);
+
+      text-align: start;
+
+      .card-title {
+        color: $mainColor-black !important; // Başlık rengi
+        font-size: 20px;
+        font-weight: 600;
+        margin-bottom: 10px;
+      }
+
+      .card-text {
+        color: $mainColor-black !important; // Açıklama rengi
+        font-size: 16px;
+        margin-bottom: 10px;
+      }
+    }
+  }
+}
