@@ -7,6 +7,7 @@ import blogData from "@/helpers/data/blog.json";
 import { Spacer } from "@/components/common/spacer";
 import { IoIosArrowBack, IoIosArrowForward } from "react-icons/io";
 import BlogCard from "./blog-card";
+import "./blog.scss";
 
 interface BlogType {
   id: number;
@@ -18,8 +19,8 @@ interface BlogType {
 
 interface HomeData {
   Home: {
-    "blogSubtitle": string;
-    "blogTitle": string;
+    blogSubtitle: string;
+    blogTitle: string;
   };
 }
 
@@ -34,7 +35,7 @@ const BlogSection: React.FC = () => {
     infinite: true,
     slidesToShow: 3,
     slidesToScroll: 1,
-    autoplay: true, 
+    autoplay: true,
     autoplaySpeed: 5000,
     speed: 500,
     arrows: false,
@@ -48,7 +49,7 @@ const BlogSection: React.FC = () => {
       {
         breakpoint: 992,
         settings: {
-          slidesToShow: 2, 
+          slidesToShow: 2,
         },
       },
       {
@@ -62,28 +63,34 @@ const BlogSection: React.FC = () => {
 
   return (
     <div className="container-fluid bg-light">
-        <div className="blog-slider-container container ">
-      <div className="blog-header">
-        <SectionHeader
-          title={homeData.Home["blogSubtitle"]}
-          spans={homeData.Home["blogTitle"]}
-        />
-        <div className="slider-buttons">
-          <button className="prev-button" onClick={() => sliderRef.current?.slickPrev()}>
-          <IoIosArrowBack />
-          </button>
-          <button className="next-button" onClick={() => sliderRef.current?.slickNext()}>
-          <IoIosArrowForward />
-          </button>
+      <div className="blog-slider-container container ">
+        <div className="blog-header">
+          <SectionHeader
+            title={homeData.Home["blogSubtitle"]}
+            spans={homeData.Home["blogTitle"]}
+          />
+          <div className="blog-buttons">
+            <button
+              className="prev-button"
+              onClick={() => sliderRef.current?.slickPrev()}
+            >
+              <IoIosArrowBack />
+            </button>
+            <button
+              className="next-button"
+              onClick={() => sliderRef.current?.slickNext()}
+            >
+              <IoIosArrowForward />
+            </button>
+          </div>
         </div>
+        <Spacer height={10} />
+        <Slider ref={sliderRef} {...settings} className="blog-slider">
+          {blogs.map((blog) => (
+            <BlogCard key={blog.id} blog={blog} />
+          ))}
+        </Slider>
       </div>
-      <Spacer height={10} />
-      <Slider ref={sliderRef} {...settings} className="slider">
-        {blogs.map((blog) =>
-        <BlogCard key={blog.id} blog={blog}/>
-        )}
-      </Slider>
-    </div>
     </div>
   );
 };
