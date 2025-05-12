@@ -5,10 +5,12 @@ import menuItems from "@/helpers/data/main-menu.json";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 
+
 // Menü tipleri
 type SubMenuItem = {
   title: string;
   link: string;
+  flag?: string; // <-- Opsiyonel yaptık
 };
 
 type MainMenuItem = {
@@ -18,7 +20,6 @@ type MainMenuItem = {
   subLinks?: SubMenuItem[];
 };
 
-// `className` prop'unu destekleyen versiyon
 interface MainMenuProps {
   className?: string;
 }
@@ -38,6 +39,12 @@ const MainMenu: React.FC<MainMenuProps> = ({ className }) => {
                 key={sub.link}
                 className={pathname === sub.link ? "active" : ""}
               >
+                {sub.flag && (
+                  <span
+                    className={`fi fi-${sub.flag}`}
+                    style={{ marginRight: "20px" }}
+                  ></span>
+                )}
                 {sub.title}
               </NavDropdown.Item>
             ))}

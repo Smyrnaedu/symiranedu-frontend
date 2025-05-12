@@ -7,9 +7,11 @@ const DoctoratePage: React.FC = () => {
   const pageHeaderData = data[0]?.PageHeaders || {};
   const title = pageHeaderData["doctoratePageHeader"];
   const imageUrl = pageHeaderData["doctorateHeaderImage"];
+  const description = pageHeaderData["buttonLabel"];
+  
   return (
     <>
-      <PageHeader url={`/image/page-header/${imageUrl}`} header={title} />
+      <PageHeader url={`/image/page-header/${imageUrl}`} header={title} buttonLabel={description} />
       <Spacer />
     </>
   );

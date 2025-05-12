@@ -4,12 +4,19 @@ import PageHeader from "@/components/common/page-header/page-header";
 import { Spacer } from "@/components/common/spacer";
 
 const CountriesLithuanianPage: React.FC = () => {
- const pageHeaderData = data[0]?.PageHeaders || {};
+  const pageHeaderData = data[0]?.PageHeaders || {};
   const title = pageHeaderData["lithuaniaPageHeader"];
   const imageUrl = pageHeaderData["lithuaniaHeaderImage"];
+  const description = pageHeaderData["buttonLabel"];
+  const flag = pageHeaderData["lithuaniaHeaderFlag"];
   return (
     <>
-      <PageHeader url={`/image/page-header/${imageUrl}`} header={title} />
+      <PageHeader
+        url={`/image/page-header/${imageUrl}`}
+        header={title}
+        buttonLabel={description}
+        flag={flag}
+      />
       <Spacer />
     </>
   );

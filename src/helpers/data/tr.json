@@ -109,69 +109,68 @@
           "processStepImage": "university-enrollment.png"
         }
       ],
-      "blogSubtitle":"Duyurular & Haberler",
-      "blogTitle":"Blog",
-      "universityPartnersTitle":"Üniversite Paydaşlarımız",
-      "universityPartnersSubtitle":"IVY League Üniversiteleri",
+      "blogSubtitle": "Duyurular & Haberler",
+      "blogTitle": "Blog",
+      "universityPartnersTitle": "Üniversite Paydaşlarımız",
+      "universityPartnersSubtitle": "IVY League Üniversiteleri",
       "universityPartners": [
         {
-          "id":1,
+          "id": 1,
           "universityPartnerName": "Penn University of Pennsylvania",
           "universityPartnerImage": "universityOfPennsylvania.png"
         },
         {
-          "id":2,
+          "id": 2,
           "universityPartnerName": "Columbia University",
           "universityPartnerImage": "columbiaUniversity.png"
         },
         {
-          "id":3,
+          "id": 3,
           "universityPartnerName": "Brown University",
           "universityPartnerImage": "brownUniversity.png"
         },
         {
-          "id":4,
+          "id": 4,
           "universityPartnerName": "Dartmouth University",
           "universityPartnerImage": "dartmouthUniversity.png"
         },
         {
-          "id":5,
+          "id": 5,
           "universityPartnerName": "Yale University",
           "universityPartnerImage": "yaleUniversity.png"
         },
         {
-          "id":6,
+          "id": 6,
           "universityPartnerName": "Princeton University",
           "universityPartnerImage": "princetonUniversity.png"
         },
         {
-          "id":7,
+          "id": 7,
           "universityPartnerName": "Cornell University",
           "universityPartnerImage": "cornellUniversity.png"
         },
         {
-          "id":8,
+          "id": 8,
           "universityPartnerName": "Hardvard University",
           "universityPartnerImage": "harvardUniversity.png"
         },
         {
-          "id":9,
+          "id": 9,
           "universityPartnerName": "Oxford University",
           "universityPartnerImage": "oxfordUniversity.png"
-        
         },
         {
-          "id":10,
+          "id": 10,
           "universityPartnerName": "Bocconi University",
           "universityPartnerImage": "bocconiUniversity.png"
         },
         {
-          "id":11,
+          "id": 11,
           "universityPartnerName": "Chicago University",
           "universityPartnerImage": "chicagoUniversity.png"
         },
         {
-          "id":12,
+          "id": 12,
           "universityPartnerName": "Colorado University",
           "universityPartnerImage": "coloradoUniversity.png"
         }
@@ -252,7 +251,8 @@
         }
       ]
     },
-    "PageHeaders":{
+    "PageHeaders": {
+      "buttonLabel": "Daha fazla bilgi",
       "aboutPageHeader": "Hakkımızda",
       "aboutHeaderImage": "about-us.png",
       "highschoolPageHeader": "Lise",
@@ -281,32 +281,63 @@
       "pathwayHeaderImage": "pathway.png",
       "usaPageHeader": "Amerika Birleşik Devletleri",
       "usaHeaderImage": "america.png",
+      "usaHeaderFlag": "us",
       "englandPageHeader": "İngiltere",
       "englandHeaderImage": "england.png",
+      "englandHeaderFlag": "gb",
       "germanyPageHeader": "Almanya",
       "germanyHeaderImage": "germany.png",
+      "germanyHeaderFlag": "de",
       "canadaPageHeader": "Kanada",
       "canadaHeaderImage": "canada.png",
+      "canadaHeaderFlag": "ca",
       "italyPageHeader": "İtalya",
       "italyHeaderImage": "italy.png",
+      "italyHeaderFlag": "it",
       "francePageHeader": "Fransa",
       "franceHeaderImage": "france.png",
+      "franceHeaderFlag": "fr",
       "czechiaPageHeader": "Çek Cumhuriyeti",
       "czechiaHeaderImage": "czechia.png",
+      "czechiaHeaderFlag": "cz",
       "hungaryPageHeader": "Macaristan",
       "hungaryHeaderImage": "hungary.png",
+      "hungaryHeaderFlag": "hu",
       "lithuaniaPageHeader": "Litvanya",
       "lithuaniaHeaderImage": "lithuanian.png",
+      "lithuaniaHeaderFlag": "lt",
       "dubaiPageHeader": "Dubai",
       "dubaiHeaderImage": "dubai.png",
+      "dubaiHeaderFlag": "ae",
       "netherlandsPageHeader": "Hollanda",
       "netherlandsHeaderImage": "netherlands.png",
+      "netherlandsHeaderFlag": "nl",
       "australiaPageHeader": "Avustralya",
       "australiaHeaderImage": "australia.png",
+      "australiaHeaderFlag": "au",
       "irelandPageHeader": "İrlanda",
       "irelandHeaderImage": "ireland.png",
+      "irelandHeaderFlag": "ie",
       "polandPageHeader": "Polonya",
-      "polandHeaderImage": "poland.png"
+      "polandHeaderImage": "poland.png",
+      "polandHeaderFlag": "pl",
+      "apPageHeader": "Advanced Placement (AP)",
+      "apHeaderImage": "ap.png",
+      "dualingoPageHeader": "Dualingo",
+      "dualingoHeaderImage": "dualingo.png",
+      "gmatPageHeader": "Graduate Management Admission Test (GMAT)",
+      "gmatHeaderImage": "gmat.png",
+      "grePageHeader": " Graduate Record Examinations (GRE)",
+      "greHeaderImage": "gre.png",
+      "ieltsPageHeader": " International English Language Testing System (IELTS)",
+      "ieltsHeaderImage": "ielts.png",
+      "ptePageHeader": " Portuguese Test of English Ability (PTE)",
+      "pteHeaderImage": "pte.png",
+      "satPageHeader": " Scholastic Aptitude Test (SAT)",
+      "satHeaderImage": "sat.svg",
+      "toeflPageHeader": "Test of English as a Foreign Language (TOEFL)",
+      "toeflHeaderImage": "toefl.png"
+    
     }
   }
 ]

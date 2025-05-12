@@ -13,19 +13,27 @@
   }
   img {
     width: 100% !important;
-    height:400px !important;
+    height: 400px !important;
     object-fit: cover;
     object-position: center;
   }
 
-  span {
+  h1 {
     position: absolute;
     left: 50%;
     top: 50%;
     transform: translateX(-50%) translateY(-50%);
     z-index: 2;
     color: $mainColor-white;
-    font-weight: 700;
-    font-size: 50px;
+    font-weight: 500;
+    font-size: 2.5rem;
+    @include flexbox($fd: column, $ai: center, $jc: center, $gap: 1rem);
+    span{
+      margin-right: 20px;
+    }
+    a.btn {
+      width: 250px;
+      height: 55px;
+    }
   }
 }

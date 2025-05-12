@@ -6,7 +6,7 @@ import Topbar from "@/components/common/header/topbar";
 import MainMenuBar from "@/components/common/header/main-menubar";
 import Footer from "@/components/common/footer/footer";
 import FooterSub from "@/components/common/footer/footer-sub";
-import FooterImage from "@/components/common/footer/footer-image";
+
 
 export const metadata: Metadata = {
   title: {
