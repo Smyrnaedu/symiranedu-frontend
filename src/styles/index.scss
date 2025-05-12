@@ -5,6 +5,7 @@
 @import "slick-carousel/slick/slick.css";
 @import "slick-carousel/slick/slick-theme.css";
 @import "primereact/resources/themes/lara-light-cyan/theme.css";
+@import "flag-icons/css/flag-icons.min.css";
 
 body {
   margin: 0;
@@ -23,7 +24,7 @@ body {
 
 .accordion-header {
   .accordion-button:not(.collapsed) {
-    background-color:$mainColor3-op-30 !important; 
+    background-color: $mainColor3-op-30 !important;
     color: $mainColor-black !important;
     font-weight: 600;
   }

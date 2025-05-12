@@ -74,59 +74,73 @@
     "subLinks": [
       {
         "title": "Amerika",
-        "link": "/countries/america"
+        "link": "/countries/america",
+        "flag":"us"
       },
       {
         "title": "İngiltere",
-        "link": "/countries/england"
+        "link": "/countries/england",
+        "flag":"gb"
       },
       {
         "title": "Almanya",
-        "link": "/countries/germany"
+        "link": "/countries/germany",
+        "flag":"de"
       },
       {
         "title": "Kanada",
-        "link": "/countries/canada"
+        "link": "/countries/canada",
+        "flag":"ca"
       },
       {
         "title": "İtalya",
-        "link": "/countries/italy"
+        "link": "/countries/italy",
+        "flag":"it"
       },
       {
         "title": "Fransa",
-        "link": "/countries/france"
+        "link": "/countries/france",
+        "flag":"fr"
       },
       {
         "title": "Çekya",
-        "link": "/countries/czech-republic"
+        "link": "/countries/czech-republic",
+        "flag":"cz"
       },
       {
         "title": "Macaristan",
-        "link": "/countries/hungary"
+        "link": "/countries/hungary",
+        "flag":"hu"
       },
       {
         "title": "Litvanya",
-        "link": "/countries/lithuania"
+        "link": "/countries/lithuania",
+        "flag":"lt"
       },
       {
         "title": "Dubai",
-        "link": "/countries/dubai"
+        "link": "/countries/dubai",
+        "flag":"ae"
       },
       {
         "title": "Hollanda",
-        "link": "/countries/netherlands"
+        "link": "/countries/netherlands",
+        "flag":"nl"
       },
       {
         "title": "Avustralya",
-        "link": "/countries/australia"
+        "link": "/countries/australia",
+        "flag":"au"
       },
       {
         "title": "İrlanda",
-        "link": "/countries/ireland"
+        "link": "/countries/ireland",
+        "flag":"ie"
       },
       {
         "title": "Polonya",
-        "link": "/countries/poland"
+        "link": "/countries/poland",
+        "flag":"pl"
       }
     ]
   },

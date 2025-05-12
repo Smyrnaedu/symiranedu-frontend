@@ -7,9 +7,16 @@ const CountriesFrancePage: React.FC = () => {
   const pageHeaderData = data[0]?.PageHeaders || {};
   const title = pageHeaderData["francePageHeader"];
   const imageUrl = pageHeaderData["franceHeaderImage"];
+  const description = pageHeaderData["buttonLabel"];
+ const flag = pageHeaderData["franceHeaderFlag"];
   return (
     <>
-      <PageHeader url={`/image/page-header/${imageUrl}`} header={title} />
+      <PageHeader
+        url={`/image/page-header/${imageUrl}`}
+        header={title}
+        buttonLabel={description}
+        flag={flag}
+      />
       <Spacer />
     </>
   );

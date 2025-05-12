@@ -7,9 +7,16 @@ const CountriesCzechRepublicPage: React.FC = () => {
   const pageHeaderData = data[0]?.PageHeaders || {};
   const title = pageHeaderData["czechiaPageHeader"];
   const imageUrl = pageHeaderData["czechiaHeaderImage"];
+  const description = pageHeaderData["buttonLabel"];
+  const flag = pageHeaderData["czechiaHeaderFlag"];
   return (
     <>
-      <PageHeader url={`/image/page-header/${imageUrl}`} header={title} />
+      <PageHeader
+        url={`/image/page-header/${imageUrl}`}
+        header={title}
+        buttonLabel={description}
+        flag={flag}
+      />
       <Spacer />
     </>
   );

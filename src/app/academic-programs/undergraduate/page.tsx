@@ -7,9 +7,14 @@ const UndergraduatePage: React.FC = () => {
   const pageHeaderData = data[0]?.PageHeaders || {};
   const title = pageHeaderData["undergraduatePageHeader"];
   const imageUrl = pageHeaderData["undergraduateHeaderImage"];
+  const description = pageHeaderData["buttonLabel"];
   return (
     <>
-      <PageHeader url={`/image/page-header/${imageUrl}`} header={title} />
+      <PageHeader
+        url={`/image/page-header/${imageUrl}`}
+        header={title}
+        buttonLabel={description}
+      />
       <Spacer />
     </>
   );
