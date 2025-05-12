@@ -3,7 +3,7 @@ import React from "react";
 import { Container } from "react-bootstrap";
 import "./banner.scss";
 import data from "@/helpers/data/tr.json";
-import MeetingButton from "./meeting-button";
+import ButtonComponent from "@/components/common/button/button-component";
 
 const Banner = () => {
   const bannerData = data[0]?.Home || {};
@@ -29,7 +29,7 @@ const Banner = () => {
       <div className="banner-text-wrapper">
         <h2 className={arimo.variable}>{title}</h2>
         <p className="banner-text">{description}</p>
-        <MeetingButton title={buttonText}/>
+        <ButtonComponent link="/" title={buttonText} />
       </div>
     </Container>
   );
