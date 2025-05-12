@@ -10,10 +10,11 @@ type PageHeaderProps = {
 const PageHeader: React.FC<PageHeaderProps> = ({ header, url }) => {
   return (
     <div className='page-header'>
+      <div className="overlay"></div>
       <Image 
         src={`${url}`} 
         width={1920} 
-        height={1280} 
+        height={600} 
         alt="page-header" 
       />
       <span>{header}</span>
