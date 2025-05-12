@@ -6,6 +6,7 @@ import Image from "next/image";
 import { appConfig } from "@/helpers/config";
 import MainLogo from "./main-logo";
 import "./main-menu.scss";
+import ButtonComponent from "../button/button-component";
 
 const MainMenubar: React.FC = () => {
   return (
@@ -35,9 +36,7 @@ const MainMenubar: React.FC = () => {
           </Offcanvas.Header>
           <Offcanvas.Body className="align-items-center">
             <MainMenu className="justify-content-center flex-grow-1" />
-            <a href="/login" className="login-btn">
-              Giriş Yap
-            </a>
+           <ButtonComponent link="/login" title="Login" />
           </Offcanvas.Body>
         </Navbar.Offcanvas>
       </Container>
