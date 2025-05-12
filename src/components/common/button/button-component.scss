@@ -4,7 +4,7 @@
 .special-btn{
       background-color: $mainColor1!important;
       width: 150px;
-      height: 50px;
+      height: 40px;
       @include flexbox($ai: center, $jc: center);
       @include borderRadius(10px);
     
