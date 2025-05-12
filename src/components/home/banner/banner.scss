@@ -69,21 +69,12 @@
     }
 
     .btn{
-      background-color: $mainColor1!important;
-      width: 200px;
-      height: 50px;
-      @include flexbox($ai: center, $jc: center);
-      border-radius: 25px;
-      border: 2px solid $mainColor1;
-      color: $mainColor-white;
-
-      &:hover{
-        background-color: $mainColor-white !important;
-        color: $mainColor1;
-        font-weight: 500;
-        transform: scale(1.1);
-        transition: all 0.5s;
-      }
+     
+      width: 270px;
+      height: 60px;
+      font-size: 1.2rem;
+    
+     
     }
 
     @media (max-width:576px) {
