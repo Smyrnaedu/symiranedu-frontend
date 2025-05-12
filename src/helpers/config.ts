@@ -8,7 +8,7 @@ import {
 
 import { AiOutlineMail } from "react-icons/ai";
 import { PiYoutubeLogoBold } from "react-icons/pi";
-import { FiFacebook } from "react-icons/fi";
+import { FiFacebook, FiLinkedin } from "react-icons/fi";
 
 export const appConfig = {
   project: {
@@ -72,6 +72,13 @@ export const appConfig = {
         title: "Follow on Youtube",
         text: "Youtube",
       },
+
+      linkedin: {
+        url: "https://www.linkedin.com/company/smyrna-edu/",
+        icon: FiLinkedin,
+        title: "Follow on LinkdIn",
+        text: "LinkdIn",
+      }
     },
   },
   apiURL: "",
