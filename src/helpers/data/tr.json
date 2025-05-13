@@ -337,7 +337,494 @@
       "satHeaderImage": "sat.png",
       "toeflPageHeader": "Test of English as a Foreign Language (TOEFL)",
       "toeflHeaderImage": "toefl.png"
-    
+    },
+    "AcademicPrograms": {
+      "highSchool": {
+        "title": "Yurtdışında Lise Eğitimi ve Programları: Bilmeniz Gereken Her Şey",
+        "description": "Yurtdışında lise eğitimi almak, öğrenciler için yalnızca akademik değil, kültürel ve kişisel gelişim açısından da önemli fırsatlar sunar. Bu yazıda, yurtdışında lise eğitimi almak isteyenler için en sık sorulan soruları yanıtlayarak, başvurular ve süreçler hakkında kapsamlı bir rehber sunuyoruz. Yurtdışında lise eğitimi hakkında detaylı bilgi arıyorsanız, doğru yerdesiniz!",
+        "abroad_edu_title": "Yurtdışında Lise Eğitimi İçin Hangi Ülkeler Tercih Edilmelidir?",
+        "abroad_edu_description": "Yurtdışında lise eğitimi almak isteyen öğrenciler için en popüler eğitim destinasyonları Amerika, Kanada, İngiltere, Almanya ve Avustralya gibi ülkeler öne çıkmaktadır. Her ülkenin eğitim sistemi farklı avantajlar sunar ve öğrencilerin akademik hedeflerine, kültürel tercihlerine ve bütçelerine göre uygun ülke seçimi yapmak önemlidir.",
+        "countries": [
+          {
+            "name": "Amerika",
+            "description": "Dünyaca ünlü üniversitelerine geçiş için ideal bir eğitim sistemi sunar."
+          },
+          {
+            "name": "Kanada",
+            "description": "Eğitimde yüksek kalite ve öğrenci dostu politikaları ile dikkat çeker."
+          },
+          {
+            "name": "İngiltere",
+            "description": ": Prestijli okulları ve uluslararası öğrenciler için sağladığı fırsatlar ile popülerdir."
+          }
+        ],
+        "abroad_edu_sub_desc": "Yurtdışında eğitim almak isteyen öğrenciler için eğitim fırsatları ve kültürel çeşitlilik gibi avantajlar, doğru ülke seçiminde etkili olacaktır.",
+        "abroad_edu_adv_title": "Yurtdışında Lise Eğitimi Almanın Avantajları Nelerdir?",
+        "abroad_edu_adv_desc": "Yurtdışında lise eğitiminin birçok avantajı bulunmaktadır:",
+        "abroad_edu_adv_list": [
+          {
+            "title": "Global Perspektif: ",
+            "description": ": Farklı kültürlerle tanışarak geniş bir dünya görüşü elde edebilirsiniz."
+          },
+          {
+            "title": "Dil Becerileri:  ",
+            "description": ": İleri düzeyde bir yabancı dil becerisi kazanabilirsiniz."
+          },
+          {
+            "title": "Akademic Fırsatlar: ",
+            "description": ": Gelişmiş eğitim sistemleri sayesinde daha fazla seçmeli ders ve daha derinlemesine eğitim alabilirsiniz."
+          },
+          {
+            "title": "Kariyer Olanakları: ",
+            "description": " Yurtdışında eğitim almak, kariyerinizde rekabet avantajı sağlar."
+          }
+        ],
+        "abroad_edu_sub_desc2": "Yurtdışında lise eğitimi, dünya çapında iş fırsatlarına kapı açabilir ve öğrencilere kariyerlerinde önemli bir avantaj sağlar.",
+        "abroad_edu_app_cond_title": "Yurtdışında Lise Başvurularında Gerekli Evraklar Nelerdir?",
+        "abroad_edu_app_cond_desc": "Yurtdışında bir lise programına başvurmak için gerekli olan belgeler genellikle şunlardır:",
+        "abroad_edu_app_cond_list": [
+          {
+            "title": "Kimlik Fotokopisi"
+          },
+          {
+            "title": "Not Dökümü (Transkript)"
+          },
+          {
+            "title": "Dil Yeterlilik Belgesi (TOEFL, IELTS vb.)"
+          },
+          {
+            "title": "Pasaport Fotokopisi"
+          },
+          {
+            "title": "Motivasyon Mektubu"
+          },
+          {
+            "title": "Referans Mektupları"
+          },
+          {
+            "title": "Sağlık Raporu"
+          },
+          {
+            "title": "Fotoğraf"
+          }
+        ],
+        "abroad_edu_app_cond_sub_desc": "Başvurular için gerekli belgeler, başvurulan okula ve ülkeye göre değişiklik gösterebilir. Başvuru sürecinizi yönetmek için, okulun başvuru gereksinimlerini dikkatlice incelemeniz önemlidir.",
+        "abroad_edu_tr_edu_title": "Yurtdışında Lise Diploması ile Türkiye’de Sınavsız Üniversite Okunabilir Mi?",
+        "abroad_edu_tr_edu_desc": "Yurtdışında lise diploması almak, Türkiye'de üniversiteye başvuru konusunda avantaj sağlar. Yurtdışında eğitim almış öğrenciler, Türkiye'deki bazı üniversitelere sınavsız giriş hakkı elde edebilir. YÖS (Yükseköğretim Kurumları Yabancı Uyruklu Öğrenci Sınavı) veya üniversitenin kendi kabul sınavları ile başvuru yapılabilir. Bu durum, başvurulan üniversiteye göre değişiklik gösterir.",
+        "abroad_edu_tr_edu_sub_desc": "Türkiye’deki üniversiteler, yurtdışı eğitimi tamamlayan öğrencilere genellikle doğrudan kabul sağlayabilir. Bu konuda üniversitenizin kabul şartlarını araştırmanız faydalı olacaktır.",
+        "abroad_edu_scholorship_title": "Yurtdışında Lise Programlarında Burs Olanakları Var Mı?",
+        "abroad_edu_scholorship_desc": "Birçok yurtdışı lise programı, öğrencilere çeşitli burs fırsatları sunmaktadır. Bu burslar, genellikle başarıya dayalı olabilir (akademik başarı, spor veya sanat gibi). Yurtdışında eğitim almak isteyen Türk öğrencilerine özel burslar da bulunmaktadır. Tam burs ya da kısmi burs imkanlarından yararlanmak için erken başvuru yapmanız önemlidir.",
+        "abroad_edu_age_title": "Yurtdışında Lise Eğitimi İçin Yaş Sınırı Var mı?",
+        "abroad_edu_age_desc": "Yurtdışında lise eğitimi alacak öğrenciler için genellikle 14-18 yaş arası kabul edilmektedir. Ancak bazı okullar, yaş sınırı koyabilir. Öğrencilerin, başvurdukları okulların yaş kriterlerini dikkatlice kontrol etmeleri gerekmektedir.",
+        "abroad_edu_acc_title": "Yurtdışında Lise Eğitimi İçin Konaklama Seçenekleri",
+        "abroad_edu_acc_desc": "Yurtdışındaki liselerde konaklama seçenekleri çeşitli alternatifler sunmaktadır:",
+        "abroad_edu_acc_list": [
+          {
+            "title": "Okul Yurtları",
+            "description": "Kampüs içi veya kampüs yakınlarında öğrencilere konaklama imkânı."
+          },
+          {
+            "title": "Aile Yanı Konaklama",
+            "description": "Yerel ailelerle birlikte kalarak yerel kültürü deneyimleme fırsatı."
+          },
+          {
+            "title": "Özel Öğrenci Yurtları  veya Daireler",
+            "description": "Bağımsız bir yaşam isteyen öğrenciler için ideal seçenekler."
+          },
+          {
+            "title": "Paylaşımlı Evler",
+            "description": "Diğer öğrencilerle birlikte yaşama fırsatı."
+          }
+        ],
+        "abroad_edu_acc_sub_desc": "Konaklama seçeneğinizi okulun sunduğu imkanlara ve bütçenize göre belirlemeniz önemlidir.",
+        "abroad_edu_lang_prof_title": "Yurtdışında Lise Eğitimi İçin Dil Yeterliliği Gerekliliği Var Mıdır?",
+        "abroad_edu_lang_prof_desc": "Yurtdışında eğitim almak için öğrencilerin dil yeterliliklerini kanıtlamaları gerekebilir. Özellikle İngilizce eğitim veren okullar, TOEFL veya IELTS gibi sınavlar ile dil yeterliliğini ölçebilir. Ancak, dil seviyeniz yeterli değilse, bazı okullar hazırlık sınıfları veya dil kursları sunmaktadır.",
+        "abroad_edu_academic_title": "Yurtdışında Lise Programlarında Akademik Sistem Nasıl İşler?",
+        "abroad_edu_academic_desc": "Yurtdışındaki okullarda akademik sistemler ülkeden ülkeye farklılık gösterebilir:",
+        "abroad_edu_academic_list": [
+          {
+            "title": "Amerika",
+            "description": "Kredi sistemi uygulanır ve öğrenciler ders seçiminde esneklik kazanır."
+          },
+          {
+            "title": "İngiltere",
+            "description": "GCSE ve A-Level sınavları ile belirli bir akademik yol izlenir."
+          },
+          {
+            "title": "Almanya",
+            "description": "Avrupa’daki birçok okulla uyumlu eğitim programları sunulmaktadır."
+          }
+        ],
+        "abroad_edu_academic_sub_desc": "Her ülkenin eğitim sistemi, öğrencilere farklı akademik deneyimler sunar. Öğrenciler, başvurdukları okullardaki sistemleri iyi anlamalıdır.",
+        "abroad_edu_app_process_title": "Yurtdışında Lise Eğitimi İçin Başvuru Süreci Nasıl İşler?",
+        "abroad_edu_app_process_desc": "Yurtdışında lise başvurusu için gereken adımlar şu şekildedir:",
+        "abroad_edu_app_process_list": [
+          {
+            "description": "Başvuru tarihlerini takip edin."
+          },
+          {
+            "description": "Gerekli belgeleri eksiksiz şeklde tamamlayın."
+          },
+          {
+            "description": "Başvuru için son tarihlere dikkat edin."
+          },
+          {
+            "description": "Bazı okullar, mülakat veya sınav talep edebilir."
+          }
+        ],
+        "abroad_edu_app_process_sub_desc": "Başvuru sürecini zamanında ve doğru şekilde yönetmek, başarılı bir başvuru için kritik öneme sahiptir.",
+        "abroad_edu_vise_title": "Yurtdışında Lise Eğitimi İçin Vize Başvuru Süreci Nasıl Olur?",
+        "abroad_edu_vise_desc": "Yurtdışında eğitim almak için öğrencilere vize başvurusu gereklidir. Öğrenciler, eğitim alacakları ülkenin öğrenci vizesi başvuru şartlarını yerine getirmelidir. Vize başvuru süreci, ülkeye göre farklılık gösterebilir. Vize başvurularını zamanında yaparak gerekli belgeleri hazırlamak önemlidir.",
+        "abroad_edu_undergrad_title": "Yurtdışında Lise Eğitimi Sonrası Hangi Yükseköğretim Fırsatları Mevcuttur?",
+        "abroad_edu_undergrad_desc": "Yurtdışında lise eğitimi almak, öğrencilere dünya çapında üniversitelere başvurma fırsatı sunar. Eğitim sonrası uluslararası üniversiteler ve prestijli okullar, öğrencilere daha fazla kariyer fırsatları sunabilir. Yurtdışında alınan bir lise diploması, öğrencilerin akademik ve profesyonel yaşamlarına güçlü bir başlangıç yapmalarını sağlar.",
+        "abroad_edu_family_title": "Yurtdışında Lise Eğitimi İçin Ailelerin Desteği Ne Kadar Önemlidir?",
+        "abroad_edu_family_desc": "Yurtdışında eğitim almak, öğrencilere büyük fırsatlar sunsa da ailelerin desteği de çok önemlidir. Finansal destek, psikolojik rehberlik ve karar verme süreçlerinde yardım ailelerin sağlayabileceği en önemli desteklerdir.",
+        "abroad_edu_family_sub_desc": "Yurtdışında lise eğitimi, sadece akademik anlamda değil, aynı zamanda kişisel gelişim açısından da büyük fırsatlar sunar. Doğru okul ve programı seçmek, öğrencilerin gelecekteki kariyerlerine yön verecek önemli bir adım olabilir."
+      },
+      "undergraduate": {
+        "undergraduate_title": "Yurtdışında Üniversite Eğitimi: Fırsatlar ve Süreçler",
+        "undergraduate_desc": "Yurtdışında üniversite eğitimi, öğrenciler için akademik başarılarını geliştirmek, küresel bir perspektif kazanmak ve uluslararası kariyer fırsatlarına kapı aralamak açısından eşsiz bir deneyim sunar. Bu yazıda, yurtdışında üniversite eğitimi almak isteyen öğrenciler için detaylı bilgi sunuyoruz. Ayrıca, başvuru süreçlerinden, vize başvurularına kadar her aşamada size rehberlik edecek bilgiler yer alacak.",
+        "undergraduate_adv_title": "Yurtdışında Üniversite Eğitimi Almanın Avantajları",
+        "undergraduate_adv_desc": "Yurtdışında üniversite eğitimi almanın birçok önemli avantajı vardır:",
+        "undergraduate_adv_list": [
+          {
+            "title": "Küresel Perspektif: ",
+            "description": "Farklı kültürleri ve eğitim sistemlerini tanıma fırsatı, öğrencilere dünya görüşünü genişletir."
+          },
+          {
+            "title": "Dil Yeterliliği: ",
+            "description": "Yabancı dil becerilerinin geliştirilmesi, kariyer için büyük bir avantaj sağlar. İngilizce başta olmak üzere birçok dilde eğitim alabilirsiniz."
+          },
+          {
+            "title": "Yüksek Eğitim Kalitesi: ",
+            "description": "Dünyaca ünlü üniversitelerde kaliteli eğitim alma fırsatı, öğrencilere akademik anlamda önemli katkılar sağlar."
+          },
+          {
+            "title": "Uluslararası Kariyer Olanakları: ",
+            "description": "Yurtdışında eğitim almak, öğrencilere uluslararası iş dünyasında iş bulma şansı sunar."
+          },
+          {
+            "title": "Farklı Kültürel Deneyimler: ",
+            "description": "Yurtdışında yaşam, kültürel çeşitliliği deneyimlemenin yanı sıra kişisel gelişime de katkı sağlar."
+          }
+        ],
+        "undergraduate_app_process_title": "Yurtdışında Üniversite İçin Başvuru ve Kabul Şartları",
+        "undergraduate_app_process_desc": "Yurtdışında üniversite başvuru süreçleri, başvurulan ülkeye ve üniversiteye göre değişiklik gösterebilir. Ancak genel olarak başvuru süreci şu şekilde işler: ",
+        "undergraduate_app_process_list": [
+          {
+            "title": "Başvuru Formu: ",
+            "description": "Okulun online başvuru sistemine kayıt olunarak başvuru formu doldurulur."
+          },
+          {
+            "title": "Belgeler: ",
+            "description": "Genellikle, not dökümü, referans mektupları, motivasyon mektubu, dil yeterlilik belgeleri ve pasaport fotokopisi gibi belgeler istenir."
+          },
+          {
+            "title": "Dil Yeterlilik Belgesi: ",
+            "description": "Çoğu üniversite, başvuru için İngilizce dil yeterliliği talep eder. IELTS, TOEFL gibi sınavlarla dil yeterliliğinizi kanıtlayabilirsiniz."
+          },
+          {
+            "title": "Mülakatlar ve Testler: ",
+            "description": "Bazı üniversiteler, öğrenci seçiminde mülakat veya yetenek testleri yapabilir."
+          }
+        ],
+        "undergraduate_app_process_sub_desc": "Başvuru şartlarını, başvurulan üniversitenin web sitesinden veya Smyrna Edu danışmanlık hizmetlerinden öğrenebilirsiniz.",
+        "undergraduate_country_select_title": "Ülke Seçimi Yaparken Dikkat Edilmesi Gerekenler",
+        "undergraduate_country_select_desc": "Yurtdışında üniversite eğitimi için ülke seçimi yapmak, akademik ve kariyer hedeflerinizi doğrudan etkileyen bir karardır. Ülke seçimi yaparken dikkat edilmesi gerekenler:",
+        "undergraduate_country_select_list": [
+          {
+            "title": "Eğitim Sistemi ve Kalitesi: ",
+            "description": "Bazı ülkelerdeki üniversiteler daha prestijli ve uluslararası düzeyde tanınmaktadır."
+          },
+          {
+            "title": "Dil Seçenekleri: ",
+            "description": "İngilizce, Fransızca, Almanca gibi hangi dillerde eğitim alacağınız önemlidir."
+          },
+          {
+            "title": "Yaşam Maliyeti: ",
+            "description": "Yaşam masrafları, konaklama ve ulaşım gibi faktörler bütçenizi etkileyebilir."
+          },
+          {
+            "title": "Kültürel Uyum: ",
+            "description": "Yaşam kültürü, sosyal hayattan beklentiler ve dil bariyerleri, adaptasyon sürecinde önemli rol oynar."
+          },
+          {
+            "title": "Çalışma Olanakları: ",
+            "description": "Öğrencilerin eğitim sürecinde part-time çalışma imkanları sunan ülkeler tercih edilebilir."
+          }
+        ],
+        "undergraduate_country_app_date_title": "Yurtdışında Üniversite Başvuru Tarihleri",
+        "undergraduate_country_app_date_desc": "Başvuru tarihleri, ülkeye ve üniversiteye göre değişiklik gösterir. Genel olarak, yurtdışındaki üniversiteler için başvurular:",
+        "undergraduate_country_app_date_list": [
+          {
+            "title": "Amerika ve Kanada: ",
+            "description": "Eylül ve Ocak aylarında başvurular alınır. Genellikle son başvuru tarihleri ocak-mart ayları arasındadır."
+          },
+          {
+            "title": "İngiltere: ",
+            "description": "Yükseköğretim başvuruları için son tarih, genellikle Ocak ayının ortasına kadar."
+          },
+          {
+            "title": "Avustralya ve Yeni Zelanda: ",
+            "description": "Başvurular genellikle Mayıs ve Temmuz aylarında yapılır."
+          }
+        ],
+        "undergraduate_country_app_date_sub_desc": "Bu tarihler, her üniversiteye ve programa bağlı olarak farklılık gösterebilir, bu yüzden başvuruyu önceden yapmak faydalı olacaktır.",
+        "undergraduate_university_adv_licence_title": "Yurtdışında Üniversite İçin Avantajlı Diplomalar",
+        "undergraduate_university_adv_licence_desc": "Yurtdışında alınan üniversite diplomaları, dünya çapında tanınan ve yüksek prestije sahip olabilir. Birçok üniversite, uluslararası akreditasyonlara sahiptir ve mezunları global iş dünyasında kabul gören diplomalarla kariyerlerine başlar. Üst düzey akademik programlar, öğrencilere üniversitelerin iş dünyası bağlantıları ile avantaj sağlar.",
+        "undergraduate_licence_validity_title": "YÖK Denkliği ve Türkiye'de Geçerlilik",
+        "undergraduate_licence_validity_desc": "Yurtdışında üniversite eğitimi aldıktan sonra, Türkiye’de üniversite diplomasının denkliği önemli bir konudur. YÖK (Yükseköğretim Kurulu), yurtdışında alınan diplomaların denklik başvurularını değerlendirir ve geçerliliğini onaylar. YÖK denklik işlemi için başvuru yapılması gereklidir.",
+        "undergraduate_vise_app_title": "Yurtdışında Üniversite İçin Vize Süreci",
+        "undergraduate_vise_app_desc": "Yurtdışında üniversite eğitimi almak isteyen öğrencilerin, öğrenci vizesi başvurusu yapması gerekmektedir. Vize süreci, başvurulan ülkeye göre değişir ve genellikle şu adımları içerir:",
+        "undergraduate_vise_app_list": [
+          {
+            "title": "Vize Başvurusu: ",
+            "description": "Öğrencilerin vize başvuru formunu doldurması gerekir."
+          },
+          {
+            "title": "Gerekli Belgeler: ",
+            "description": "Pasaport, kabul mektubu, finansal durumu kanıtlayan belgeler gibi evraklar gereklidir."
+          },
+          {
+            "title": "Mülakatlar: ",
+            "description": "Bazı ülkeler, öğrencilere vize mülakatı yapabilir."
+          },
+          {
+            "title": "Vize Ücretleri: ",
+            "description": "Vize başvuru ücretleri, başvurulan ülkenin şartlarına göre değişir."
+          }
+        ],
+        "undergraduate_vise_app_sub_desc": "Smyrna Edu danışmanlık, vize başvuru sürecinde de öğrencilerine rehberlik etmektedir.",
+        "undergraduate_scholarship_title": "Yurtdışında Üniversite İçin Burs Olanakları",
+        "undergraduate_scholarship_desc": "Yurtdışında üniversite eğitimi almak için çeşitli burs imkanları vardır. Tam burs, kısmi burs, başarı bursları veya ihtiyaç bursları gibi burslar, öğrencilerin eğitim maliyetlerini karşılamalarına yardımcı olabilir. Yurtdışında burs alabileceğiniz ülkeler arasında Amerika, Kanada, Almanya, İngiltere ve Avustralya yer almaktadır. Smyrna Edu danışmanlık, burs başvuru süreçlerinde öğrencilere yardımcı olmaktadır.",
+        "undergraduate_universities_departments_title": "Yurtdışında Üniversiteler ve Bölümler",
+        "undergraduate_universities_departments_desc": "Yurtdışındaki üniversiteler, öğrencilere geniş bir bölüm yelpazesi sunmaktadır. Popüler bölümler arasında:",
+        "undergraduate_universities_departments_list": [
+          {
+            "title": "Mühendislik ve Teknoloji "
+          },
+          {
+            "title": "İşletme ve Yönetim "
+          },
+          {
+            "title": "Tıp ve Sağlık Bilimleri "
+          },
+          {
+            "title": "Hukuk"
+          },
+          {
+            "title": "Sosyal Vilimler ve Psikoloji"
+          },
+          {
+            "title": "Sanat ve Tasarım"
+          },
+          {
+            "title": "Bilgisayar Bilimleri"
+          }
+        ],
+        "undergraduate_universities_departments_sub_desc": "Smyrna Edu danışmanlık, öğrencilerin ilgi alanlarına ve kariyer hedeflerine uygun üniversite ve bölüm seçiminde uzman desteği sunar.",
+        "smyrna_edu_consulting_title": "Smyrna Edu Danışmanlık Hizmetleri",
+        "smyrna_edu_consulting_desc": "Smyrna Edu olarak, yurtdışında üniversite eğitimi almak isteyen öğrencilere kapsamlı danışmanlık hizmetleri sunuyoruz. Hizmetlerimiz:",
+        "smyrna_edu_consulting_list": [
+          {
+            "title": "Üniversite Seçimi ve Bölüm Danışmanlığı: ",
+            "description": "İlgi ve kariyer hedeflerinize uygun üniversite ve bölüm seçimi."
+          },
+          {
+            "title": "Başvuru Süreci ve Belgelerin Hazırlanması: ",
+            "description": "Başvuru için gerekli belgelerin hazırlanması ve başvuruların yapılması."
+          },
+          {
+            "title": "Dil Yeterliliği Desteği: ",
+            "description": "Dil yeterlilik sınavlarına hazırlık ve başvuru belgelerinin dil uygunluğu."
+          },
+          {
+            "title": "Vize Başvurusu: ",
+            "description": "Vize başvurusu süreci ve gerekli belgeler konusunda rehberlik."
+          },
+          {
+            "title": "Konaklama ve Sim Kart Ayarlamaları: ",
+            "description": "Öğrenciler için konaklama seçenekleri ve sim kart ayarlamaları."
+          },
+          {
+            "title": "Burs ve Finansal Destek İmkanları: ",
+            "description": "Eğitim sürecinde burs ve finansal destek başvuruları."
+          },
+          {
+            "title": "Kariyer Danışmanlığı: ",
+            "description": "Yurtdışında eğitimin ardından kariyer hedeflerine yönelik rehberlik."
+          }
+        ],
+        "undergraduate_sub_desc": "Yurtdışında üniversite eğitimi almak, öğrencilerin akademik ve kişisel gelişimlerinde büyük fırsatlar sunar. Smyrna Edu danışmanlık olarak, bu süreçte öğrencilerimize her adımda rehberlik ederek, en uygun üniversiteyi ve bölümü seçmelerine yardımcı oluyoruz. Yurtdışında üniversite eğitimi ile ilgili daha fazla bilgi almak ve başvuru süreçlerini öğrenmek için bizimle iletişime geçebilirsiniz!"
+      },
+      "master": {},
+      "doctorate": {
+        "doctorate_title": "Yurtdışında Doktora Programları: Akademik Mükemmeliyet ve Küresel Araştırma Fırsatları",
+        "doctorate_desc": "Yurtdışında doktora eğitimi almak, akademik kariyerinizi zirveye taşıyacak ve araştırma alanındaki uzmanlığınızı derinleştirecek eşsiz bir fırsattır. Uluslararası düzeyde tanınan üniversitelerden doktora diploması almak, dünya çapında tanınan bir akademisyen olmanızı sağlar. Bu yazıda, yurtdışında doktora programlarına başvuru sürecinden, burs olanaklarına kadar her şey hakkında kapsamlı bilgiler bulabilirsiniz.",
+        "doctorate_general_inf_title": "Yurtdışında Doktora Eğitimi: Genel Bilgi",
+        "doctorate_general_inf_desc": "Doktora eğitimi, genellikle 3 ila 5 yıl süren bir araştırma odaklı programdır. Bu süreç, öğrencilere seçtikleri alanda derinlemesine araştırma yapma, akademik yazı yazma ve kendi orijinal katkılarını ortaya koyma fırsatı sunar. Yurtdışında doktora eğitimi almak, akademik kariyerinizi geliştirecek, aynı zamanda uluslararası bir ağ kurmanıza ve dünyanın en prestijli üniversitelerinde araştırma yapmanıza imkân tanıyacaktır.",
+        "doctorate_general_inf_sub_desc": "Doktora programları, genellikle yoğun araştırmalar, tez yazma ve alanınızdaki en son gelişmeleri inceleme fırsatlarını içerir. Ayrıca, öğrenciler akademik yayınlar ve uluslararası konferanslara katılma imkânı bulurlar.",
+        "doctorate_adv_title": "Yurtdışında Doktora Programlarının Avantajları",
+        "doctorate_adv_desc": "Yurtdışında doktora yapmanın sağladığı başlıca avantajlar şunlardır:",
+        "doctorate_adv_list": [
+          {
+            "title": "Akademik Mükemmeliyet:",
+            "description": "Dünyanın en prestijli üniversitelerinde eğitim almak, akademik mükemmeliyetinizi geliştirecek ve alanınızda tanınan bir uzman olmanızı sağlayacaktır."
+          },
+          {
+            "title": "Araştırma Fırsatları:",
+            "description": "Yurtdışındaki üniversiteler, ileri düzey araştırma projeleri, laboratuvarlar ve kaynaklarla donatılmıştır. Bu da size daha geniş araştırma olanakları sunar."
+          },
+          {
+            "title": "Uluslararası Ağ Kurma:",
+            "description": "Farklı ülkelerden gelen öğrenciler ve akademisyenlerle çalışarak geniş bir uluslararası ağ kurabilirsiniz. Bu, kariyerinizde büyük fırsatlar yaratabilir."
+          },
+          {
+            "title": "Finansal Destek:",
+            "description": "Yurtdışındaki birçok üniversite, doktora öğrencilerine çeşitli burs ve finansal destekler sunmaktadır."
+          },
+          {
+            "title": "Kariyer İmkanları:",
+            "description": "Yurtdışında alınan doktora diploması, hem akademik dünyada hem de endüstri alanlarında kariyer fırsatlarınızı artırır."
+          }
+        ],
+        "doctorate_process_title": "Yurtdışında Doktora Programlarına Başvuru Şartları",
+        "doctorate_process_desc": "Yurtdışında doktora başvurusu, genellikle bir dizi adım ve gereklilik içerir. Bu başvuru süreci, ülkeye ve üniversiteye göre farklılıklar gösterebilir, ancak genel olarak aşağıdaki belgeler gereklidir:",
+        "doctorate_process_list": [
+          {
+            "title": "Başvuru Formu: ",
+            "description": "Her üniversite, başvurularını genellikle online başvuru sistemi üzerinden alır. Başvuru formunun eksiksiz ve doğru bir şekilde doldurulması gerekmektedir."
+          },
+          {
+            "title": "Lisans ve Yüksek Lisans Diploması: ",
+            "description": "Doktora başvurusu için, genellikle lisans ve yüksek lisans diploması gereklidir. Ayrıca, not dökümü veya transkript de istenebilir."
+          },
+          {
+            "title": "Araştırma Teklifi (Research Proposal): ",
+            "description": "Birçok üniversite, başvurulan doktora programına ilişkin bir araştırma önerisi talep eder. Bu öneri, doktora yapmayı düşündüğünüz konu, araştırma sorularınız ve metodolojiniz hakkında bilgi verir."
+          },
+          {
+            "title": "Dil Yeterliliği:  ",
+            "description": "İngilizce dilinde eğitim veren programlar için genellikle TOEFL veya IELTS gibi dil yeterliliği sınav sonuçları gereklidir."
+          },
+          {
+            "title": "Referans Mektupları: ",
+            "description": "Genellikle 2-3 referans mektubu istenmektedir. Bu mektuplar, akademik veya profesyonel geçmişinizi gösterir."
+          },
+          {
+            "title": "Motivasyon Mektubu: ",
+            "description": "Neden bu programı seçtiğinizi ve kariyer hedeflerinize nasıl katkı sağladığını belirten bir motivasyon mektubu yazmanız gerekebilir."
+          },
+          {
+            "title": "CV/Özgeçmiş: ",
+            "description": "Eğitim geçmişiniz, araştırma deneyiminiz ve akademik başarılarınızı içeren özgeçmişiniz istenebilir."
+          }
+        ],
+        "doctorate_popular_country_title": "Yurtdışında Doktora İçin Popüler Ülkeler ve Üniversiteler",
+        "doctorate_popular_country_desc": "Yurtdışında doktora yapmayı tercih eden öğrenciler için popüler olan bazı ülkeler ve üniversiteler şunlardır:",
+        "doctorate_popular_country_list": [
+          {
+            "title": "Amerika Birleşik Devletleri(ABD) ",
+            "uni_1": "Harvard Üniversitesi ",
+            "uni_2": "Stanford Üniversitesi ",
+            "uni_3": "California Institute of Technology (Caltech) ",
+            "description": "ABD, doktora programlarında dünya lideri üniversiteler ve ileri düzey araştırma fırsatları ile öne çıkar. Ayrıca, araştırma ve gelişim için geniş bütçelere sahip birçok kurum bulunmaktadır."
+          },
+          {
+            "title": "İngiltere ",
+            "uni_1": "Oxford Üniversitesi",
+            "uni_2": "Cambridge Üniversitesi",
+            "uni_3": "Imperial College London",
+            "description": "İngiltere, hem akademik hem de araştırma alanlarında yüksek kaliteli üniversitelere sahiptir. Doktora programları, bilimsel katkılar yapmanıza ve prestijli bir akademik kariyer inşa etmenize olanak sağlar."
+          },
+          {
+            "title": "Almanya",
+            "uni_1": "Heidelberg Üniversitesi",
+            "uni_2": "Ludwig Maximilian Üniversitesi (LMU) ",
+            "description": "Almanya, doktora öğrencilerine sunduğu araştırma fırsatları ve düşük eğitim ücretleri ile dikkat çeker. Ayrıca, Almanya'daki birçok üniversite araştırmaya dayalı eğitim sağlamaktadır."
+          },
+          {
+            "title": "Kanada ",
+            "uni_1": "Toronto Üniversitesi ",
+            "uni_2": "McGill Üniversitesi ",
+            "description": "Kanada, özellikle mühendislik, biyoteknoloji ve sağlık bilimleri gibi alanlarda güçlü doktora programları sunar. Ayrıca, Kanada hükümeti ve üniversiteler tarafından sağlanan burs olanakları oldukça yaygındır."
+          },
+          {
+            "title": "Avustralya",
+            "uni_1": "Melbourne Üniversitesi",
+            "uni_2": "Australian National University (ANU)",
+            "description": "Avustralya, doktora öğrencilerine sunmuş olduğu araştırma fırsatları ve yaşam kalitesi ile tercih edilen bir ülke haline gelmiştir. Ayrıca, öğrencilere part-time çalışma izni sunulmaktadır."
+          }
+        ],
+        "doctorate_scholar_title": "Yurtdışında Doktora Eğitimi İçin Burs Olanakları",
+        "doctorate_scholar_desc": "Birçok üniversite, yurtdışında doktora eğitimi almak isteyen öğrencilere çeşitli burslar sunmaktadır. Bu burslar, eğitim masraflarını karşılamak için önemli bir kaynaktır. Yaygın burs türleri şunlardır:",
+        "doctorate_scholar_list": [
+          {
+            "title": "Tam Burslar: ",
+            "description": "Eğitim ücreti, yaşam giderleri ve sigorta gibi tüm masrafları karşılayan burslardır."
+          },
+          {
+            "title": "Kısmi Burslar: ",
+            "description": "Eğitim ücretinin bir kısmını karşılayan burslardır."
+          },
+          {
+            "title": "Araştırma Bursları: ",
+            "description": "Araştırma yapacak doktora öğrencilerine sağlanan burslardır."
+          },
+          {
+            "title": "Başarı Bursları: ",
+            "description": "Akademik başarıya dayalı burslardır."
+          }
+        ],
+        "doctorate_vise_process_title": "Yurtdışında Doktora İçin Vize Süreci",
+        "doctorate_vise_process_desc": "Yurtdışında doktora eğitimi alabilmek için öğrenci vizesine başvurmanız gerekmektedir. Her ülkenin vize başvuru süreci farklıdır, ancak genel olarak aşağıdaki adımlar izlenir:",
+        "doctorate_vise_process_list": [
+          {
+            "title": "Vize Başvuru Formu Doldurma:  ",
+            "description": "Başvuru yapacağınız ülkenin konsolosluğunun web sitesinden vize başvuru formunu doldurun."
+          },
+          {
+            "title": "Gerekli Belgeler: ",
+            "description": "Pasaport, kabul mektubu, finansal belgeler, sağlık sigortası ve diğer belgeler gereklidir."
+          },
+          {
+            "title": "Vize Ücreti: ",
+            "description": "Vize başvurusu için belirli bir ücret ödemeniz gerekebilir."
+          },
+          {
+            "title": "Mülakat: ",
+            "description": "Bazı ülkeler mülakat yapabilir ve vize başvuru sürecinde daha fazla bilgi talep edebilir."
+          }
+        ],
+        "doctorate_profestional_support_title": "Smyrna Edu Danışmanlık: Yurtdışında Doktora Eğitimi İçin Profesyonel Destek",
+        "doctorate_profestional_support_desc": "Smyrna Edu, yurtdışında doktora eğitimi almak isteyen öğrencilere profesyonel danışmanlık hizmetleri sunmaktadır. Sağladığımız hizmetler arasında:",
+        "doctorate_profestional_support_list": [
+          {
+            "title": "Üniversite ve Bölüm Danışmanlığı: ",
+            "description": "Hedeflerinize uygun üniversite ve bölüm seçimi konusunda rehberlik."
+          },
+          {
+            "title": "Başvuru Süreci ve Belgeler: ",
+            "description": "Başvuru formlarının doldurulması, gerekli belgelerin hazırlanması ve başvuru sürecinin takibi."
+          },
+          {
+            "title": "Dil Yeterliliği Desteği: ",
+            "description": "Dil yeterlilik sınavlarına hazırlık ve başvuru için dil desteği."
+          },
+          {
+            "title": "Vize Başvurusu: ",
+            "description": "Öğrenci vizesi başvuru süreci ve danışmanlık desteği."
+          },
+          {
+            "title": "Burs Başvuruları: ",
+            "description": "Yurtdışında burs başvuruları için gerekli bilgiler ve rehberlik."
+          }
+        ],
+        "doctorate_professional_support_sub_desc": "Yurtdışında doktora eğitimi almak, araştırmalarınızı uluslararası bir düzeye taşıyacaktır. Smyrna Edu olarak, bu yolculuğu sizin için daha kolay ve başarılı hale getirmek için her adımda yanınızdayız."
+      },
+      "online_university": {},
+      "exchange": {},
+      "ivy_league": {}
     }
   }
 ]
