@@ -1,0 +1,283 @@
+[
+  {
+    "highschool": [
+      {
+        "title": "Genel Bilgiler",
+        "idTag": "#overview"
+      },
+      {
+        "title": "Avantajlar",
+        "idTag": "#advantages"
+      },
+      {
+        "title": "Gerekli Evraklar",
+        "idTag": "#documents"
+      },
+      {
+        "title": "Burs Olanakları",
+        "idTag": "#scholarships"
+      },
+      {
+        "title": "Şartlar",
+        "idTag": "#requirements"
+      },
+      {
+        "title": "Konaklama",
+        "idTag": "#accommodation"
+      },
+      {
+        "title": "Başvuru Süreci",
+        "idTag": "#application"
+      },
+      {
+        "title": "Sıkça Sorulan Sorular",
+        "idTag": "#faq"
+      }
+    ],
+    "undergraduate": [
+      {
+        "title": "Genel Bilgiler",
+        "idTag": "#overview"
+      },
+      {
+        "title": "Avantajlar",
+        "idTag": "#advantages"
+      },
+      {
+        "title": "Başvuru Şartları",
+        "idTag": "#requirements"
+      },
+      {
+        "title": "Hangi Ülkeyi Seçmeliyim?",
+        "idTag": "#popular-countries"
+      },
+      {
+        "title": "Burs Olanakları",
+        "idTag": "#scholarships"
+      },
+      {
+        "title": "Vize Süreci",
+        "idTag": "#visa-options"
+      },
+      {
+        "title": "Profesyonel Destek",
+        "idTag": "#professional-support"
+      }
+    ],
+    "master": [
+      {
+        "title": "Genel Bilgiler",
+        "idTag": "#overview"
+      },
+      {
+        "title": "Avantajlar",
+        "idTag": "#advantages"
+      },
+      {
+        "title": "Başvuru Şartları",
+        "idTag": "#requirements"
+      },
+      {
+        "title": "Hangi Ülkeyi Seçmeliyim?",
+        "idTag": "#popular-countries"
+      },
+      {
+        "title": "Burs Olanakları",
+        "idTag": "#scholarships"
+      },
+      {
+        "title": "Vize Süreci",
+        "idTag": "#visa-options"
+      },
+      {
+        "title": "Profesyonel Destek",
+        "idTag": "#professional-support"
+      }
+    ],
+    "doctorate": [
+      {
+        "title": "Genel Bilgiler",
+        "idTag": "#overview"
+      },
+      {
+        "title": "Avantajlar",
+        "idTag": "#advantages"
+      },
+      {
+        "title": "Başvuru Şartları",
+        "idTag": "#requirements"
+      },
+      {
+        "title": "Hangi Ülkeyi Seçmeliyim?",
+        "idTag": "#popular-countries"
+      },
+      {
+        "title": "Burs Olanakları",
+        "idTag": "#scholarships"
+      },
+      {
+        "title": "Vize Süreci",
+        "idTag": "#visa-options"
+      },
+      {
+        "title": "Profesyonel Destek",
+        "idTag": "#professional-support"
+      }
+    ],
+    "online-university": [
+      {
+        "title": "Genel Bilgiler",
+        "idTag": "#overview"
+      },
+      {
+        "title": "Avantajlar",
+        "idTag": "#advantages"
+      },
+      {
+        "title": "Program Seçenekleri",
+        "idTag": "#program-options"
+      },
+      {
+        "title": "Başvuru Şartları",
+        "idTag": "#requirements"
+      },
+      {
+        "title": "Burs Olanakları",
+        "idTag": "#scholarships"
+      },
+      {
+        "title": "Popüler Üniversiteler",
+        "idTag": "#popular-universities"
+      },
+      {
+        "title": "Diploma & Denklik",
+        "idTag": "#diploma-equivalence"
+      },
+      {
+        "title": "Profesyonel Destek",
+        "idTag": "#professional-support"
+      }
+    ],
+    "exchange": [
+      {
+        "title": "Genel Bilgiler",
+        "idTag": "#overview"
+      },
+      {
+        "title": "Avantajlar",
+        "idTag": "#advantages"
+      },
+      {
+        "title": "Başvuru Şartları",
+        "idTag": "#requirements"
+      },
+      {
+        "title": "Ülkeler",
+        "idTag": "#countries"
+      },
+      {
+        "title": "Burs Olanakları",
+        "idTag": "#scholarships"
+      },
+      {
+        "title": "Profesyonel Destek",
+        "idTag": "#professional-support"
+      }
+    ],
+    "ivy-league": [
+      {
+        "title": "Genel Bilgiler",
+        "idTag": "#overview"
+      },
+      {
+        "title": "Avantajlar",
+        "idTag": "#advantages"
+      },
+      {
+        "title": "Başvuru Şartları",
+        "idTag": "#requirements"
+      },
+      {
+        "title": "Popüler Bölümler",
+        "idTag": "#popular-departments"
+      },
+      {
+        "title": "Profesyonel Destek",
+        "idTag": "#professional-support"
+      }
+    ],
+    "summer-schools": [
+      
+    ],
+    "language-schools": [
+      
+    ],
+    "work-and-study": [
+      {
+        "title": "Genel Bilgiler",
+        "idTag": "#overview"
+      },
+      {
+        "title": "Avantajlar",
+        "idTag": "#advantages"
+      },
+      {
+        "title": "Başvuru Şartları",
+        "idTag": "#requirements"
+      },
+      {
+        "title": "Ülkeler",
+        "idTag": "#countries"
+      },
+      {
+        "title": "Profesyonel Destek",
+        "idTag": "#professional-support"
+      }
+    ],
+    "foundation": [
+      {
+        "title": "Genel Bilgiler",
+        "idTag": "#overview"
+      },
+      {
+        "title": "Avantajlar",
+        "idTag": "#advantages"
+      },
+      {
+        "title": "Başvuru Şartları",
+        "idTag": "#requirements"
+      },
+      {
+        "title": "Ülkeler",
+        "idTag": "#countries"
+      },
+    
+      {
+        "title": "Profesyonel Destek",
+        "idTag": "#professional-support"
+      }
+    ],
+    "pathway": [
+      {
+        "title": "Genel Bilgiler",
+        "idTag": "#overview"
+      },
+      {
+        "title": "Avantajlar",
+        "idTag": "#advantages"
+      },
+      {
+        "title": "Başvuru Şartları",
+        "idTag": "#requirements"
+      },
+      {
+        "title": "Ülkeler",
+        "idTag": "#countries"
+      },
+      {
+        "title": "Profesyonel Destek",
+        "idTag": "#professional-support"
+      }
+    ]
+  }
+]
