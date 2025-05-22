@@ -11,7 +11,6 @@ const ButtonComponent: React.FC<ButtonProps> = ({ link, title }) => {
   return (
     <Link
       href={link}
-      target="_blank"
       rel="noopener noreferrer"
       className="btn btn-secondary special-btn"
     >
