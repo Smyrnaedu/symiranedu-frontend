@@ -1228,7 +1228,7 @@
       "ivy_league": {
         "ivy_league_title": "Ivy League Üniversiteleri: Dünyanın En Prestijli Eğitim Kurumları",
         "ivy_league_desc": "Dünyanın en prestijli ve saygın üniversitelerinin bulunduğu <span>Ivy League</span>, akademik mükemmeliyet, güçlü mezun ağları ve geniş araştırma olanakları ile tanınır. Ivy League, Amerika Birleşik Devletleri'nin en iyi sekiz özel üniversitesinden oluşur ve bu üniversiteler, eğitimdeki yüksek standartları ve başarılı mezunlarıyla uluslararası alanda büyük bir üne sahiptir. Bu yazıda, Ivy League üniversitelerinin tarihçesi, başvuru şartları, avantajları ve sundukları imkanlar hakkında kapsamlı bilgiler bulabilirsiniz.",
-        "ivy_league_means_title": "IIvy League Nedir?",
+        "ivy_league_means_title": "Ivy League Nedir?",
         "ivy_league_means_desc": "<span>Ivy League</span>, Amerika Birleşik Devletleri'nde bulunan sekiz prestijli üniversitenin oluşturduğu bir grup adı olarak kullanılır. Ivy League üniversiteleri, yalnızca akademik başarılarıyla değil, aynı zamanda spor, kültürel etkinlikler ve sosyal sorumluluk projelerindeki başarılarıyla da öne çıkar. 1954 yılında Ivy League, üniversiteler arasında bir spor ligi olarak kurulmuş olsa da, zamanla bu üniversiteler \"elit eğitim kurumu\" olarak tanınmaya başlanmıştır.",
         "ivy_league_universities_title": "Ivy League Üniversiteleri Şunlardır: ",
         "ivy_league_universities": [
@@ -1359,6 +1359,104 @@
         ],
         "smyrna_edu_ivy_leage_program_sub_desc": "Ivy League üniversitelerinde eğitim almak, akademik kariyerinizin en önemli dönüm noktalarından biri olabilir. Smyrna Edu olarak, bu zorlu ve prestijli süreci sizin için daha kolay ve başarılı hale getirmeye yardımcı oluyoruz."
       }
+    },
+    "preparation-programs": {
+      "summer-schools": {
+        "title": "Yaz Okulları",
+        "description": "Yaz okulları, yıl boyu eğitim ve araştırma yolu ile yeteneklerinizi gelştirir. Buna dayanarak, yıl boyu egitim ve araştırma yolu ile yeteneklerinizi gelştirirsiniz."
+      },
+      "language-schools": {
+        "title": "Yüksek Lisans ve Yüksek Lisans",
+        "description": "Yüksek lisans ve yüksek lisans programları, eğitim ve araştırma yolu ile yeteneklerinizi geliştirmek için tasarlanmıştır. Bu programlar, eğitim ve araştırma yolu ile yeteneklerinizi geliştirmek için tasarlanmıştır."
+      },
+      "work-and-study": {
+        "work-and-study-title": "Work and Study: Hem Çalışın Hem Eğitim Alın",
+        "work-and-study-description": "Globalleşen dünyada eğitim ve iş deneyimi kazanmak, kişisel ve profesyonel gelişiminiz için büyük önem taşıyor.<span> Work and Study programları,</span> öğrencilere yurtdışında eğitim alırken aynı zamanda çalışarak gelir elde etme fırsatı sunar. Bu programlar, öğrencilere eğitim hayatlarını sürdürülebilir kılma ve aynı zamanda iş deneyimi kazanma imkânı verir. Özellikle finansal olarak bağımsız olmak ve kariyer yolunda önemli bir adım atmak isteyen öğrenciler için oldukça cazip fırsatlar sunar.",
+        "work-and-study-sub-description": "Bu yazıda, <span>Work and Study programlarının</span> ne olduğunu, nasıl başvurulacağını, avantajlarını, vize sürecini ve daha fazlasını öğreneceksiniz.",
+
+        "what-is": {
+          "title": "Work and Study Programları Nedir?",
+          "description": "<span>Work and Study programları,</span> öğrencilere yurtdışında eğitim aldıkları dönemde aynı zamanda part-time veya tam zamanlı çalışarak gelir elde etme imkânı sunan eğitim programlarıdır. Bu programlar genellikle <span>yurtdışında üniversite eğitimi</span> alırken veya dil kurslarına katılırken uygulanabilir. Öğrenciler, çalışma izinleri sayesinde eğitim aldıkları ülkede yasal olarak çalışabilir ve yaşam masraflarını karşılamak için gelir elde edebilirler. ",
+          "sub-description": "<span> Work and Study</span> programları, öğrencilerin kariyerlerini erken yaşta şekillendirmelerine yardımcı olurken, finansal özgürlük kazanmalarını sağlar. Aynı zamanda kültürel deneyimler edinmeleri ve yabancı dil becerilerini geliştirmeleri için harika bir fırsattır."
+        },
+
+        "benefits": {
+          "title": "Work and Study Programlarının Avantajları",
+          "benefit-list": [
+            {
+              "finance": {
+                "title": "Finansal Destek",
+                "description": "Work and Study programlarının en büyük avantajlarından biri, öğrencilerin eğitim sırasında finansal olarak bağımsız olmalarına yardımcı olmaktır. Çalışarak kazanılan gelir, öğrencilerin yaşam giderlerini karşılamalarına yardımcı olur ve eğitimlerini sürdürebilmeleri için ekstra finansal yükten kurtulmalarını sağlar."
+              },
+              "career": {
+                "title": "Kariyer Destek",
+                "description": "Work and Study programları, öğrencilere farklı iş alanlarında pratik deneyim kazandırır. Bu programlar, öğrencilerin gelecekteki kariyerlerine yön verecek deneyimler edinmelerini sağlar. Çalışma deneyimi, CV'nizi güçlendirir ve mezuniyet sonrası iş bulma sürecinizi hızlandırabilir."
+              },
+              "culture": {
+                "title": "Kültürel Deneyim",
+                "description": "Yurtdışında eğitim almak, aynı zamanda farklı bir kültürü tanıma fırsatıdır. Work and Study programlarına katılan öğrenciler, yalnızca çalıştıkları işyerlerinde değil, aynı zamanda toplumsal yaşamda da farklı bir kültürle tanışır ve sosyal becerilerini geliştirir."
+              },
+              "language": {
+                "title": "Yabancı Dil Gelişimi",
+                "description": "Çalışırken, özellikle yerel işyerlerinde dil becerilerinizi geliştirebilirsiniz. Eğer eğitim aldığınız ülkenin dilini öğrenmek istiyorsanız, günlük yaşamda ve iş ortamında bu dili kullanmak, dil becerilerinizi hızla geliştirmenize yardımcı olacaktır."
+              },
+              "independence": {
+                "title": "Bağımsızlık ve Sorumluluk",
+                "description": "Work and Study programları, öğrencilerin bağımsızlıklarını artırır. Kendi kazançlarını elde etme ve çalışma sorumluluğu, öğrencilerin kişisel gelişimlerine önemli katkılarda bulunur."
+              }
+            }
+          ]
+        },
+
+        "requirements": {
+          "title": "Work and Study Programlarına Katılmak İçin Gereken Şartlar",
+          "description": "Work and Study programlarına katılmak için çeşitli şartlar bulunmaktadır. Bu şartlar, eğitim aldığınız ülkeye ve programın türüne göre değişiklik gösterebilir. Ancak genel olarak aranan başlıca gereklilikler şunlardır:",
+          "requirements-list": [
+            {
+              "visa": {
+                "title": "Öğrenci Vizesi ve Çalışma İzni",
+                "description": "Çoğu ülke, Work and Study programlarına katılacak öğrencilerden, geçerli bir öğrenci vizesine sahip olmalarını ister. Öğrencilerin vize başvurusunda, eğitim kurumlarıyla yapılan anlaşmalar ve çalışma izinleri de göz önünde bulundurulur. Çalışma izni, öğrencilere belirli saatlerde çalışma hakkı tanır."
+              },
+              "education": {
+                "title": "Eğitim Durumu",
+                "description": "Work and Study programlarına başvurmak için, öğrencilerin kayıtlı oldukları bir eğitim kurumunda aktif öğrenci olmaları gerekmektedir. Lisans veya yüksek lisans öğrencileri, dil okulları gibi kısa süreli eğitim programlarına katılan öğrenciler de bu programlardan yararlanabilir."
+              },
+              "language": {
+                "title": "Dil Yeterliliği",
+                "description": "Çoğu Work and Study programı, öğrencilere çalışma ve eğitim fırsatları sunarken, genellikle o ülkenin dilini belirli bir seviyede bilmenizi ister. Dil yeterliliği, öğrencinin programa başvurduğu ülkenin dilinde iletişim kurmasını sağlayacak şekilde değerlendirilir."
+              },
+              "finance": {
+                "title": "Finansal Durum",
+                "description": "Bazı ülkeler, öğrencilerin belirli bir miktar finansal kaynağa sahip olduklarını belgelemelerini isteyebilir. Bu, öğrencinin yaşam masraflarını karşılayabilmesi için gereklidir."
+              }
+            }
+          ],
+        "countries": {
+          "title": "Work and Study Programlarına Katılabileceğiniz Ülkeler",
+          "usa": "Amerika, Work and Study programları konusunda oldukça geniş bir yelpazeye sahiptir. F-1 öğrenci vizesi ile Amerika’da eğitim alırken haftada 20 saate kadar çalışabilirsiniz. Amerika’daki üniversiteler ve dil okulları, Work and Study programları sunmaktadır.",
+          "canada": "Kanada, öğrencilere eğitim sırasında çalışma fırsatı sunan ülkelerden biridir. Kanada’da öğrenci vizesi ile çalışma izni almak mümkündür ve bu izinle haftada 20 saat çalışabilirsiniz.",
+          "australia": "Avustralya, öğrencilere hem eğitim hem de çalışma fırsatları sunar. Eğitim alırken haftada 40 saate kadar çalışmak mümkündür. Avustralya’daki üniversiteler ve dil okulları, Work and Study programlarına katılmak isteyen öğrencilere çeşitli seçenekler sunar.",
+          "germany": "Almanya, Work and Study programlarına katılmak isteyen öğrencilere cazip fırsatlar sunar. Öğrenciler, eğitim süresince haftada 120 gün veya 240 yarım gün çalışabilirler. Almanya’da eğitim almak için genellikle bir dil yeterlilik testi gerekebilir.",
+          "uk": "İngiltere’de öğrenci vizesi ile Work and Study programına katılmak mümkündür. Öğrenciler, haftada 20 saate kadar çalışabilirler. İngiltere'deki üniversiteler, öğrencilere birçok çalışma ve eğitim fırsatı sunar."
+        },
+
+        "smyrna": {
+          "title": "Smyrna Edu Danışmanlık: Work and Study Programlarına Başvuru ve Destek Hizmetleri",
+          "description": "Smyrna Edu, Work and Study programları hakkında size rehberlik etmek için profesyonel danışmanlık hizmetleri sunmaktadır. Eğitim alırken aynı zamanda çalışarak deneyim kazanmak, finansal özgürlüğünüzü sağlamak ve dünya çapında kariyer fırsatları yaratmak için doğru programı seçmek önemlidir. Bizimle, başvuru sürecinden, vize işlemlerine, konaklama düzenlemelerinden, çalışma izni alımına kadar her aşamada profesyonel destek alabilirsiniz.",
+          "services": [
+            "Work and Study Programı Seçimi",
+            "Başvuru Belgelerinin Hazırlanması",
+            "Vize Başvurusu ve Çalışma İzni Rehberliği",
+            "Kariyer Danışmanlığı ve İş İmkanları",
+            "Dil Yeterlilik Desteği",
+            "Konaklama ve Ulaşım Yardımları",
+            "Burs ve Finansal Destek İmkanları"
+          ],
+          "closing": "Work and Study hem eğitim hem de iş deneyimi kazanarak kariyerinize sağlam bir temel atmanıza olanak tanır. Smyrna Edu olarak, bu süreçte size rehberlik etmek için buradayız."
+        }
+        }
+      }
     }
   }
+  
 ]

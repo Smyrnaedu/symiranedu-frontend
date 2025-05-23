@@ -2,6 +2,8 @@ import React from "react";
 import data from "@/helpers/data/tr.json";
 import PageHeader from "@/components/common/page-header/page-header";
 import { Spacer } from "@/components/common/spacer";
+import { programsData } from "@/data/programs";
+import ProgramLayout from "@/components/pages/academic-program-pages/program-layout";
 
 const UndergraduatePage: React.FC = () => {
   const pageHeaderData = data[0]?.PageHeaders || {};
@@ -16,6 +18,7 @@ const UndergraduatePage: React.FC = () => {
         buttonLabel={description}
       />
       <Spacer />
+      <ProgramLayout programData={programsData.undergraduate} />;
     </>
   );
 };
