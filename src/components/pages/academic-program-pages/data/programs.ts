@@ -1,7 +1,4 @@
-import { s, sub } from "framer-motion/client";
 import { ProgramsData } from "../types/programTypes";
-import { title } from "process";
-import { list } from "postcss";
 
 export const programsData: ProgramsData = {
   highSchool: {
