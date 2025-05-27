@@ -4,6 +4,7 @@ import data from "@/helpers/data/tr.json";
 import { Spacer } from "@/components/common/spacer";
 import { programsData } from "@/components/pages/academic-program-pages/data/programs";
 import ProgramLayout from "@/components/pages/academic-program-pages/program-layout";
+import SubNavbar from "@/components/pages/common/header/subnavbar";
 
 const HighschoolPage: React.FC = () => {
   const pageHeaderData = data[0]?.PageHeaders || {};
@@ -18,6 +19,7 @@ const HighschoolPage: React.FC = () => {
         header={title}
         buttonLabel={description}
       />
+      <SubNavbar category="highschool" />
       <Spacer />
       <ProgramLayout programData={programsData.highSchool} />;
     </>

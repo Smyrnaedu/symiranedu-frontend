@@ -12,15 +12,29 @@ section {
       padding-bottom: 0.5rem;
       flex-wrap: wrap;
 
+      @media(max-width:992px) {
+      //   padding-top: 0.5rem;
+      //   padding-bottom: 0.5rem;
+      }
+      
+
       a {
         color: $mainColor-black-op-70;
         text-decoration: none;
         text-align: center;
         font-size: 15px;
 
+        @media(max-width:992px) {
+          font-size: 14px;
+        }
+
         &.active {
           color: $mainColor-red;
           font-weight: 600;
+        }
+
+        &:hover{
+          color: $mainColor-blue;
         }
       }
     }
