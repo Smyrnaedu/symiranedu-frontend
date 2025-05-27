@@ -1,7 +1,6 @@
-"use client";
+
 import Link from "next/link";
-import { useEffect, useState, useReducer } from "react";
-import React from "react";
+import { Nav } from "react-bootstrap";
 
 type SubNavbarItem = {
   title: string;
@@ -10,45 +9,22 @@ type SubNavbarItem = {
 
 type Props = {
   item: SubNavbarItem;
+  hash: string;
 };
 
-// Dummy reducer to force re-render
-const forceUpdateReducer = (x: number) => x + 1;
-
-const PageNavbarItem: React.FC<Props> = ({ item }) => {
-  const [currentHash, setCurrentHash] = useState<string>("");
-  const [, forceUpdate] = useReducer(forceUpdateReducer, 0);
-
-  useEffect(() => {
-    const updateHash = () => {
-      setCurrentHash(window.location.hash);
-      forceUpdate(); // force re-render even if hash doesn't change
-    };
-
-    updateHash(); // İlk yüklemede
-    window.addEventListener("hashchange", updateHash);
-
-    return () => {
-      window.removeEventListener("hashchange", updateHash);
-    };
-  }, []);
-
-  const handleClick = () => {
-    setCurrentHash(item.idTag); // hash'i ayarla
-    forceUpdate();              // re-render zorla
-  };
-
-  const isActive = currentHash === item.idTag;
+const PageNavbarItem: React.FC<Props> = ({ item, hash }) => {
 
   return (
-    <Link
+    <Nav.Item>
+      <Nav.Link
+      as={Link}
       href={item.idTag}
-      onClick={handleClick}
-      scroll={false}
-      className={isActive ? "active" : ""}
+      className={`subnavbar-item ${hash === item.idTag ? "active" : ""}`}
     >
       {item.title}
-    </Link>
+    </Nav.Link>
+    </Nav.Item>
+    
   );
 };
 
