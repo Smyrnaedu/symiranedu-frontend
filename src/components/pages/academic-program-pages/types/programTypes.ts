@@ -6,6 +6,7 @@ export interface ProgramItem {
 
 export interface ProgramSection {
   title: string;
+  idTag?: string;
   description: string;
   sub_desc_for_main?: string;
   sub_desc?: string;
@@ -23,6 +24,7 @@ export interface ProgramSection {
 }
 export interface ProgramData {
   title: string;
+  idTag: string;
   description: string;
   sub_desc_for_main?: string;
   sub_desc?: string;
