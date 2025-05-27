@@ -1,7 +1,10 @@
 import React from "react";
 
 import Section from "./section";
-import { ProgramData, ProgramSection } from "@/types/programTypes";
+import {
+  ProgramData,
+  ProgramSection,
+} from "@/components/pages/academic-program-pages/types/programTypes";
 
 interface ProgramLayoutProps {
   programData: ProgramData;

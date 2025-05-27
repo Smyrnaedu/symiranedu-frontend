@@ -3,7 +3,7 @@ import React from "react";
 import CountryCard from "./country-card";
 import AdvantageCard from "./advantages-card";
 import ListItem from "./list-item";
-import { ProgramSection } from "@/types/programTypes";
+import { ProgramSection } from "@/components/pages/academic-program-pages/types/programTypes";
 import ListItemForUni from "./list-item-for-uni";
 
 interface SectionProps {
@@ -11,12 +11,10 @@ interface SectionProps {
 }
 
 const Section: React.FC<SectionProps> = ({ section }) => {
-
   return (
-    <section className="mb-12">
+    <section className="mb-12" >
       <h3 className="text-2xl font-semibold mb-4">{section.title}</h3>
       {section.description && <p className="mb-4">{section.description}</p>}
-  
 
       {section.list &&
         (section.list.some((item) => item.uni1 || item.uni2 || item.uni3) ? (

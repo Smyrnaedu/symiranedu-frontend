@@ -1,4 +1,4 @@
-import { ProgramItem } from "@/types/programTypes";
+import { ProgramItem } from "@/components/pages/academic-program-pages/types/programTypes";
 import React from "react";
 
 interface ListItemProps {
