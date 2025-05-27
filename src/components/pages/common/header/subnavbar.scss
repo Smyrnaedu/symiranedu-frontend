@@ -1,0 +1,28 @@
+@use "../../../../styles/variables" as *;
+@use "../../../../styles/mixins" as *;
+
+section {
+  &.container-fluid {
+    border-bottom: 1px solid $mainColor-blue-op-50;
+    border-top: 1px solid $mainColor-blue-op-50;
+
+    .subnavbar {
+      @include flexbox($ai: center, $jc: center, $gap: 1rem);
+      padding-top: 1rem;
+      padding-bottom: 0.5rem;
+      flex-wrap: wrap;
+
+      a {
+        color: $mainColor-black-op-70;
+        text-decoration: none;
+        text-align: center;
+        font-size: 15px;
+
+        &.active {
+          color: $mainColor-red;
+          font-weight: 600;
+        }
+      }
+    }
+  }
+}

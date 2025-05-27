@@ -1,14 +1,17 @@
+import { i } from "framer-motion/client";
 import { ProgramsData } from "../types/programTypes";
 
 export const programsData: ProgramsData = {
   highSchool: {
     title: "Yurtdışında Lise Eğitimi ve Programları: Bilmeniz Gereken Her Şey",
+    idTag:"#overview",
     description:
       "Yurtdışında lise eğitimi almak, öğrenciler için yalnızca akademik değil, kültürel ve kişisel gelişim açısından da önemli fırsatlar sunar. Bu yazıda, yurtdışında lise eğitimi almak isteyenler için en sık sorulan soruları yanıtlayarak, başvurular ve süreçler hakkında kapsamlı bir rehber sunuyoruz. Yurtdışında lise eğitimi hakkında detaylı bilgi arıyorsanız, doğru yerdesiniz!",
     sections: {
       abroad_edu_preference_title: {
         title:
           "Yurtdışında Lise Eğitimi İçin Hangi Ülkeler Tercih Edilmelidir?",
+        idTag:"#overview",
         description:
           "Yurtdışında lise eğitimi almak isteyen öğrenciler için en popüler eğitim destinasyonları Amerika, Kanada, İngiltere, Almanya ve Avustralya gibi ülkeler öne çıkmaktadır. Her ülkenin eğitim sistemi farklı avantajlar sunar ve öğrencilerin akademik hedeflerine, kültürel tercihlerine ve bütçelerine göre uygun ülke seçimi yapmak önemlidir.",
         list: [
@@ -34,6 +37,7 @@ export const programsData: ProgramsData = {
       },
       abroad_edu_adv: {
         title: "Yurtdışında Lise Eğitimi Almanın Avantajları Nelerdir?",
+        idTag:"#advantages",
         description:
           "Yurtdışında lise eğitiminin birçok avantajı bulunmaktadır:",
         list: [
@@ -63,6 +67,7 @@ export const programsData: ProgramsData = {
       },
       abroad_edu_app_cond: {
         title: "Yurtdışında Lise Başvurularında Gerekli Evraklar Nelerdir?",
+        idTag:"#documents",
         description:
           "Yurtdışında bir lise programına başvurmak için gerekli olan belgeler genellikle şunlardır:",
         list: [
@@ -88,16 +93,19 @@ export const programsData: ProgramsData = {
       },
       abroad_edu_scholorship: {
         title: "Yurtdışında Lise Programlarında Burs Olanakları Var Mı?",
+        idTag:"#scholarships",
         description:
           "Birçok yurtdışı lise programı, öğrencilere çeşitli burs fırsatları sunmaktadır. Bu burslar, genellikle başarıya dayalı olabilir (akademik başarı, spor veya sanat gibi). Yurtdışında eğitim almak isteyen Türk öğrencilerine özel burslar da bulunmaktadır. Tam burs ya da kısmi burs imkanlarından yararlanmak için erken başvuru yapmanız önemlidir.",
       },
       abroad_edu_age: {
         title: "Yurtdışında Lise Eğitimi İçin Yaş Sınırı Var mı?",
+        idTag: "#requirements",
         description:
           "Yurtdışında lise eğitimi alacak öğrenciler için genellikle 14-18 yaş arası kabul edilmektedir. Ancak bazı okullar, yaş sınırı koyabilir. Öğrencilerin, başvurdukları okulların yaş kriterlerini dikkatlice kontrol etmeleri gerekmektedir.",
       },
       abroad_edu_acc: {
         title: "Yurtdışında Lise Eğitimi İçin Konaklama Seçenekleri",
+        idTag: "#accommodation",
         description:
           "Yurtdışındaki liselerde konaklama seçenekleri çeşitli alternatifler sunmaktadır:",
         list: [
@@ -127,11 +135,13 @@ export const programsData: ProgramsData = {
       abroad_edu_lang_prof: {
         title:
           "Yurtdışında Lise Eğitimi İçin Dil Yeterliliği Gerekliliği Var Mıdır?",
+        idTag: "#application",
         description:
           "Yurtdışında eğitim almak için öğrencilerin dil yeterliliklerini kanıtlamaları gerekebilir. Özellikle İngilizce eğitim veren okullar, TOEFL veya IELTS gibi sınavlar ile dil yeterliliğini ölçebilir. Ancak, dil seviyeniz yeterli değilse, bazı okullar hazırlık sınıfları veya dil kursları sunmaktadır.",
       },
       abroad_edu_academic: {
         title: "Yurtdışında Lise Programlarında Akademik Sistem Nasıl İşler?",
+        idTag: "#faq",
         description:
           "Yurtdışındaki okullarda akademik sistemler ülkeden ülkeye farklılık gösterebilir:",
         list: [
@@ -156,6 +166,7 @@ export const programsData: ProgramsData = {
       },
       abroad_edu_app_process: {
         title: "Yurtdışında Lise Eğitimi İçin Başvuru Süreci Nasıl İşler?",
+        idTag: "#faq",
         description:
           "Yurtdışında lise başvurusu için gereken adımlar şu şekildedir:",
         list: [
@@ -169,18 +180,21 @@ export const programsData: ProgramsData = {
       },
       abroad_edu_vise: {
         title: "Yurtdışında Lise Eğitimi İçin Vize Başvuru Süreci Nasıl Olur?",
+        idTag: "#faq",
         description:
           "Yurtdışında eğitim almak için öğrencilere vize başvurusu gereklidir. Öğrenciler, eğitim alacakları ülkenin öğrenci vizesi başvuru şartlarını yerine getirmelidir. Vize başvuru süreci, ülkeye göre farklılık gösterebilir. Vize başvurularını zamanında yaparak gerekli belgeleri hazırlamak önemlidir.",
       },
       abroad_edu_undergrad: {
         title:
           "Yurtdışında Lise Eğitimi Sonrası Hangi Yükseköğretim Fırsatları Mevcuttur?",
+        idTag: "#faq",
         description:
           "Yurtdışında lise eğitimi almak, öğrencilere dünya çapında üniversitelere başvurma fırsatı sunar. Eğitim sonrası uluslararası üniversiteler ve prestijli okullar, öğrencilere daha fazla kariyer fırsatları sunabilir. Yurtdışında alınan bir lise diploması, öğrencilerin akademik ve profesyonel yaşamlarına güçlü bir başlangıç yapmalarını sağlar.",
       },
       abroad_edu_family: {
         title:
           "Yurtdışında Lise Eğitimi İçin Ailelerin Desteği Ne Kadar Önemlidir?",
+        idTag: "#faq",
         description:
           "Yurtdışında eğitim almak, öğrencilere büyük fırsatlar sunsa da ailelerin desteği de çok önemlidir. Finansal destek, psikolojik rehberlik ve karar verme süreçlerinde yardım ailelerin sağlayabileceği en önemli desteklerdir.",
         sub_desc:
@@ -190,11 +204,13 @@ export const programsData: ProgramsData = {
   },
   undergraduate: {
     title: "Yurtdışında Üniversite Eğitimi: Fırsatlar ve Süreçler",
+    idTag: "#overview",
     description:
       "Yurtdışında üniversite eğitimi, öğrenciler için akademik başarılarını geliştirmek, küresel bir perspektif kazanmak ve uluslararası kariyer fırsatlarına kapı aralamak açısından eşsiz bir deneyim sunar. Bu yazıda, yurtdışında üniversite eğitimi almak isteyen öğrenciler için detaylı bilgi sunuyoruz. Ayrıca, başvuru süreçlerinden, vize başvurularına kadar her aşamada size rehberlik edecek bilgiler yer alacak.",
     sections: {
       abroad_edu_adv: {
         title: "Yurtdışında Üniversite Eğitimi Almanın Avantajları",
+        idTag: "#advantages",
         description:
           "Yurtdışında üniversite eğitimi almanın birçok önemli avantajı vardır:",
         list: [
@@ -227,6 +243,7 @@ export const programsData: ProgramsData = {
       },
       abroad_edu_app_cond: {
         title: "Yurtdışında Üniversite İçin Başvuru ve Kabul Şartları",
+        idTag: "#documents",
         description:
           "Yurtdışında üniversite başvuru süreçleri, başvurulan ülkeye ve üniversiteye göre değişiklik gösterebilir. Ancak genel olarak başvuru süreci şu şekilde işler:",
         list: [
@@ -256,6 +273,7 @@ export const programsData: ProgramsData = {
       },
       abroad_edu_counrty_select: {
         title: "Ülke Seçimi Yaparken Dikkat Edilmesi Gerekenler",
+        idTag: "#popular-countries",
         description:
           "Yurtdışında üniversite eğitimi için ülke seçimi yapmak, akademik ve kariyer hedeflerinizi doğrudan etkileyen bir karardır. Ülke seçimi yaparken dikkat edilmesi gerekenler:",
         list: [
@@ -322,6 +340,7 @@ export const programsData: ProgramsData = {
       },
       abroad_edu_vise: {
         title: "Yurtdışında Üniversite İçin Vize Süreci",
+        idTag: "#visa-options",
         description:
           "Yurtdışında üniversite eğitimi almak isteyen öğrencilerin, öğrenci vizesi başvurusu yapması gerekmektedir. Vize süreci, başvurulan ülkeye göre değişir ve genellikle şu adımları içerir:",
         list: [
@@ -350,6 +369,7 @@ export const programsData: ProgramsData = {
       },
       abroad_edu_scholorship: {
         title: "Yurtdışında Üniversite İçin Burs Olanakları",
+        idTag: "#scholarships",
         description:
           "Yurtdışında üniversite eğitimi almak için çeşitli burs imkanları vardır. Tam burs, kısmi burs, başarı bursları veya ihtiyaç bursları gibi burslar, öğrencilerin eğitim maliyetlerini karşılamalarına yardımcı olabilir. Yurtdışında burs alabileceğiniz ülkeler arasında Amerika, Kanada, Almanya, İngiltere ve Avustralya yer almaktadır. Smyrna Edu danışmanlık, burs başvuru süreçlerinde öğrencilere yardımcı olmaktadır.",
       },
@@ -385,6 +405,7 @@ export const programsData: ProgramsData = {
       },
       smyrna_edu_guide: {
         title: "Smyrna Edu Danışmanlık Hizmetleri",
+        idTag: "#professional-support",
         description:
           "Smyrna Edu olarak, yurtdışında üniversite eğitimi almak isteyen öğrencilere kapsamlı danışmanlık hizmetleri sunuyoruz. Hizmetlerimiz:",
         list: [
@@ -432,12 +453,14 @@ export const programsData: ProgramsData = {
   master: {
     title:
       "Yurtdışında Yüksek Lisans Programları: Küresel Eğitim ve Kariyer Fırsatları",
+      idTag: "#overview",
     description:
       "Yurtdışında yüksek lisans eğitimi, kariyerinize önemli katkılar sağlayacak eşsiz bir fırsattır. Eğitim alanında uzmanlaşmak, küresel iş dünyasında rekabetçi bir konum elde etmek ve uluslararası bir ağ kurmak için en iyi yollardan biridir. Bu rehber, yurtdışında yüksek lisans yapmak isteyen öğrenciler için başvuru sürecinden, burs olanaklarına kadar her şeyi detaylı şekilde açıklamaktadır.",
 
     sections: {
       abroad_edu_general: {
         title: "Yurtdışında Yüksek Lisans Eğitimi: Genel Bilgi",
+        idTag: "#overview",
         description:
           "Yüksek lisans eğitimi, bir lisans diploması sonrasında gelen ve öğrencilere belirli bir alanda derinlemesine bilgi sunan bir programdır. Yurtdışında yüksek lisans, sadece akademik becerilerinizi geliştirmekle kalmaz, aynı zamanda kariyerinizde bir adım öne çıkmanızı sağlar. Bu eğitim programları, genellikle 1-2 yıl arasında sürer ve öğrencilerin seçtikleri alanda uzmanlaşmalarını sağlar.",
         sub_desc:
@@ -445,6 +468,7 @@ export const programsData: ProgramsData = {
       },
       abroad_edu_adv: {
         title: "Yurtdışında Yüksek Lisans Programlarının Avantajları",
+        idTag: "#advantages",
         description:
           "Yurtdışında yüksek lisans eğitiminin sunduğu başlıca avantajlar şunlardır:",
         list: [
@@ -477,6 +501,7 @@ export const programsData: ProgramsData = {
       },
       abroad_edu_app_cond: {
         title: "Yurtdışında Yüksek Lisans Programlarına Başvuru Şartları",
+        idTag: "#requirements",
         description:
           "Yurtdışında yüksek lisans başvuru süreci, genellikle belirli adımları takip eder ve her üniversitenin belirlediği başvuru kriterlerine bağlı olarak değişebilir. Ancak genel olarak aşağıdaki belgeler gereklidir:",
         list: [
@@ -515,6 +540,7 @@ export const programsData: ProgramsData = {
       abroad_edu_counrty_select: {
         title:
           "Yurtdışında Yüksek Lisans İçin Popüler Ülkeler ve Üniversiteler",
+        idTag: "#popular-countries",
         description:
           "Birçok öğrenci, yüksek lisans programları için yurtdışındaki en iyi üniversiteleri ve ülkeleri tercih etmektedir. İşte yüksek lisans eğitimi için popüler olan bazı ülkeler ve üniversiteler:",
         list: [
@@ -559,6 +585,7 @@ export const programsData: ProgramsData = {
       },
       abroad_edu_scholorship: {
         title: "Yurtdışında Yüksek Lisans İçin Burs Olanakları",
+        idTag: "#scholarships",
         description:
           "Birçok üniversite, yurtdışında yüksek lisans eğitimi almak isteyen öğrencilere çeşitli burslar sunmaktadır. Bu burslar, eğitim masraflarını karşılamada önemli bir kaynak olabilir. Burs seçenekleri şunlar olabilir:",
         list: [
@@ -585,6 +612,7 @@ export const programsData: ProgramsData = {
       },
       abroad_edu_vise: {
         title: "Yurtdışında Yüksek Lisans Eğitimi İçin Vize Süreci",
+        idTag: "#visa-options",
         description:
           "Yurtdışında yüksek lisans yapabilmek için, öğrenci vizesine başvurmanız gerekmektedir. Her ülkenin vize başvuru süreci farklıdır, ancak genel olarak izlenmesi gereken adımlar şunlardır:",
         list: [
@@ -613,6 +641,7 @@ export const programsData: ProgramsData = {
       smyrna_edu_guide: {
         title:
           "Smyrna Edu Danışmanlık: Yurtdışında Yüksek Lisans İçin Profesyonel Destek",
+        idTag: "#professional-support",
         description:
           "Smyrna Edu, yurtdışında yüksek lisans eğitimi almak isteyen öğrencilere profesyonel danışmanlık hizmetleri sunmaktadır. Aşağıdaki hizmetlerle öğrencilerin eğitim yolculuklarını daha kolay hale getiriyoruz:",
         list: [
@@ -659,12 +688,14 @@ export const programsData: ProgramsData = {
   doctorate: {
     title:
       "Yurtdışında Doktora Programları: Akademik Mükemmeliyet ve Küresel Araştırma Fırsatları",
+      idTag: "#overview",
     description:
       "Yurtdışında doktora eğitimi almak, akademik kariyerinizi zirveye taşıyacak ve araştırma alanındaki uzmanlığınızı derinleştirecek eşsiz bir fırsattır. Uluslararası düzeyde tanınan üniversitelerden doktora diploması almak, dünya çapında tanınan bir akademisyen olmanızı sağlar. Bu yazıda, yurtdışında doktora programlarına başvuru sürecinden, burs olanaklarına kadar her şey hakkında kapsamlı bilgiler bulabilirsiniz.",
 
     sections: {
       abroad_edu_general: {
         title: "Yurtdışında Doktora Eğitimi: Genel Bilgi",
+        idTag: "#overview",
         description:
           "Doktora eğitimi, genellikle 3 ila 5 yıl süren bir araştırma odaklı programdır. Bu süreç, öğrencilere seçtikleri alanda derinlemesine araştırma yapma, akademik yazı yazma ve kendi orijinal katkılarını ortaya koyma fırsatı sunar. Yurtdışında doktora eğitimi almak, akademik kariyerinizi geliştirecek, aynı zamanda uluslararası bir ağ kurmanıza ve dünyanın en prestijli üniversitelerinde araştırma yapmanıza imkân tanıyacaktır.",
         sub_desc:
@@ -672,6 +703,7 @@ export const programsData: ProgramsData = {
       },
       abroad_edu_adv: {
         title: "Yurtdışında Doktora Programlarının Avantajları",
+        idTag: "#advantages",
         description:
           "Yurtdışında doktora yapmanın sağladığı başlıca avantajlar şunlardır:",
         list: [
@@ -704,6 +736,7 @@ export const programsData: ProgramsData = {
       },
       abroad_edu_app_cond: {
         title: "Yurtdışında Doktora Programlarına Başvuru Şartları",
+        idTag: "#requirements",
         description:
           "Yurtdışında doktora başvurusu, genellikle bir dizi adım ve gereklilik içerir. Bu başvuru süreci, ülkeye ve üniversiteye göre farklılıklar gösterebilir, ancak genel olarak aşağıdaki belgeler gereklidir:",
         list: [
@@ -746,6 +779,7 @@ export const programsData: ProgramsData = {
       },
       abroad_edu_counrty_select: {
         title: "Yurtdışında Doktora İçin Popüler Ülkeler ve Üniversiteler",
+        idTag: "#popular-countries",
         description:
           "Yurtdışında doktora yapmayı tercih eden öğrenciler için popüler olan bazı ülkeler ve üniversiteler şunlardır:",
         list: [
@@ -790,6 +824,7 @@ export const programsData: ProgramsData = {
       },
       abroad_edu_scholorship: {
         title: "Yurtdışında Doktora Eğitimi İçin Burs Olanakları",
+        idTag: "#scholarships",
         description:
           "Birçok üniversite, yurtdışında doktora eğitimi almak isteyen öğrencilere çeşitli burslar sunmaktadır. Bu burslar, eğitim masraflarını karşılamak için önemli bir kaynaktır. Yaygın burs türleri şunlardır:",
         list: [
@@ -815,6 +850,7 @@ export const programsData: ProgramsData = {
       },
       abroad_edu_vise: {
         title: "Yurtdışında Doktora İçin Vize Süreci",
+        idTag: "#visa-options",
         description:
           "Yurtdışında doktora eğitimi alabilmek için öğrenci vizesine başvurmanız gerekmektedir. Her ülkenin vize başvuru süreci farklıdır, ancak genel olarak aşağıdaki adımlar izlenir:",
         list: [
@@ -843,6 +879,7 @@ export const programsData: ProgramsData = {
       smyrna_edu_guide: {
         title:
           "Smyrna Edu Danışmanlık: Yurtdışında Doktora Eğitimi İçin Profesyonel Destek",
+        idTag: "#professional-support",
         description:
           "Smyrna Edu, yurtdışında doktora eğitimi almak isteyen öğrencilere profesyonel danışmanlık hizmetleri sunmaktadır. Sağladığımız hizmetler arasında:",
         list: [
@@ -877,6 +914,7 @@ export const programsData: ProgramsData = {
   },
   onlineUniversity: {
     title: "Online Üniversiteler: Esnek Eğitim ve Küresel Fırsatlar",
+    idTag: "#overview",
     description:
       "Teknolojinin ilerlemesiyle birlikte, eğitim dünyasında büyük bir dönüşüm yaşanıyor. Artık üniversite eğitimi almak için kampüslerde bulunmanız gerekmiyor. Online üniversiteler, öğrencilere dünyanın dört bir yanından akademik başarıya ulaşma imkânı sunuyor. Hem esnek zaman yönetimi hem de kaliteli eğitim olanaklarıyla online üniversiteler, geleneksel eğitim sistemlerine alternatif olarak öne çıkmaktadır.",
     sub_desc_for_main:
@@ -885,6 +923,7 @@ export const programsData: ProgramsData = {
     sections: {
       abroad_edu_general: {
         title: "Online Üniversiteler Nedir?",
+        idTag: "#overview",
         description:
           "Online üniversiteler, tamamen internet üzerinden eğitim sunan, öğrencilerin fiziksel olarak kampüse gitmelerine gerek kalmadan derslere katılabildiği akademik kurumlardır. Bu üniversiteler, öğrencilere dünyanın herhangi bir yerinden eğitim alma fırsatı sunar. Online eğitim, genellikle video konferanslar, çevrimiçi ders materyalleri, tartışma forumları ve sanal sınıflarla gerçekleştirilir.",
         sub_desc:
@@ -892,6 +931,7 @@ export const programsData: ProgramsData = {
       },
       abroad_edu_adv: {
         title: "Online Üniversitelerin Avantajları",
+        idTag: "#advantages",
         list: [
           {
             title: "Esnek Eğitim İmkanları ",
@@ -922,6 +962,7 @@ export const programsData: ProgramsData = {
       },
       abroad_edu_app_cond: {
         title: "Online Üniversitelere Başvuru Şartları",
+        idTag: "#requirements",
         description:
           "Online üniversitelere başvurmak, geleneksel üniversitelerle benzer bazı süreçler içerir. Ancak, başvuru süreçlerinde genellikle daha fazla esneklik bulunur. Online üniversitelere başvurmak için genellikle aşağıdaki belgeler ve şartlar istenir:",
         list: [
@@ -954,6 +995,7 @@ export const programsData: ProgramsData = {
       },
       abroad_edu_popular: {
         title: "Popüler Online Üniversiteler",
+        idTag: "#popular-universities",
         description:
           "Dünya çapında bir dizi prestijli online üniversite bulunmaktadır. İşte en bilinen ve saygın online üniversitelerden bazıları:",
         list: [
@@ -986,6 +1028,7 @@ export const programsData: ProgramsData = {
       },
       abroad_edu_tr_edu: {
         title: "Online Üniversitelerin Diplomaları ve Denklikler",
+        idTag: "#diploma-equivalence",
         description:
           "Online üniversitelerden alınan diplomalar, çoğu zaman geleneksel üniversitelerle aynıdır ve geçerlilikleri uluslararası düzeyde kabul edilir. Ancak, online eğitimin geçerliliği, üniversitenin akreditasyonu ile doğrudan ilişkilidir. Akreditasyon, bir üniversitenin eğitim kalitesinin bağımsız bir kurum tarafından onaylanmasıdır.",
         sub_desc:
@@ -994,6 +1037,7 @@ export const programsData: ProgramsData = {
       smyrna_edu_guide: {
         title:
           "Smyrna Edu Danışmanlık: Online Üniversite Başvuru ve Destek Hizmetleri",
+        idTag: "#professional-support",
         description:
           "Smyrna Edu, online üniversite başvuru sürecinde size rehberlik eden profesyonel danışmanlık hizmetleri sunmaktadır. Online eğitimdeki süreçler bazen karmaşık olabilir, ancak uzman ekibimizle başvurunuzu kolayca tamamlayabilir, eğitim hayatınızı bir adım öteye taşıyabilirsiniz. Sunmuş olduğumuz hizmetler şunlardır:",
         list: [
@@ -1027,6 +1071,7 @@ export const programsData: ProgramsData = {
   exchange: {
     title:
       "Yurtdışı Değişim (Exchange) Programları: Kültürel Deneyim ve Akademik Gelişim Fırsatları",
+    idTag: "#overview",
     description:
       "Yurtdışı değişim programları, öğrencilere farklı kültürleri deneyimleme, yeni arkadaşlıklar kurma ve akademik başarıyı uluslararası düzeyde sürdürme fırsatları sunar. Bu programlar, üniversite öğrencilerinin veya lise öğrencilerinin belirli bir süre için yurtdışındaki bir üniversitede veya eğitim kurumunda eğitim almasını sağlar. Hem kişisel hem de akademik gelişim açısından son derece değerli olan bu programlar, öğrencilere küresel bir perspektif kazandırır.",
     sub_desc_for_main:
@@ -1034,6 +1079,7 @@ export const programsData: ProgramsData = {
     sections: {
       abroad_edu_general: {
         title: "Yurtdışı Değişim Programları Nedir?",
+        idTag: "#overview",
         description:
           "Yurtdışı değişim programları, öğrencilere belirli bir süre için yurtdışında eğitim alma fırsatı veren programlardır. Bu programlar genellikle üniversite ve lise öğrencileri için düzenlenir, ancak mezuniyet sonrası da başvurulabilen değişim fırsatları mevcuttur. Öğrenciler, bir dönem veya bir yıl boyunca başka bir ülkede eğitim alabilir ve bu süreçte hem dil becerilerini geliştirebilir hem de farklı kültürleri keşfedebilirler.",
         sub_desc:
@@ -1041,6 +1087,7 @@ export const programsData: ProgramsData = {
       },
       abroad_edu_adv: {
         title: "Yurtdışında Exchange Programlarının Avantajları",
+        idTag: "#advantages",
         list: [
           {
             title: "Kültürel Zenginlik ve Uluslararası Deneyim",
@@ -1071,6 +1118,7 @@ export const programsData: ProgramsData = {
       },
       abroad_edu_app_cond: {
         title: "Yurtdışında Exchange Programına Başvuru Şartları",
+        idTag: "#requirements",
         description:
           "Yurtdışında exchange programına başvurmak için genellikle bazı şartlar vardır. Her üniversitenin ve programın gereksinimleri farklı olabilir, ancak genel olarak aşağıdaki belgeler ve kriterler aranır:",
         list: [
@@ -1108,6 +1156,7 @@ export const programsData: ProgramsData = {
       },
       abroad_edu_counrty_select: {
         title: "Yurtdışındaki Popüler Exchange Programı Ülkeleri",
+        idTag: "#countries",
         description:
           "Birçok öğrenci, değişim programları için popüler eğitim destinasyonlarını tercih etmektedir. İşte yurtdışında en çok tercih edilen exchange programı ülkeleri:",
         list: [
@@ -1140,6 +1189,7 @@ export const programsData: ProgramsData = {
       },
       abroad_edu_scholorship: {
         title: "Yurtdışında Exchange Programları İçin Burs Olanakları",
+        idTag: "#scholarships",
         description:
           "Birçok değişim programı, öğrencilere eğitim ve yaşam giderleri için burs imkânı sunmaktadır. Burslar, genellikle akademik başarıya, ihtiyaç durumuna veya ülkeye göre değişiklik gösterebilir. İşte yaygın burs türleri:",
         list: [
@@ -1168,6 +1218,7 @@ export const programsData: ProgramsData = {
       smyrna_edu_guide: {
         title:
           "Smyrna Edu Danışmanlık: Yurtdışında Exchange Programları İçin Profesyonel Destek",
+        idTag: "#professional-support",
         description:
           "Smyrna Edu, yurtdışında exchange programlarına katılmak isteyen öğrencilere danışmanlık hizmetleri sunmaktadır. Bu hizmetler arasında:",
         list: [
@@ -1204,16 +1255,19 @@ export const programsData: ProgramsData = {
   },
   ivyLeague: {
     title: "Ivy League Üniversiteleri: Dünyanın En Prestijli Eğitim Kurumları",
+    idTag: "#overview",
     description:
       "Dünyanın en prestijli ve saygın üniversitelerinin bulunduğu Ivy League, akademik mükemmeliyet, güçlü mezun ağları ve geniş araştırma olanakları ile tanınır. Ivy League, Amerika Birleşik Devletleri'nin en iyi sekiz özel üniversitesinden oluşur ve bu üniversiteler, eğitimdeki yüksek standartları ve başarılı mezunlarıyla uluslararası alanda büyük bir üne sahiptir. Bu yazıda, Ivy League üniversitelerinin tarihçesi, başvuru şartları, avantajları ve sundukları imkanlar hakkında kapsamlı bilgiler bulabilirsiniz.",
     sections: {
       abroad_edu_general: {
         title: "Ivy League Nedir?",
+        idTag: "#overview",
         description:
           'Ivy League, Amerika Birleşik Devletleri\'nde bulunan sekiz prestijli üniversitenin oluşturduğu bir grup adı olarak kullanılır. Ivy League üniversiteleri, yalnızca akademik başarılarıyla değil, aynı zamanda spor, kültürel etkinlikler ve sosyal sorumluluk projelerindeki başarılarıyla da öne çıkar. 1954 yılında Ivy League, üniversiteler arasında bir spor ligi olarak kurulmuş olsa da, zamanla bu üniversiteler "elit eğitim kurumu" olarak tanınmaya başlanmıştır.',
       },
       abroad_universities: {
         title: "Ivy League Üniversiteleri Şunlardır: ",
+        idTag: "#overview",
         list: [
           {
             title: "Harvard University (Cambridge, Massachusetts)",
@@ -1243,6 +1297,7 @@ export const programsData: ProgramsData = {
       },
       abroad_edu_adv: {
         title: "Ivy League Üniversitelerinin Avantajları:",
+        idTag: "#advantages",
         list: [
           {
             title: "Akademik Mükemmeliyet ",
@@ -1273,6 +1328,7 @@ export const programsData: ProgramsData = {
       },
       abroad_edu_app_cond: {
         title: "Ivy League Üniversitelerine Başvuru Şartları",
+        idTag: "#requirements",
         description:
           "Ivy League üniversitelerine başvurmak, yüksek akademik başarı ve çok yönlü yetenekler gerektirir. Başvuru süreci oldukça rekabetçidir ve her üniversitenin kendi başvuru gereksinimleri bulunmaktadır. Ancak genel olarak aşağıdaki belgeler ve şartlar talep edilmektedir:",
         list: [
@@ -1310,6 +1366,7 @@ export const programsData: ProgramsData = {
       },
       abroad_edu_popular: {
         title: "Ivy League Üniversitelerinde Popüler Bölümler",
+        idTag: "#popular-departments",
         description:
           "Ivy League üniversiteleri, çok çeşitli akademik disiplinlerde yüksek kaliteli eğitim verir. Bazı popüler bölümler şunlardır:",
         list: [
@@ -1343,6 +1400,7 @@ export const programsData: ProgramsData = {
       smyrna_edu_guide: {
         title:
           "Smyrna Edu Danışmanlık: Ivy League Üniversitelerine Başvuru Desteği",
+        idTag: "#professional-support",
         description:
           "Smyrna Edu olarak, Ivy League üniversitelerine başvuru sürecinde size profesyonel danışmanlık hizmeti sunuyoruz. Ivy League üniversitelerine başvurmak karmaşık ve rekabetçi bir süreç olabilir, ancak uzman ekibimiz, başvuru için gerekli tüm belgelerin hazırlanmasından, mülakatlara kadar her adımda yanınızda olacaktır. Verdiğimiz hizmetler arasında:",
         list: [

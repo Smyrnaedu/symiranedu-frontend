@@ -12,7 +12,7 @@ interface SectionProps {
 
 const Section: React.FC<SectionProps> = ({ section }) => {
   return (
-    <section className="mb-12" >
+    <section className="mb-12" id={section.idTag}>
       <h3 className="text-2xl font-semibold mb-4">{section.title}</h3>
       {section.description && <p className="mb-4">{section.description}</p>}
 

@@ -1,6 +1,8 @@
 import React from "react";
 import PageNavbarItem from "./subnavbar-item";
 import subNavbarMenusRaw from "@/helpers/data/sub-navbar.json";
+import "./subnavbar.scss";
+import { section } from "framer-motion/client";
 
 type SubNavbarItem = {
   title: string;
@@ -12,7 +14,7 @@ type SubNavbarData = {
 };
 
 type Props = {
-  category: string; 
+  category: string;
 };
 
 const SubNavbar: React.FC<Props> = ({ category }) => {
@@ -22,11 +24,13 @@ const SubNavbar: React.FC<Props> = ({ category }) => {
   if (!menuItems.length) return null;
 
   return (
-    <nav className="mb-3">
-      {menuItems.map((item, idx) => (
-        <PageNavbarItem key={idx} item={item} />
-      ))}
-    </nav>
+    <section className="container-fluid">
+      <nav className="container subnavbar">
+        {menuItems.map((item, idx) => (
+          <PageNavbarItem key={idx} item={item} />
+        ))}
+      </nav>
+    </section>
   );
 };
 
