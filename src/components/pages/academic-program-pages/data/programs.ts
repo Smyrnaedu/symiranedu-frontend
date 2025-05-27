@@ -1,4 +1,3 @@
-import { i } from "framer-motion/client";
 import { ProgramsData } from "../types/programTypes";
 
 export const programsData: ProgramsData = {
