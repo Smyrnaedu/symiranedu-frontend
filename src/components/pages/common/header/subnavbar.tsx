@@ -3,7 +3,6 @@ import React, { useEffect, useState } from "react";
 import PageNavbarItem from "./subnavbar-item";
 import subNavbarMenusRaw from "@/helpers/data/sub-navbar.json";
 import "./subnavbar.scss";
-import { useSearchParams } from "next/navigation";
 import { Nav } from "react-bootstrap";
 
 type SubNavbarItem = {
