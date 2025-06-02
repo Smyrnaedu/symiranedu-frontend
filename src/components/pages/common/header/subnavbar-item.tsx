@@ -1,4 +1,3 @@
-
 "use client";
 
 import React from "react";
@@ -15,7 +14,7 @@ type Props = {
   hash: string;
 };
 
-const PageNavbarItem: React.FC<Props> = ({ item }) => {
+const PageNavbarItem: React.FC<Props> = ({ item, hash }) => {
   const handleClick = () => {
     const targetId = item.idTag.replace("#", "");
     const element = document.getElementById(targetId);
@@ -24,23 +23,18 @@ const PageNavbarItem: React.FC<Props> = ({ item }) => {
     }
     window.history.replaceState(null, "", item.idTag);
   };
-
-const PageNavbarItem: React.FC<Props> = ({ item, hash }) => {
-
-
   return (
     <Nav.Item>
       <Nav.Link
-      as={Link}
-      href={item.idTag}
-      legacyBehavior
-      onClick={handleClick}
-         className={`subnavbar-item ${hash === item.idTag ? "active" : ""}`}
-    >
-      {item.title}
-    </Nav.Link>
+        as={Link}
+        href={item.idTag}
+        legacyBehavior
+        onClick={handleClick}
+        className={`subnavbar-item ${hash === item.idTag ? "active" : ""}`}
+      >
+        {item.title}
+      </Nav.Link>
     </Nav.Item>
-    
   );
 };
 
