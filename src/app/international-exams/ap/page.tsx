@@ -2,7 +2,7 @@ import PageHeaderForExams from "@/components/common/page-header/page-header-for-
 import { Spacer } from "@/components/common/spacer";
 import React from "react";
 import data from "@/helpers/data/tr.json";
-import SubNavbar from "@/components/pages/common/header/subnavbar";
+
 
 
 const ApExamPage: React.FC = () => {

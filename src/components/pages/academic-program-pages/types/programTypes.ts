@@ -28,7 +28,7 @@ export interface ProgramData {
   description: string;
   sub_desc_for_main?: string;
   sub_desc?: string;
-  sections: Record<string, string>;
+  sections: Record<string, ProgramSection>;
 }
 
 export interface ProgramsData {

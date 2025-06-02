@@ -931,6 +931,7 @@ export const programsData: ProgramsData = {
       abroad_edu_adv: {
         title: "Online Üniversitelerin Avantajları",
         idTag: "#advantages",
+        description:"",
         list: [
           {
             title: "Esnek Eğitim İmkanları ",
@@ -1086,6 +1087,7 @@ export const programsData: ProgramsData = {
       },
       abroad_edu_adv: {
         title: "Yurtdışında Exchange Programlarının Avantajları",
+        description:"",
         idTag: "#advantages",
         list: [
           {
@@ -1266,6 +1268,7 @@ export const programsData: ProgramsData = {
       },
       abroad_universities: {
         title: "Ivy League Üniversiteleri Şunlardır: ",
+        description:"",
         idTag: "#overview",
         list: [
           {
@@ -1296,6 +1299,7 @@ export const programsData: ProgramsData = {
       },
       abroad_edu_adv: {
         title: "Ivy League Üniversitelerinin Avantajları:",
+        description:"",
         idTag: "#advantages",
         list: [
           {
