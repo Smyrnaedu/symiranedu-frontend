@@ -4,6 +4,7 @@ import PageHeader from "@/components/common/page-header/page-header";
 import { Spacer } from "@/components/common/spacer";
 import { programsData } from "@/components/pages/academic-program-pages/data/programs";
 import ProgramLayout from "@/components/pages/academic-program-pages/program-layout";
+import SubNavbar from "@/components/pages/common/header/subnavbar";
 
 const UndergraduatePage: React.FC = () => {
   const pageHeaderData = data[0]?.PageHeaders || {};
@@ -17,6 +18,7 @@ const UndergraduatePage: React.FC = () => {
         header={title}
         buttonLabel={description}
       />
+      <SubNavbar category="undergraduate" />
       <Spacer />
       <ProgramLayout programData={programsData.undergraduate} />;
     </>

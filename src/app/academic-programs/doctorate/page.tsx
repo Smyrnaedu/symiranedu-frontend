@@ -5,7 +5,6 @@ import { Spacer } from "@/components/common/spacer";
 import { programsData } from "@/components/pages/academic-program-pages/data/programs";
 import ProgramLayout from "@/components/pages/academic-program-pages/program-layout";
 import SubNavbar from "@/components/pages/common/header/subnavbar";
-import { Container } from "postcss";
 
 const DoctoratePage: React.FC = () => {
   const pageHeaderData = data[0]?.PageHeaders || {};
@@ -20,7 +19,7 @@ const DoctoratePage: React.FC = () => {
         header={title}
         buttonLabel={description}
       />
-        <SubNavbar category="doctorate" />
+      <SubNavbar category="doctorate" />
       <Spacer />
       <ProgramLayout programData={programsData.doctorate} />;
     </>
