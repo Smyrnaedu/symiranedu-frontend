@@ -1,5 +1,4 @@
 import React from "react";
-import { Avatar } from "primereact/avatar";
 import "./student-review-slider-card.scss";
 import { Card, CardBody, CardFooter, CardText } from "react-bootstrap";
 

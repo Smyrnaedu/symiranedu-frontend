@@ -1,4 +1,3 @@
-import { p } from "framer-motion/client";
 import React from "react";
 
 interface ListItemForUniProps {
