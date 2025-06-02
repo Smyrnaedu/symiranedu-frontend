@@ -2,19 +2,17 @@
 
 import React from "react";
 import Link from "next/link";
-import { Nav } from "react-bootstrap";
 
 type SubNavbarItem = {
   title: string;
   idTag: string;
 };
-
 type Props = {
   item: SubNavbarItem;
-  hash: string;
+  onSelect?: (id: string) => void;
 };
 
-const PageNavbarItem: React.FC<Props> = ({ item, hash }) => {
+const PageNavbarItem: React.FC<Props> = ({ item, onSelect }) => {
   const handleClick = () => {
     const targetId = item.idTag.replace("#", "");
     const element = document.getElementById(targetId);
@@ -22,19 +20,13 @@ const PageNavbarItem: React.FC<Props> = ({ item, hash }) => {
       element.scrollIntoView({ behavior: "smooth" });
     }
     window.history.replaceState(null, "", item.idTag);
+    onSelect?.(targetId); // ilk tıklamada da state güncellenebilir
   };
+
   return (
-    <Nav.Item>
-      <Nav.Link
-        as={Link}
-        href={item.idTag}
-        legacyBehavior
-        onClick={handleClick}
-        className={`subnavbar-item ${hash === item.idTag ? "active" : ""}`}
-      >
-        {item.title}
-      </Nav.Link>
-    </Nav.Item>
+    <Link href={item.idTag} legacyBehavior onClick={handleClick}>
+      {item.title}
+    </Link>
   );
 };
 

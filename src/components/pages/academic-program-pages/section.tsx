@@ -7,11 +7,15 @@ import ListItemForUni from "./list-item-for-uni";
 
 interface SectionProps {
   section: ProgramSection;
+  isActive: boolean;
 }
 
-const Section: React.FC<SectionProps> = ({ section }) => {
+const Section: React.FC<SectionProps> = ({ section, isActive }) => {
   return (
-    <section className="mb-12" id={(section.idTag ?? "").replace("#", "")}>
+    <section
+      className={`py-8 ${isActive ? "bg-gray-100" : ""}`}
+      id={(section.idTag ?? "").replace("#", "")}
+    >
       <h3 className="text-2xl font-semibold mb-4">{section.title}</h3>
       {section.description && <p className="mb-4">{section.description}</p>}
 

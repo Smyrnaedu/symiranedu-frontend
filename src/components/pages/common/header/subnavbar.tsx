@@ -36,7 +36,7 @@ const SubNavbar: React.FC<Props> = ({ category }) => {
     <section className="container-fluid">
       <Nav className="container subnavbar">
         {menuItems.map((item, idx) => (
-          <PageNavbarItem key={idx} item={item} hash={hash}/>
+          <PageNavbarItem key={idx} item={item} onSelect={setHash}/>
         ))}
       </Nav>
     </section>
