@@ -20,6 +20,7 @@ const ExchangePage: React.FC = () => {
       />
       <SubNavbar category="exchange" />
       <Spacer />
+
       <ProgramLayout programData={programsData.exchange} />
     </>
   );

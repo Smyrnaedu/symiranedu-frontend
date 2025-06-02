@@ -19,7 +19,7 @@ const DoctoratePage: React.FC = () => {
         header={title}
         buttonLabel={description}
       />
-        <SubNavbar category="doctorate" />
+      <SubNavbar category="doctorate" />
       <Spacer />
       <ProgramLayout programData={programsData.doctorate} />;
     </>

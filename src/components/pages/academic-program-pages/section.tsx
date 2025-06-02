@@ -1,5 +1,4 @@
 import React from "react";
-
 import CountryCard from "./country-card";
 import AdvantageCard from "./advantages-card";
 import ListItem from "./list-item";
@@ -12,7 +11,7 @@ interface SectionProps {
 
 const Section: React.FC<SectionProps> = ({ section }) => {
   return (
-    <section className="mb-12" id={section.idTag}>
+    <section className="mb-12" id={(section.idTag ?? "").replace("#", "")}>
       <h3 className="text-2xl font-semibold mb-4">{section.title}</h3>
       {section.description && <p className="mb-4">{section.description}</p>}
 
@@ -29,9 +28,9 @@ const Section: React.FC<SectionProps> = ({ section }) => {
             ))}
           </ol>
         ))}
-      {/* Yurt dışı eğitim alt açıklaması varsa */}
+
       {section.sub_desc && <p className="mb-4">{section.sub_desc}</p>}
-      {/* Yurt dışı eğitim genel bilgisi varsa */}
+
       {section.abroad_edu_general && (
         <div className="mb-4">
           <strong>{section.abroad_edu_general.title}</strong>:{" "}
@@ -41,7 +40,7 @@ const Section: React.FC<SectionProps> = ({ section }) => {
           )}
         </div>
       )}
-      {/* Yurt dışı eğitim tarih seçimi varsa */}
+
       {section.abroad_edu_app_date &&
         Array.isArray(section.abroad_edu_app_date) && (
           <div className="mb-4">
@@ -53,7 +52,6 @@ const Section: React.FC<SectionProps> = ({ section }) => {
           </div>
         )}
 
-      {/* Ülkeler varsa */}
       {section.countries && (
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4 mb-4">
           {section.countries.map((country, index) => (
@@ -62,7 +60,6 @@ const Section: React.FC<SectionProps> = ({ section }) => {
         </div>
       )}
 
-      {/* Avantajlar varsa */}
       {section.abroad_edu_adv_list && (
         <div className="grid md:grid-cols-2 gap-4 mb-4">
           {section.abroad_edu_adv_list.map((advantage, index) => (
@@ -70,8 +67,6 @@ const Section: React.FC<SectionProps> = ({ section }) => {
           ))}
         </div>
       )}
-
-      {/* Diğer özel bölümler için koşullu renderlar eklenebilir */}
     </section>
   );
 };
