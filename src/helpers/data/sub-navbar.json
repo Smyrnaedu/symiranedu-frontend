@@ -206,12 +206,8 @@
         "idTag": "#professional-support"
       }
     ],
-    "summer-schools": [
-      
-    ],
-    "language-schools": [
-      
-    ],
+    "summer-schools": [],
+    "language-schools": [],
     "work-and-study": [
       {
         "title": "Genel Bilgiler",
@@ -251,7 +247,7 @@
         "title": "Ülkeler",
         "idTag": "#countries"
       },
-    
+
       {
         "title": "Profesyonel Destek",
         "idTag": "#professional-support"
@@ -277,6 +273,151 @@
       {
         "title": "Profesyonel Destek",
         "idTag": "#professional-support"
+      }
+    ],
+    "ielts": [
+      {
+        "title": "Genel Bilgiler",
+        "idTag": "#overview"
+      },
+      {
+        "title": "Akademik IELTS",
+        "idTag": "#ielts-academic"
+      },
+      {
+        "title": "Genel Eğitim",
+        "idTag": "#general"
+      },
+      {
+        "title": "IELTS Sınav Formatı",
+        "idTag": "#format"
+      },
+      {
+        "title": "Sınav Süreci",
+        "idTag": "#exam-process"
+      },
+      {
+        "title": "Puanlama Sistemi",
+        "idTag": "#exam-grading"
+      }
+    ],
+    "toefl": [
+      {
+        "title": "Genel Bilgiler",
+        "idTag": "#overview"
+      },
+      {
+        "title": "TOEFL Sınav Türleri",
+        "idTag": "#exam-types"
+      },
+      {
+        "title": "TOEFL Sınav Formatı",
+        "idTag": "#exam-format"
+      },
+      {
+        "title": "Sınav Süreci",
+        "idTag": "#exam-process"
+      },
+      {
+        "title": "Puanlama Sistemi",
+        "idTag": "#exam-grading"
+      }
+    ],
+    "pte": [
+      {
+        "title": "Genel Bilgiler",
+        "idTag": "#overview"
+      },
+      {
+        "title": "PTE Kimler İçin?",
+        "idTag": "#exam-participants"
+      },
+      {
+        "title": "PTE Sınav Formatı",
+        "idTag": "#exam-format"
+      },
+      {
+        "title": "Sınav Süreci",
+        "idTag": "#exam-process"
+      },
+      {
+        "title": "Puanlama Sistemi",
+        "idTag": "#exam-grading"
+      }
+    ],
+    "gmat": [
+      {
+        "title": "Genel Bilgiler",
+        "idTag": "#overview"
+      },
+      {
+        "title": "GMAT Kimler İçin?",
+        "idTag": "#exam-participants"
+      },
+      {
+        "title": "GMAT Sınav Formatı",
+        "idTag": "#exam-format"
+      },
+      {
+        "title": "Sınav Süreci",
+        "idTag": "#exam-process"
+      },
+      {
+        "title": "Puanlama Sistemi",
+        "idTag": "#exam-grading"
+      }
+    ],
+    "gre": [
+      {
+        "title": "Genel Bilgiler",
+        "idTag": "#overview"
+      },
+      {
+        "title": "GRE Kimler İçin?",
+        "idTag": "#exam-participants"
+      },
+      {
+        "title": "GRE Sınav Türleri",
+        "idTag": "#exam-types"
+      },
+      {
+        "title": "GRE Sınav Formatı",
+        "idTag": "#exam-format"
+      },
+      {
+        "title": "Sınav Süreci",
+        "idTag": "#exam-process"
+      },
+      {
+        "title": "Puanlama Sistemi",
+        "idTag": "#exam-grading"
+      }
+    ],
+    "sat": [
+      {
+        "title": "Genel Bilgiler",
+        "idTag": "#overview"
+      },
+      {
+        "title": "Sınav Süreci",
+        "idTag": "#exam-process"
+      },
+      {
+        "title": "SAT Sınav Formatı",
+        "idTag": "#exam-format"
+      },
+      {
+        "title": "SAT Kimler İçin?",
+        "idTag": "#exam-participants"
+      },
+
+      {
+        "title": "Puanlama Sistemi",
+        "idTag": "#exam-grading"
+      },
+      {
+        "title": "SAT ve ACT Farkları",
+        "idTag": "#exam-differences"
       }
     ]
   }

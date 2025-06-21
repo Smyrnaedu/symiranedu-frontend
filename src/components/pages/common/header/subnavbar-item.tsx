@@ -20,11 +20,11 @@ const PageNavbarItem: React.FC<Props> = ({ item, onSelect }) => {
       element.scrollIntoView({ behavior: "smooth" });
     }
     window.history.replaceState(null, "", item.idTag);
-    onSelect?.(targetId); // ilk tıklamada da state güncellenebilir
+    onSelect?.(targetId);
   };
 
   return (
-    <Link href={item.idTag} legacyBehavior onClick={handleClick}>
+    <Link href={item.idTag} onClick={handleClick}>
       {item.title}
     </Link>
   );

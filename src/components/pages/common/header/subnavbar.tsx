@@ -20,7 +20,10 @@ type Props = {
 
 const SubNavbar: React.FC<Props> = ({ category }) => {
   const subNavbarMenus: SubNavbarData = subNavbarMenusRaw[0];
-  const menuItems: SubNavbarItem[] = subNavbarMenus[category] || [];
+  // Filter out items missing title or idTag to ensure type safety
+  const menuItems: SubNavbarItem[] = (subNavbarMenus[category] || []).filter(
+    (item) => item.title && item.idTag
+  );
 
   const [hash, setHash] = useState(""); // örnek: #overview
 
