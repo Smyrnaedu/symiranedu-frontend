@@ -1,0 +1,8 @@
+@use "@/styles/variables" as *;
+@use "@/styles/mixins" as *;
+
+p {
+  a {
+    color: $mainColor-black;
+  }
+}
