@@ -419,6 +419,72 @@
         "title": "SAT ve ACT Farkları",
         "idTag": "#exam-differences"
       }
+    ],
+    "work_and_study": [
+      {
+        "title": "Genel Bilgiler",
+        "idTag": "#overview"
+      },
+      {
+        "title": "Avantajlar",
+        "idTag": "#advantages"
+      },
+      {
+        "title": "Başvuru Şartları",
+        "idTag": "#requirements"
+      },
+      {
+        "title": "Ülkeler",
+        "idTag": "#countries"
+      },
+      {
+        "title": "Profesyonel Destek",
+        "idTag": "#support"
+      }
+    ],
+    "pathway_programs": [
+      {
+        "title": "Genel Bilgiler",
+        "idTag": "#overview"
+      },
+      {
+        "title": "Avantajlar",
+        "idTag": "#advantages"
+      },
+      {
+        "title": "Başvuru Şartları",
+        "idTag": "#requirements"
+      },
+      {
+        "title": "Ülkeler",
+        "idTag": "#countries"
+      },
+      {
+        "title": "Profesyonel Destek",
+        "idTag": "#support"
+      }
+    ],
+    "foundation_programs": [
+      {
+        "title": "Genel Bilgiler",
+        "idTag": "#overview"
+      },
+      {
+        "title": "Avantajlar",
+        "idTag": "#advantages"
+      },
+      {
+        "title": "Başvuru Şartları",
+        "idTag": "#requirements"
+      },
+      {
+        "title": "Ülkeler",
+        "idTag": "#countries"
+      },
+      {
+        "title": "Profesyonel Destek",
+        "idTag": "#support"
+      }
     ]
   }
 ]
