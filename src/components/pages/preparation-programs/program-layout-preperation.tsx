@@ -7,14 +7,7 @@ interface Props {
 }
 
 const ProgramLayoutPreparation: React.FC<Props> = ({ prepationsData }) => {
-  const scrollToSection = (id: string) => {
-    const element = document.getElementById(id.replace("#", ""));
-    if (element) {
-      element.scrollIntoView({ behavior: "smooth" });
-    }
-  };
-
-  const sectionKeys = Object.keys(prepationsData.sections);
+ 
 
   return (
     <div className="container mx-auto px-4 py-8">
@@ -27,7 +20,6 @@ const ProgramLayoutPreparation: React.FC<Props> = ({ prepationsData }) => {
         <section
           key={section.idTag}
           id={section.idTag.replace("#", "")}
-         
         >
           <h3>{section.title}</h3>
           {section.description && <p>{section.description}</p>}

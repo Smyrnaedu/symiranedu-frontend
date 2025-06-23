@@ -1,8 +1,8 @@
 // Make sure PreparationData is exported from the module, or adjust the import to match the actual export
 
-import { count } from "console";
+
 import type { PreparationData } from "../types/preperationTypes";
-import { sup } from "framer-motion/client";
+
 
 // If the export is named differently, for example 'IPreparationData', use:
 // import type { IPreparationData as PreparationData } from "../types/preperationTypes";

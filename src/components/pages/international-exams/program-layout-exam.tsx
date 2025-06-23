@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useEffect, useState } from "react";
+import React, { useEffect } from "react";
 import { ExamData } from "./types/programTypes";
 import SectionExam from "./sectionexam";
 
@@ -9,8 +9,6 @@ interface ProgramLayoutExamProps {
 }
 
 const ProgramLayoutExam: React.FC<ProgramLayoutExamProps> = ({ examData }) => {
-  const [activeSectionId, setActiveSectionId] = useState<string | null>(null);
-
   useEffect(() => {
     const observerOptions = {
       root: null,
@@ -22,16 +20,12 @@ const ProgramLayoutExam: React.FC<ProgramLayoutExamProps> = ({ examData }) => {
       entries.forEach((entry) => {
         const id = entry.target.getAttribute("id");
         if (entry.isIntersecting && id) {
-          setActiveSectionId(`#${id}`);
           window.history.replaceState(null, "", `#${id}`);
         }
       });
     };
 
-    const observer = new IntersectionObserver(
-      observerCallback,
-      observerOptions
-    );
+    const observer = new IntersectionObserver(observerCallback, observerOptions);
 
     Object.values(examData.sections).forEach((section) => {
       const el = document.getElementById(section.idTag.replace("#", ""));
@@ -55,9 +49,9 @@ const ProgramLayoutExam: React.FC<ProgramLayoutExamProps> = ({ examData }) => {
         <SectionExam
           key={`${section.idTag}-${key}`}
           section={section}
-          isActive={activeSectionId === section.idTag}
         />
       ))}
+
       {examData.sub_desc_pte_2 && (
         <p className="mb-2">{examData.sub_desc_pte_2}</p>
       )}
