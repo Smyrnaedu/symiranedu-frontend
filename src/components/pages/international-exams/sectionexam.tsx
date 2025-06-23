@@ -5,7 +5,6 @@ import "./section.scss";
 
 interface Props {
   section: ExamSection;
-  isActive?: boolean;
 }
 
 const renderList = (list?: { title: string; description?: string }[]) => {
@@ -167,7 +166,7 @@ const renderExamProcess = (data?: ExamSection["exam_process"]) => {
   );
 };
 
-const SectionExam: React.FC<Props> = ({ section, isActive }) => {
+const SectionExam: React.FC<Props> = ({ section }) => {
   return (
     <div id={section.idTag.replace("#", "")}>
       <h3>{section.title}</h3>

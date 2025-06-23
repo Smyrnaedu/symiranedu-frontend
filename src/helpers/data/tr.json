@@ -253,6 +253,8 @@
     },
     "PageHeaders": {
       "buttonLabel": "Daha fazla bilgi",
+      "officePageHeader": "Ofisimiz",
+      "contactPageHeader": "İletişim",
       "aboutPageHeader": "Hakkımızda",
       "aboutHeaderImage": "about-us.png",
       "highschoolPageHeader": "Lise",
