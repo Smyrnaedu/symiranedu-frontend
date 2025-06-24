@@ -4,7 +4,7 @@ import "./button-component.scss";
 
 interface ButtonProps {
   link: string;
-  title: string;
+  title?: string;
 }
 
 const ButtonComponent: React.FC<ButtonProps> = ({ link, title }) => {

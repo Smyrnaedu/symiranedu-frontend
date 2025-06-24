@@ -6,8 +6,9 @@ import ButtonComponent from "../button/button-component";
 type PageHeaderProps = {
   header: string;
   url: string;
-  buttonLabel: string;
+  buttonLabel?: string;
   flag?: string; // Her sayfaya ait flag, örneğin "us", "de"
+  showButton?: boolean; // Butonun gösterilip gösterilmeyeceği
 };
 
 const PageHeader: React.FC<PageHeaderProps> = ({
@@ -15,6 +16,7 @@ const PageHeader: React.FC<PageHeaderProps> = ({
   url,
   buttonLabel,
   flag,
+  showButton = true
 }) => {
   return (
     <div className="page-header">
@@ -31,7 +33,11 @@ const PageHeader: React.FC<PageHeaderProps> = ({
           )}
           {header}
         </span>
-        <ButtonComponent link="/contact" title={buttonLabel} />
+        {showButton && buttonLabel && (
+          <span className="page-header-button">
+            <ButtonComponent link="/contact" title={buttonLabel} />
+          </span>
+        )}
       </h1>
     </div>
   );
