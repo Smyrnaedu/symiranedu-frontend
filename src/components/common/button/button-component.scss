@@ -6,7 +6,7 @@
       width: 150px;
       height: 40px;
       @include flexbox($ai: center, $jc: center);
-      @include borderRadius(10px);
+      @include borderRadius(5px);
     
       border: 2px solid $mainColor1;
       color: $mainColor-white;
