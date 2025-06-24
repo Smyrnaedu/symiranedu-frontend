@@ -1433,32 +1433,44 @@
               }
             }
           ],
-        "countries": {
-          "title": "Work and Study Programlarına Katılabileceğiniz Ülkeler",
-          "usa": "Amerika, Work and Study programları konusunda oldukça geniş bir yelpazeye sahiptir. F-1 öğrenci vizesi ile Amerika’da eğitim alırken haftada 20 saate kadar çalışabilirsiniz. Amerika’daki üniversiteler ve dil okulları, Work and Study programları sunmaktadır.",
-          "canada": "Kanada, öğrencilere eğitim sırasında çalışma fırsatı sunan ülkelerden biridir. Kanada’da öğrenci vizesi ile çalışma izni almak mümkündür ve bu izinle haftada 20 saat çalışabilirsiniz.",
-          "australia": "Avustralya, öğrencilere hem eğitim hem de çalışma fırsatları sunar. Eğitim alırken haftada 40 saate kadar çalışmak mümkündür. Avustralya’daki üniversiteler ve dil okulları, Work and Study programlarına katılmak isteyen öğrencilere çeşitli seçenekler sunar.",
-          "germany": "Almanya, Work and Study programlarına katılmak isteyen öğrencilere cazip fırsatlar sunar. Öğrenciler, eğitim süresince haftada 120 gün veya 240 yarım gün çalışabilirler. Almanya’da eğitim almak için genellikle bir dil yeterlilik testi gerekebilir.",
-          "uk": "İngiltere’de öğrenci vizesi ile Work and Study programına katılmak mümkündür. Öğrenciler, haftada 20 saate kadar çalışabilirler. İngiltere'deki üniversiteler, öğrencilere birçok çalışma ve eğitim fırsatı sunar."
-        },
+          "countries": {
+            "title": "Work and Study Programlarına Katılabileceğiniz Ülkeler",
+            "usa": "Amerika, Work and Study programları konusunda oldukça geniş bir yelpazeye sahiptir. F-1 öğrenci vizesi ile Amerika’da eğitim alırken haftada 20 saate kadar çalışabilirsiniz. Amerika’daki üniversiteler ve dil okulları, Work and Study programları sunmaktadır.",
+            "canada": "Kanada, öğrencilere eğitim sırasında çalışma fırsatı sunan ülkelerden biridir. Kanada’da öğrenci vizesi ile çalışma izni almak mümkündür ve bu izinle haftada 20 saat çalışabilirsiniz.",
+            "australia": "Avustralya, öğrencilere hem eğitim hem de çalışma fırsatları sunar. Eğitim alırken haftada 40 saate kadar çalışmak mümkündür. Avustralya’daki üniversiteler ve dil okulları, Work and Study programlarına katılmak isteyen öğrencilere çeşitli seçenekler sunar.",
+            "germany": "Almanya, Work and Study programlarına katılmak isteyen öğrencilere cazip fırsatlar sunar. Öğrenciler, eğitim süresince haftada 120 gün veya 240 yarım gün çalışabilirler. Almanya’da eğitim almak için genellikle bir dil yeterlilik testi gerekebilir.",
+            "uk": "İngiltere’de öğrenci vizesi ile Work and Study programına katılmak mümkündür. Öğrenciler, haftada 20 saate kadar çalışabilirler. İngiltere'deki üniversiteler, öğrencilere birçok çalışma ve eğitim fırsatı sunar."
+          },
 
-        "smyrna": {
-          "title": "Smyrna Edu Danışmanlık: Work and Study Programlarına Başvuru ve Destek Hizmetleri",
-          "description": "Smyrna Edu, Work and Study programları hakkında size rehberlik etmek için profesyonel danışmanlık hizmetleri sunmaktadır. Eğitim alırken aynı zamanda çalışarak deneyim kazanmak, finansal özgürlüğünüzü sağlamak ve dünya çapında kariyer fırsatları yaratmak için doğru programı seçmek önemlidir. Bizimle, başvuru sürecinden, vize işlemlerine, konaklama düzenlemelerinden, çalışma izni alımına kadar her aşamada profesyonel destek alabilirsiniz.",
-          "services": [
-            "Work and Study Programı Seçimi",
-            "Başvuru Belgelerinin Hazırlanması",
-            "Vize Başvurusu ve Çalışma İzni Rehberliği",
-            "Kariyer Danışmanlığı ve İş İmkanları",
-            "Dil Yeterlilik Desteği",
-            "Konaklama ve Ulaşım Yardımları",
-            "Burs ve Finansal Destek İmkanları"
-          ],
-          "closing": "Work and Study hem eğitim hem de iş deneyimi kazanarak kariyerinize sağlam bir temel atmanıza olanak tanır. Smyrna Edu olarak, bu süreçte size rehberlik etmek için buradayız."
+          "smyrna": {
+            "title": "Smyrna Edu Danışmanlık: Work and Study Programlarına Başvuru ve Destek Hizmetleri",
+            "description": "Smyrna Edu, Work and Study programları hakkında size rehberlik etmek için profesyonel danışmanlık hizmetleri sunmaktadır. Eğitim alırken aynı zamanda çalışarak deneyim kazanmak, finansal özgürlüğünüzü sağlamak ve dünya çapında kariyer fırsatları yaratmak için doğru programı seçmek önemlidir. Bizimle, başvuru sürecinden, vize işlemlerine, konaklama düzenlemelerinden, çalışma izni alımına kadar her aşamada profesyonel destek alabilirsiniz.",
+            "services": [
+              "Work and Study Programı Seçimi",
+              "Başvuru Belgelerinin Hazırlanması",
+              "Vize Başvurusu ve Çalışma İzni Rehberliği",
+              "Kariyer Danışmanlığı ve İş İmkanları",
+              "Dil Yeterlilik Desteği",
+              "Konaklama ve Ulaşım Yardımları",
+              "Burs ve Finansal Destek İmkanları"
+            ],
+            "closing": "Work and Study hem eğitim hem de iş deneyimi kazanarak kariyerinize sağlam bir temel atmanıza olanak tanır. Smyrna Edu olarak, bu süreçte size rehberlik etmek için buradayız."
+          }
         }
-        }
+      }
+    },
+    "Contact": {
+      "title": "İletişim Bİlgileri",
+      "description": "Smyrna Edu Danışmanlık ile iletişime geçmek için aşağıdaki formu doldurabilirsiniz. Sorularınızı, taleplerinizi veya danışmanlık hizmetlerimiz hakkında bilgi almak için bize ulaşın. Uzman ekibimiz, size en kısa sürede geri dönüş yapacaktır.",
+      "sub_description": "Bilgi almak için yazmaktan çekinmeyin. Eğitim ve kariyer hedeflerinize ulaşmanız için buradayız.",
+      "form": {
+        "name": "Adınız",
+        "surname": "Soyadınız",
+        "email": "E-posta Adresiniz",
+        "phone": "Telefon Numaranız",
+        "message": "Mesajınız",
+        "submit": "Gönder"
       }
     }
   }
-  
 ]
