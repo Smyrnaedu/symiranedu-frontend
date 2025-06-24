@@ -22,7 +22,6 @@ const ContactPageComponent: React.FC<ContactPageProps> = ({
   title,
   description,
   sub_description,
-  form
 }) => {
   return (
     <section className="container contact-page">

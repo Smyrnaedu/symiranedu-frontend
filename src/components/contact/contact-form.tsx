@@ -1,8 +1,7 @@
 "use client";
-import { div } from "framer-motion/client";
 import Image from "next/image";
 import React from "react";
-import { Button, Col, FloatingLabel, Form, InputGroup, Row } from "react-bootstrap";
+import { Button, Col, FloatingLabel, Form, Row } from "react-bootstrap";
 
 const ContactForm: React.FC = () => {
   return (
