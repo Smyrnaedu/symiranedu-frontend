@@ -2,6 +2,7 @@ import React from "react";
 import { Col, Row } from "react-bootstrap";
 import "./contact-style.scss";
 import ContactInformation from "./contact-info";
+import ContactForm from "./contact-form";
 
 type ContactPageProps = {
   title: string;
@@ -34,7 +35,7 @@ const ContactPageComponent: React.FC<ContactPageProps> = ({
             />
         </Col>
         <Col lg={7}>
-            {description}
+            <ContactForm/>
         </Col>
       </Row>
     </section>
