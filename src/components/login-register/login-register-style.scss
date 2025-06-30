@@ -1,17 +1,37 @@
 @use "@/styles/variables" as *;
 @use "@/styles/mixins" as *;
 
-.login-register-section{
+.login-register-container {
+  .row {
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.06);
+    border-radius: 5px!important;
 
-    .login-section{
+    &.login-register-section {
+      position: relative;
+      min-height: 600px;
 
+      .login-section {
+        z-index: 1;
+        @include flexbox($fd: row, $jc: center, $ai: center);
+      }
+
+      .register-section {
+        z-index: 1;
+        @include flexbox($fd: row, $jc: center, $ai: center);
+      }
+
+      .layout-section {
+        background-color: $mainColor3;
+        z-index: 100;
+        height: 100%;
+        position: absolute;
+        transition: all 0.5s linear;
+        @include flexbox($fd: row, $jc: center, $ai: center);
+
+        .signin-button, .register-button{
+            margin-top: 3rem;
+        }
+      }
     }
-
-    .register-section{
-
-    }
-
-    .layout-text-section{
-
-    }
+  }
 }

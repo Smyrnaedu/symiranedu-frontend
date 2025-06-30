@@ -1471,6 +1471,30 @@
         "message": "Mesajınız",
         "submit": "Gönder"
       }
+    },
+    "LoginRegister":{
+      "title": "Giriş Yap / Kayıt Ol",
+      "description": "Smyrna Edu Danışmanlık platformuna giriş yaparak, danışmanlık hizmetlerimize erişebilir, başvurularınızı takip edebilir ve eğitim fırsatlarından haberdar olabilirsiniz. Henüz üye değilseniz, kayıt olabilirsiniz.",
+      "layout-login-title": "Tekrar Hoş Geldiniz",
+      "layout-register-title": "Hoş Geldiniz",
+      "layout-description":"Smyrna Edu Danışmanlık’a giriş yaparak hizmetlerimize ulaşabilir, başvurularınızı takip edip eğitim fırsatlarını keşfedebilirsiniz. Henüz üye değilseniz, hemen kayıt olun!",
+      "login": {
+        "title": "Giriş Yap",
+        "email": "E-posta Adresiniz",
+        "password": "Şifreniz",
+        "remember-me": "Beni Hatırla",
+        "forgot-password": "Şifremi Unuttum",
+        "login-button": "Giriş Yap"
+      },
+      "register": {
+        "title": "Kayıt Ol",
+        "name": "Adınız",
+        "surname": "Soyadınız",
+        "email": "E-posta Adresiniz",
+        "password": "Şifreniz",
+        "confirm-password": "Şifreyi Onayla",
+        "register-button": "Kayıt Ol"
+      }
     }
   }
 ]
