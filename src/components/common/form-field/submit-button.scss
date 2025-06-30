@@ -1,0 +1,21 @@
+@use "@/styles/variables.scss" as *;
+@use "@/styles/mixins.scss" as *;
+
+.submit-button {
+  background-color: $mainColor1 !important;
+  width: 150px;
+  height: 40px;
+  @include flexbox($ai: center, $jc: center);
+  @include borderRadius(5px);
+
+  border: 2px solid $mainColor1;
+  color: $mainColor-white;
+
+  &:hover {
+    background-color: $mainColor-white !important;
+    color: $mainColor1;
+    font-weight: 500;
+    transform: scale(1.1);
+    transition: all 0.5s;
+  }
+}
