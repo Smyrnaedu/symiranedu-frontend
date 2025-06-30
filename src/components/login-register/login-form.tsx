@@ -12,21 +12,21 @@ const LoginForm: React.FC = () => {
 
   return (
     <Form className="login-form">
+      <TextInput
+        label="E-Posta Adresiniz"
+        name="username"
+        // error={state?.errors?.username}
+        // defaultValue={state.data.username ?? "root"}
+      />
       <PasswordInput
-        label="Password"
+        label="Şifreniz"
         name="password"
         defaultValue={password}
         // error={state?.errors?.password}
         // defaultValue={state.data.password ?? "12345aA."}
       />
-      <TextInput
-        label="Username"
-        name="username"
-        // error={state?.errors?.username}
-        // defaultValue={state.data.username ?? "root"}
-      />
       <SubmitButton
-        title="Login"
+        title="Giriş Yap"
         icon="sign-in"
         />
     </Form>
