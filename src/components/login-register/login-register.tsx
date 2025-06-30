@@ -24,16 +24,24 @@ const LoginRegisterSection: React.FC<LoginRegisterSectionProps> = ({
   loginRegisterData,
 }) => {
   const [isLogin, setIsLogin] = useState(true);
+  
+  const login = {
+    title: loginRegisterData.login.title,
+    email: loginRegisterData.login.email,
+    password: loginRegisterData.login.password,
+    loginButton: loginRegisterData.login.loginButton,
+  };
+
+  const register = loginRegisterData.register;
+
+  // Extract layout and button texts from loginRegisterData
   const layoutLoginTitle = loginRegisterData["layout-login-title"];
   const layoutRegisterTitle = loginRegisterData["layout-register-title"];
-  const layoutDescriptionForLogin =
-    loginRegisterData["layout-description-for-login"];
-  const layoutDescriptionForRegister =
-    loginRegisterData["layout-description-for-register"];
+  const layoutDescriptionForLogin = loginRegisterData["layout-description-for-login"];
+  const layoutDescriptionForRegister = loginRegisterData["layout-description-for-register"];
   const loginButtonText = loginRegisterData["login-button"];
   const registerButtonText = loginRegisterData["register-button"];
-  const login = loginRegisterData.login;
-  const register = loginRegisterData.register;
+
   return (
     <section className="container login-register-container">
       <Row className="login-register-section">

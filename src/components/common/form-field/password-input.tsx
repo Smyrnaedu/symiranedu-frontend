@@ -1,21 +1,26 @@
-"use client";
 import React, { useState } from "react";
-import { FloatingLabel, FormControl, FormGroup } from "react-bootstrap";
+import {
+  FloatingLabel,
+  FormControl,
+  FormGroup,
+  FormControlProps
+} from "react-bootstrap";
 import "./password-input.scss";
 
 type PasswordInputProps = {
-    label: string;
-    error?: string;
-    className?: string;
-    [key: string]: any;
-}
+  label: string;
+  error?: string;
+  className?: string;
+} & Omit<FormControlProps, "size">; // ✅ Çakışan size prop'u çıkarıldı
 
-export const PasswordInput: React.FC<PasswordInputProps> = (props) => {
-  const { label, error, className = "password-base", ...rest } = props;
+export const PasswordInput: React.FC<PasswordInputProps> = ({
+  label,
+  error,
+  className = "password-base",
+  ...rest
+}) => {
+  const [type, setType] = useState<"text" | "password">("password");
 
- 
-
-  const [type, setType] = useState("password");
   const handleClick = () => {
     setType((prev) => (prev === "password" ? "text" : "password"));
   };
@@ -26,20 +31,18 @@ export const PasswordInput: React.FC<PasswordInputProps> = (props) => {
         <FormControl
           isInvalid={!!error}
           type={type}
+          size="lg"
           placeholder={label}
-        
           {...rest}
         />
-        <FormControl.Feedback type="invalid">{error}</FormControl.Feedback>
-        <span
-          id="password"
-          onClick={handleClick}
-          style={{ cursor: "pointer" }}
-        >
+        <FormControl.Feedback type="invalid">
+          {error}
+        </FormControl.Feedback>
+        <span id="password" onClick={handleClick} style={{ cursor: "pointer" }}>
           {type === "password" ? (
             <i className="pi pi-eye-slash" />
           ) : (
-            <i className="pi pi-eye"></i>
+            <i className="pi pi-eye" />
           )}
         </span>
       </FloatingLabel>
