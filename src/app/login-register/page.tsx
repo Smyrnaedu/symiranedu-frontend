@@ -1,22 +1,27 @@
+import { Metadata } from "next";
 import { Spacer } from "@/components/common/spacer";
-import LoginRegisterSection from "@/components/login-register/login-register";
-import React from "react";
+
 import data from "@/helpers/data/tr.json";
+import LoginRegisterSection from "@/components/login-register/login-register";
 
-const LoginPage: React.FC = () => {
+export async function generateMetadata(): Promise<Metadata> {
   const loginRegisterData = data[0]?.LoginRegister || {};
-  console.log("LoginRegister Data:", loginRegisterData);
 
-  
+  return {
+    title: loginRegisterData.title || "Giriş Yap / Kayıt Ol",
+    description:
+      loginRegisterData.description ||
+      "Smyrna Edu Danışmanlık platformuna giriş yapın, hizmetlere ulaşın.",
+  };
+}
+
+const LoginPage = () => {
+  const loginRegisterData = data[0]?.LoginRegister || {};
+
   return (
     <>
       <Spacer />
-      <LoginRegisterSection
-        {...loginRegisterData}
-        layoutLoginTitle={loginRegisterData["layout-login-title"]}
-        layoutRegisterTitle={loginRegisterData["layout-register-title"]}
-        layoutDescription={loginRegisterData["layout-description"]}
-      />
+      <LoginRegisterSection loginRegisterData={loginRegisterData} />
       <Spacer />
     </>
   );

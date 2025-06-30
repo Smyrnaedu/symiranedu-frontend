@@ -1,34 +1,51 @@
 "use client";
-import React from "react";
+import React, { useState } from "react";
+import { Form } from "react-bootstrap";
 import { PasswordInput } from "../common/form-field/password-input";
 import { TextInput } from "../common/form-field/text-input";
-import { Form } from "react-bootstrap";
 import { SubmitButton } from "../common/form-field/submit-button";
 
-const LoginForm: React.FC = () => {
-  const [password, setPassword] = React.useState("");
+type LoginFormData = {
+  title: string;
+  email: string;
+  password: string;
+  rememberMe?: string;
+  forgotPassword?: string;
+  loginButton: string;
+};
 
-  // const [state, formAction] = useActionState(loginAction, initialState);
+type LoginFormProps = {
+  login: LoginFormData;
+};
+
+const LoginForm: React.FC<LoginFormProps> = ({ login }) => {
+  const [password, setPassword] = useState("");
+  const [remember, setRemember] = useState(false);
+
+  const {
+    email,
+    password: passwordLabel,
+    loginButton,
+    title,
+    rememberMe,
+    forgotPassword,
+  } = login;
 
   return (
     <Form className="login-form">
-      <TextInput
-        label="E-Posta Adresiniz"
-        name="username"
-        // error={state?.errors?.username}
-        // defaultValue={state.data.username ?? "root"}
-      />
+      <h4>{title}</h4>
+
+      <TextInput label={email} name="email" type="email" required />
+
       <PasswordInput
-        label="Şifreniz"
+        label={passwordLabel}
         name="password"
-        defaultValue={password}
-        // error={state?.errors?.password}
-        // defaultValue={state.data.password ?? "12345aA."}
+        value={password}
+        onChange={(e) => setPassword(e.target.value)}
+        required
       />
-      <SubmitButton
-        title="Giriş Yap"
-        icon="sign-in"
-        />
+
+      <SubmitButton title={loginButton} icon="sign-in" />
     </Form>
   );
 };
