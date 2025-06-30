@@ -1,10 +1,14 @@
 "use client";
-import React from 'react'
+import React from "react";
 
-const RegisterForm: React.FC = () => {
-  return (
-    <div>RegisterForm</div>
-  )
-}
+type RegisterFormProps = {
+  register: Record<string, string>;
+};
 
-export default RegisterForm
+const RegisterForm: React.FC<RegisterFormProps> = ({ register }) => {
+  
+  const { title, email, password, confirmPassword, registerButton } = register;
+  return <div>RegisterForm</div>;
+};
+
+export default RegisterForm;
