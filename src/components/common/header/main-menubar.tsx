@@ -36,7 +36,7 @@ const MainMenubar: React.FC = () => {
           </Offcanvas.Header>
           <Offcanvas.Body className="align-items-center">
             <MainMenu className="justify-content-center flex-grow-1" />
-           <ButtonComponent link="/login" title="Login / Register" />
+           <ButtonComponent link="/login-register" title="Login / Register" />
           </Offcanvas.Body>
         </Navbar.Offcanvas>
       </Container>

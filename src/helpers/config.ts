@@ -81,7 +81,7 @@ export const appConfig = {
       }
     },
   },
-  apiURL: "",
+  apiURL: "localhost:8080/smyrna",
   educationTerms: [
     { label: "Fall", value: "FALL_SEMESTER" },
     { label: "Spring", value: "SPRING_SEMESTER" },
