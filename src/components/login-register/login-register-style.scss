@@ -13,6 +13,15 @@
       .login-section {
         z-index: 1;
         @include flexbox($fd: row, $jc: center, $ai: center);
+        .login-form{
+          h4{
+            text-align: center;
+            color: $mainColor1;
+            font-size: 2.5rem;
+            font-weight: 600;
+
+          }
+        }
       }
 
       .register-section {
