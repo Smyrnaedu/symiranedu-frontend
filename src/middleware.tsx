@@ -1,0 +1,2 @@
+export { auth as middleware } from "@/auth"
+//kullanıcı login olduktan sonra oluşan session'ın uygulamanın nerelerinden erişeceğini belirler. şu aşamada uygulamanın  her yerinden erişilebileceğini belirtiyoruz.

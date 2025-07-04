@@ -1472,15 +1472,15 @@
         "submit": "Gönder"
       }
     },
-    "LoginRegister":{
+    "LoginRegister": {
       "title": "Giriş Yap / Kayıt Ol",
       "description": "Smyrna Edu Danışmanlık platformuna giriş yaparak, danışmanlık hizmetlerimize erişebilir, başvurularınızı takip edebilir ve eğitim fırsatlarından haberdar olabilirsiniz. Henüz üye değilseniz, kayıt olabilirsiniz.",
       "layout-login-title": "Tekrar Hoş Geldiniz",
       "layout-register-title": "Hoş Geldiniz",
-      "layout-description-for-login":"Smyrna Edu Danışmanlık’a giriş yaparak hizmetlerimize ulaşabilir, başvurularınızı takip edip eğitim fırsatlarını keşfedebilirsiniz. Hemen giriş yapın!",
-      "login-button":"Giriş Yap",
-      "layout-description-for-register":"Smyrna Edu Danışmanlık platformuna kayıt olarak, eğitim fırsatlarından haberdar olabilir, danışmanlık hizmetlerimize erişebilir ve başvurularınızı takip edebilirsiniz. Hemen kayıt olun!",
-      "register-button":"Kayıt Ol",
+      "layout-description-for-login": "Smyrna Edu Danışmanlık’a giriş yaparak hizmetlerimize ulaşabilir, başvurularınızı takip edip eğitim fırsatlarını keşfedebilirsiniz. Hemen giriş yapın!",
+      "login-button": "Giriş Yap",
+      "layout-description-for-register": "Smyrna Edu Danışmanlık platformuna kayıt olarak, eğitim fırsatlarından haberdar olabilir, danışmanlık hizmetlerimize erişebilir ve başvurularınızı takip edebilirsiniz. Hemen kayıt olun!",
+      "register-button": "Kayıt Ol",
       "login": {
         "title": "Giriş Yap",
         "email": "E-posta Adresiniz",
@@ -1493,8 +1493,21 @@
         "title": "Kayıt Ol",
         "name": "Adınız",
         "surname": "Soyadınız",
+        "residence": "Adresiniz",
+        "cityId": "Şehir",
+        "phoneNumber": "Telefon Numarası",
+        "familyPhoneNumber": "Aile Telefon Numarası",
+        "gender": {
+          "title": "Cinsiyet",
+          "genders": {
+            "male": "Erkek",
+            "female": "Kadın"
+          }
+        },
+        "highSchool": "Lise",
+        "birthDate": "Dogum Tarihi",
         "email": "E-posta Adresiniz",
-        "password": "Şifreniz",
+        "passwordLabel": "Şifreniz",
         "confirmPassword": "Şifreyi Onayla",
         "registerButton": "Kayıt Ol"
       }
