@@ -1,3 +1,4 @@
+"use client";
 import React, { useState } from "react";
 import {
   FloatingLabel,
@@ -20,6 +21,7 @@ export const PasswordInput: React.FC<PasswordInputProps> = ({
   ...rest
 }) => {
   const [type, setType] = useState<"text" | "password">("password");
+  const [val, setVal] = useState("");
 
   const handleClick = () => {
     setType((prev) => (prev === "password" ? "text" : "password"));
@@ -34,6 +36,8 @@ export const PasswordInput: React.FC<PasswordInputProps> = ({
           size="lg"
           placeholder={label}
           {...rest}
+          value={val}
+          onChange={(e) => setVal(e.target.value)}
         />
         <FormControl.Feedback type="invalid">
           {error}

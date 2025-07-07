@@ -6,7 +6,7 @@ import { TextInput } from "../common/form-field/text-input";
 import { PasswordInput } from "../common/form-field/password-input";
 import { SubmitButton } from "../common/form-field/submit-button";
 import { MaskedInput } from "../common/form-field/masked-input";
-import { SelectInput } from "./select-input";
+import { SelectInput } from "../common/form-field/select-input";
 import { DateInput } from "../common/form-field/date-input";
 
 type RegisterFormProps = {

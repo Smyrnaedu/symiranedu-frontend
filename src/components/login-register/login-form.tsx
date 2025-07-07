@@ -35,12 +35,18 @@ const LoginForm: React.FC<LoginFormProps> = ({ login }) => {
     <Form className="login-form">
       <h4>{title}</h4>
 
-      <TextInput label={email} name="email" type="email" required />
+      <TextInput
+        label={email}
+        name="email"
+        type="email"
+        defaultValue={email}
+        required
+      />
 
       <PasswordInput
         label={passwordLabel}
         name="password"
-        value={password}
+        defaultValue={password}
         onChange={(e) => setPassword(e.target.value)}
         required
       />

@@ -5,26 +5,25 @@ import "./login-register-style.scss";
 import LoginForm from "./login-form";
 import RegisterForm from "./register-form";
 import LayoutTextSection from "./layout-text";
-
-type LoginRegisterSectionProps = {
+interface LoginRegisterSectionProps {
   loginRegisterData: {
+    [key: string]: any;
     "layout-login-title": string;
     "layout-register-title": string;
     "layout-description-for-login": string;
     "layout-description-for-register": string;
     "login-button": string;
     "register-button": string;
-    login: Record<string, string>;
-    register: Record<string, string>;
-    [key: string]: any;
+    login: Record<string, any>;
+    register: Record<string, any>;
   };
-};
+}
 
 const LoginRegisterSection: React.FC<LoginRegisterSectionProps> = ({
   loginRegisterData,
 }) => {
   const [isLogin, setIsLogin] = useState(true);
-  
+
   const login = {
     title: loginRegisterData.login.title,
     email: loginRegisterData.login.email,
@@ -37,8 +36,10 @@ const LoginRegisterSection: React.FC<LoginRegisterSectionProps> = ({
   // Extract layout and button texts from loginRegisterData
   const layoutLoginTitle = loginRegisterData["layout-login-title"];
   const layoutRegisterTitle = loginRegisterData["layout-register-title"];
-  const layoutDescriptionForLogin = loginRegisterData["layout-description-for-login"];
-  const layoutDescriptionForRegister = loginRegisterData["layout-description-for-register"];
+  const layoutDescriptionForLogin =
+    loginRegisterData["layout-description-for-login"];
+  const layoutDescriptionForRegister =
+    loginRegisterData["layout-description-for-register"];
   const loginButtonText = loginRegisterData["login-button"];
   const registerButtonText = loginRegisterData["register-button"];
 
