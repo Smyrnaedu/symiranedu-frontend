@@ -7,11 +7,12 @@ import { LOGIN_API_ROUTE, REGISTER_API_ROUTE } from "@/helpers/api-routes";
 //fetch işlemini yapan yer. bu method auth.js de çağrılacak
 
 interface LoginPayload {
-    username: string;
+    email: string;
     password: string;
 }
 
 export const login = (payload: LoginPayload): Promise<Response> => {
+    console.log(payload);
     return fetch(LOGIN_API_ROUTE, {
         method: 'POST',
         headers: {

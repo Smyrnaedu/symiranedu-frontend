@@ -1,36 +1,44 @@
 "use client";
-import React, { useState } from "react";
+import React from "react";
 import { FormControl, FormFloating, FormGroup } from "react-bootstrap";
 import "./text-input.scss";
 
 type TextInputProps = {
   label: string;
+  name: string;
+  value: string;
+  onChange: (e: React.ChangeEvent<HTMLInputElement>) => void;
   error?: string;
   className?: string;
-  [key: string]: any;
+  type?: string;
 };
 
 export const TextInput: React.FC<TextInputProps> = ({
   label,
+  name,
+  value,
+  onChange,
   error,
   className = "text-base",
-  ...rest
+  type = "text",
 }) => {
-  const [val, setVal] = useState("");
   return (
-    <FormGroup className={className} controlId={rest.name}>
+    <FormGroup className={className} controlId={name}>
       <FormFloating>
         <FormControl
+          type={type}
+          name={name}
+          value={value ?? ""}
+          onChange={onChange}
           isInvalid={!!error}
           size="lg"
-          {...rest}
           placeholder={label}
-          value={val}
-          onChange={(e) => setVal(e.target.value)}
         />
-        <label htmlFor={rest.name}>{label}</label>
+        <label htmlFor={name}>{label}</label>
         <FormControl.Feedback type="invalid">{error}</FormControl.Feedback>
       </FormFloating>
     </FormGroup>
   );
 };
+
+export default TextInput;
