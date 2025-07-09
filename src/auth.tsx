@@ -20,113 +20,63 @@ interface AppUser extends Record<string, unknown> {
   role: string;
   token?: string;
 }
+type LoginPayload = {
+  email: string;
+  password: string;
+};
 
 // NextAuth config yapısı
 const config: NextAuthConfig = {
   // Kullanıcı girişi için özel Credential Provider
   providers: [
     CredentialsProvider({
-      // Giriş yapan kullanıcının verileri burada kontrol edilir
-      async authorize(credentials) {
-        const { username, password } = credentials as {
-          username?: string;
-          password?: string;
-        };
-        if (!username || !password) return null;
+      authorize: async (
+        credentials: Record<"email" | "password", string> | undefined
+      ) => {
+        if (!credentials) return null;
 
-        const res = await login({ username, password }); // API login
+        const payload: LoginPayload = {
+          email: credentials.email,
+          password: credentials.password,
+        };
+
+        const res = await login(payload);
+        console.log("response",res);
         const data = await res.json();
 
-        if (!res.ok) return null; // login başarısız
+        if (!data.ok) return null;
 
-        const { token, ...userWithoutToken } = data;
-        return userWithoutToken as AppUser; // user döndürülür
-      },
-    }),
+        console.log("data:", data);
+
+        const response = {
+          user:{...data},
+          accessToken: data.token,
+        };
+        delete response.user.token;
+        return response;
+        },
+      }),
   ],
 
   // Yetkilendirme kontrolü (middleware fonksiyonu gibi)
-  callbacks: {
-    // Kullanıcı belirli bir sayfaya erişmek istediğinde kontrol burada yapılır
-    authorized({
-      request,
-      auth,
-    }: {
-      request: NextRequest;
-      auth: Session | null;
-    }) {
-      const { pathname, searchParams, origin } = request.nextUrl;
+  callbacks: {/* 
+    authorized({auth, request}){
 
-      const user = auth?.user as AppUser | undefined;
-      const accessToken = (auth as any)?.accessToken as string | undefined;
-
-      const userRole = user?.role;
-      const isLoggedIn = Boolean(userRole);
-      const isInLoginPage = pathname.startsWith("/login");
-      const isInDashboardPages = pathname.startsWith("/dashboard");
-      const isAPITokenValid = getIsTokenValid(accessToken);
-
-      // Kullanıcı login olduysa ve token geçerliyse
-      if (isLoggedIn && isAPITokenValid) {
-        // Login olan biri login sayfasına dönmeye çalışırsa → redirect dashboard
-        if (isInLoginPage) {
-          const url = searchParams.get("callbackUrl") || `${origin}/dashboard`;
-          return NextResponse.redirect(url);
-        }
-
-        // Dashboard erişimi varsa → rol kontrolü yapılır
-        if (isInDashboardPages) {
-          const isUserAuthorized = getIsUserAuthorized(userRole!, pathname);
-          if (!isUserAuthorized) {
-            return NextResponse.redirect(`${origin}/unauthorized`);
-          }
-        }
-      }
-      // Login olmayan biri dashboard’a gitmeye çalışıyorsa → erişim engeli
-      else if (isInDashboardPages) {
-        return false;
-      }
-
-      // Diğer sayfalar herkese açık
-      return true;
     },
-
-    // JWT token üretimi ve oturum yönetimi
-    async jwt({ token, user }: { token: JWT; user?: User }) {
-      // Kullanıcı varsa token’a kullanıcı bilgisi eklenir
-      if (user) {
-        // Eğer user, AppUser ise (rol varsa) onu ekle, yoksa User’dan türet
-        const appUser = (user as AppUser).role
-          ? (user as AppUser)
-          : {
-              id: user.id,
-              email: user.email,
-              name: user.name,
-              role: undefined,
-            };
-
-        token.user = appUser;
-        token.accessToken =
-          (appUser as AppUser).token ?? (token as any).accessToken;
-      }
-
-      // Token süresi dolmuşsa → logout yapılır
-      if (!getIsTokenValid((token as any).accessToken)) {
-        return null;
-      }
-
-      return token;
+    async jwt({token, user}){
+      return {...token, ...user};
     },
+    async session({session, token}){
 
-    // Oturum oluşturulurken session içine token ve user bilgileri eklenir
-    async session({ session, token }: { session: Session; token: JWT }) {
-      session.user = token.user as AppUser;
-      session.accessToken = token.accessToken as string;
+      const { accessToken, user } = token;
+     
+      session.user = user;
+      session.accessToken = accessToken;
+
       return session;
-    },
-  },
+    }, */
 
-  // Login sayfası özel tanım
+  },
   pages: {
     signIn: "/login",
   },

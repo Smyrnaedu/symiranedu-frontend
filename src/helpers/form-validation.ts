@@ -1,18 +1,53 @@
-// Yup'ın ValidationError sınıfı dışarı aktarılıyor
+import { ValidationError } from "yup";
+
+// ✅ Yup'ın ValidationError sınıfı dışarı aktarılıyor
 export { ValidationError as YupValidationError } from "yup";
 
-// FormData'nın JSON'a dönüştürülmesi için tip tanımları
+//
+// ✅ 1. JSON Tipleri
+//
+export type JSONPrimitive = string | number | boolean | null;
+
+export type JSONValue = JSONPrimitive | JSONObject | JSONArray;
+
 export interface JSONObject {
-  [key: string]: string | number | boolean | null | JSONObject | JSONArray;
+  [key: string]: JSONValue;
 }
 
-export interface JSONArray extends Array<string | number | boolean | null | JSONObject | JSONArray> {}
+export type JSONArray = JSONValue[];
 
-export const convertFormDataToJSON = (formData: Iterable<[string, FormDataEntryValue]>): JSONObject => {
-  return Object.fromEntries(formData) as JSONObject;
+//
+// ✅ 2. FormData to JSONObject dönüştürücü
+//
+
+export const convertToJSONObject = (data: unknown): JSONObject => {
+  if (typeof data === "object" && data !== null) {
+    // Eğer FormData ise
+    if (data instanceof FormData) {
+      return Object.fromEntries(data.entries()) as JSONObject;
+    }
+
+    // Eğer iterable key-value pair ise
+    if (Symbol.iterator in Object(data)) {
+      try {
+        return Object.fromEntries(data as Iterable<[string, FormDataEntryValue]>) as JSONObject;
+      } catch (e) {
+        console.error("Error converting iterable to JSONObject:", e);
+        return {};
+      }
+    }
+
+    // Normal JS object
+    return data as JSONObject;
+  }
+
+  throw new Error("Unsupported data type for JSON conversion");
 };
 
-// Genel response tipi
+//
+// ✅ 3. Genel Response tipi ve üreticisi
+//
+
 export interface Response<T = unknown, E = Record<string, string>> {
   ok: boolean;
   data: T;
@@ -20,43 +55,40 @@ export interface Response<T = unknown, E = Record<string, string>> {
   errors: E;
 }
 
-// Response üreten yardımcı fonksiyon
 export const response = <T = unknown, E = Record<string, string>>(
   ok: boolean,
   data: T,
   message: string,
   errors: E
-): Response<T, E> => {
-  return {
-    ok,
-    data,
-    message,
-    errors,
-  };
-};
+): Response<T, E> => ({
+  ok,
+  data,
+  message,
+  errors,
+});
 
-// initialState başlangıç objesi (form için)
-export const initialState: Response<object, Record<string, string>> = response(false, {}, "", {});
+//
+// ✅ 4. useActionState için uyumlu başlangıç state
+//
 
-// Yup validasyon hatası tipi (path opsiyonel hale getirildi)
-export interface YupErrorItem {
-  path?: string;
-  message: string;
-}
+export const initialState: Response<JSONObject> = response(false, {}, "", {});
 
-// transformYupErrors tipi
+//
+// ✅ 5. Yup Hata Dönüştürücü
+//
+
 export interface TransformYupErrorsResponse<T = unknown> extends Response<T, Record<string, string>> {}
 
-// Yup hatalarını error objesine dönüştürür
-export const transformYupErrors = <T = unknown>(
-  errors: YupErrorItem[],
-  data: T
-): TransformYupErrorsResponse<T> => {
+export const transformYupErrors = (
+  errors: ValidationError[],
+  data: JSONObject
+): TransformYupErrorsResponse<JSONObject> => {
   const errObject: Record<string, string> = {};
 
-  // path varsa işlenir (undefined olanlar atlanır)
   errors
-    .filter((item): item is YupErrorItem & { path: string } => Boolean(item.path))
+    .filter((item): item is ValidationError & { path: string } =>
+      typeof item.path === "string" && item.path.length > 0
+    )
     .forEach((item) => {
       errObject[item.path] = item.message;
     });
