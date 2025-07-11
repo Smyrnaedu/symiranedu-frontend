@@ -1,5 +1,5 @@
 "use client";
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import { Col, Form, Row } from "react-bootstrap";
 
 import { TextInput } from "../common/form-field/text-input";
@@ -9,12 +9,32 @@ import { MaskedInput } from "../common/form-field/masked-input";
 import { SelectInput } from "../common/form-field/select-input";
 import { DateInput } from "../common/form-field/date-input";
 
+type CityOption = { label: string; value: number };
+
 type RegisterFormProps = {
-  register: Record<string, any>;
-  [key: string]: any;
+  register: {
+    title: string;
+    name: string;
+    surname: string;
+    phoneNumber: string;
+    familyPhoneNumber: string;
+    email: string;
+    passwordLabel: string;
+    confirmPassword: string;
+    registerButton: string;
+    gender: {
+      title: string;
+      genders: Record<string, string>;
+    };
+    birthDate: string;
+    residence: string;
+    cityId: string;
+    highSchool: string;
+  };
+  cities: CityOption[]; // dışarıdan geliyor
 };
 
-const RegisterForm: React.FC<RegisterFormProps> = ({ register }) => {
+const RegisterForm: React.FC<RegisterFormProps> = ({ register, cities }) => {
   const {
     title,
     name,
@@ -33,7 +53,7 @@ const RegisterForm: React.FC<RegisterFormProps> = ({ register }) => {
   } = register;
 
   const [password, setPassword] = useState("");
-  const [cities, setCities] = useState<{ label: string; value: number }[]>([]);
+  const [selectedCityId, setSelectedCityId] = useState<number | null>(null);
 
   return (
     <Form className="login-form">
@@ -50,20 +70,10 @@ const RegisterForm: React.FC<RegisterFormProps> = ({ register }) => {
 
       <Row>
         <Col md={6}>
-          <MaskedInput
-            label={phoneNumber}
-            name="phoneNumber"
-            type="text"
-            required
-          />
+          <MaskedInput label={phoneNumber} name="phoneNumber" required />
         </Col>
         <Col md={6}>
-          <MaskedInput
-            label={familyPhoneNumber}
-            name="familyPhoneNumber"
-            type="text"
-            required
-          />
+          <MaskedInput label={familyPhoneNumber} name="familyPhoneNumber" required />
         </Col>
       </Row>
 
@@ -86,20 +96,8 @@ const RegisterForm: React.FC<RegisterFormProps> = ({ register }) => {
         </Col>
       </Row>
 
-      <TextInput
-        label={highSchool}
-        name="highSchool"
-        type="text"
-        as="textarea"
-        required
-      />
-      <TextInput
-        label={residence}
-        name="residence"
-        type="text"
-        as="textarea"
-        required
-      />
+      <TextInput label={highSchool} name="highSchool" as="textarea" required />
+      <TextInput label={residence} name="residence" as="textarea" required />
 
       <Row>
         <Col md={6}>
@@ -110,16 +108,14 @@ const RegisterForm: React.FC<RegisterFormProps> = ({ register }) => {
             optionLabel="label"
             optionValue="value"
             options={cities}
+            value={selectedCityId ?? ""}
+            onChange={(e: React.ChangeEvent<HTMLSelectElement>) =>
+              setSelectedCityId(Number(e.target.value))
+            }
           />
         </Col>
         <Col md={6}>
-          <DateInput
-            label={birthDate}
-            name="birthDay"
-            dateFormat="yy-mm-dd"
-            error=""
-            required
-          />
+          <DateInput label={birthDate} name="birthDay" dateFormat="yy-mm-dd" required />
         </Col>
       </Row>
 
@@ -128,7 +124,6 @@ const RegisterForm: React.FC<RegisterFormProps> = ({ register }) => {
           <PasswordInput
             label={passwordLabel}
             name="password"
-            type="password"
             required
             onChange={(e: React.ChangeEvent<HTMLInputElement>) =>
               setPassword(e.target.value)
@@ -139,9 +134,8 @@ const RegisterForm: React.FC<RegisterFormProps> = ({ register }) => {
           <PasswordInput
             label={confirmPassword}
             name="confirmPassword"
-            type="password"
             required
-            value={password}
+            defaultValue={password}
           />
         </Col>
       </Row>

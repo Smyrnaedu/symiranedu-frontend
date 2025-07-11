@@ -6,29 +6,32 @@ import "./text-input.scss";
 type TextInputProps = {
   label: string;
   name: string;
-  value: string;
-  onChange: (e: React.ChangeEvent<HTMLInputElement>) => void;
+  defaultValue?: string;
+  onChange?: (e: React.ChangeEvent<HTMLInputElement>) => void;
   error?: string;
   className?: string;
   type?: string;
+  required?: boolean;
+   as?: 'input' | 'textarea';
 };
 
 export const TextInput: React.FC<TextInputProps> = ({
   label,
   name,
-  value,
+  defaultValue = "",
   onChange,
   error,
   className = "text-base",
   type = "text",
 }) => {
   return (
-    <FormGroup className={className} controlId={name}>
+    <FormGroup className={className}>
       <FormFloating>
         <FormControl
-          type={type}
+          id={name}
           name={name}
-          value={value ?? ""}
+          type={type}
+          defaultValue={defaultValue}
           onChange={onChange}
           isInvalid={!!error}
           size="lg"
