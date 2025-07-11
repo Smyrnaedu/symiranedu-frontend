@@ -35,16 +35,16 @@ export const isTimeValid = (time: IsTimeValidInput["time"]): boolean => {
 	return regex.test(time);
 };
 
-
 export interface ConvertTimeToDateTimeInput {
 	time: string;
 }
 
-export interface ConvertTimeToDateTimeOutput extends Date {}
+// ❌ Şu satıra artık gerek yok:
+// export interface ConvertTimeToDateTimeOutput extends Date {}
 
 export const convertTimeToDateTime = (
 	time: ConvertTimeToDateTimeInput["time"]
-): ConvertTimeToDateTimeOutput => {
+): Date => {
 	const dateTimeStr = `2000-01-01 ${time}`;
 	return new Date(dateTimeStr);
 };

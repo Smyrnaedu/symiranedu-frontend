@@ -1,5 +1,5 @@
 "use client";
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { Form } from "react-bootstrap";
 import { PasswordInput } from "../common/form-field/password-input";
 import { TextInput } from "../common/form-field/text-input";
@@ -7,7 +7,6 @@ import { SubmitButton } from "../common/form-field/submit-button";
 import { loginAction } from "@/actions/auth-action";
 import { initialState } from "@/helpers/form-validation";
 import { useActionState } from "react";
-import { Console } from "node:console";
 
 type LoginFormData = {
   title: string;
@@ -25,21 +24,26 @@ type LoginFormProps = {
 const LoginForm: React.FC<LoginFormProps> = ({ login }) => {
   const [state, formAction] = useActionState(loginAction, initialState);
 
-  const [emailValue, setEmailValue] = useState(
-    typeof state.data.email === "string" ? state.data.email : "anihalersoy@gmail.com"
-  );
-  const [passwordValue, setPasswordValue] = useState(
-    typeof state.data.password === "string" ? state.data.password : "Aa1234567."
-  );
+  console.log("state", state);
 
-  console.log("STATE",state);
+  const [emailValue, setEmailValue] = useState("anihalersoy@gmail.com");
+  const [passwordValue, setPasswordValue] = useState("Aa1234567.");
+
+  useEffect(() => {
+    if (typeof state.data.email === "string") {
+      setEmailValue(state.data.email);
+    }
+
+    if (typeof state.data.password === "string") {
+      setPasswordValue(state.data.password);
+    }
+  }, [state.data.email, state.data.password]);
+
   const {
     email,
     password: passwordLabel,
     loginButton,
     title,
-    rememberMe,
-    forgotPassword,
   } = login;
 
   return (
@@ -50,16 +54,15 @@ const LoginForm: React.FC<LoginFormProps> = ({ login }) => {
         label={email}
         name="email"
         type="email"
-        value={emailValue}
-        onChange={(e) => setEmailValue(e.target.value)}
+        defaultValue={emailValue}
         error={state?.errors?.email}
       />
 
       <PasswordInput
         label={passwordLabel}
         name="password"
-        value={passwordValue}
-        onChange={(e) => setPasswordValue(e.target.value)}
+        
+        defaultValue={passwordValue}
         error={state?.errors?.password}
       />
 

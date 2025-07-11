@@ -1,5 +1,5 @@
 "use client";
-import React from "react";
+import React, { InputHTMLAttributes } from "react";
 import {
   FormControl,
   FormFloating,
@@ -10,24 +10,32 @@ import { InputMask } from "primereact/inputmask";
 
 type MaskedInputProps = {
   label: string;
+  name: string; // ✅ zorunlu tanım
   error?: string;
   className?: string;
   value?: string;
-  [key: string]: any;
-};
+  size?: "sm" | "lg";
+} & Omit<InputHTMLAttributes<HTMLInputElement>, "size" | "name">;
 
-export const MaskedInput: React.FC<MaskedInputProps> = (props) => {
-  const { label, error, className = "mb-3", value, ...rest } = props;
-
+export const MaskedInput: React.FC<MaskedInputProps> = ({
+  label,
+  name,
+  error,
+  className = "mb-3",
+  value,
+  size = "lg",
+  ...rest
+}) => {
   return (
-    <FormGroup className={className} controlId={rest.name}>
+    <FormGroup className={className} controlId={name}>
       <FormFloating>
         <FormControl
-          isInvalid={!!error}
-          size="lg"
-          {...rest}
-          value={value ?? ""} // Eğer value null ise boş string kullan
           as={InputMask}
+          isInvalid={!!error}
+          size={size}
+          name={name}
+          {...rest}
+          value={value ?? ""}
           placeholder={label}
         />
         <FormLabel>{label}</FormLabel>

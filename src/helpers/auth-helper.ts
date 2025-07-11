@@ -1,52 +1,55 @@
-//authentication headerını almak için bir fonk oluşturuldu
+// authentication header'ını almak için oluşturulan yardımcı fonksiyonlar
 import { auth } from "@/auth";
 import { appConfig } from "./config";
 
-export const getAuthHeader = async () => {
-  const session = await auth(); //apinin gönderdiği tokeni session içerisinden al
-  const token = (session as any)?.accessToken;
+interface AuthHeader {
+  [key: string]: string;
+}
 
-  let authHeader: { [key: string]: string } = {
+// 🔐 Token'ı header olarak hazırlayan fonksiyon
+export const getAuthHeader = async (): Promise<AuthHeader> => {
+  const session = await auth(); // API'den gelen token'ı session içinden al
+  const token = (session as { accessToken?: string } | null)?.accessToken;
+
+  const authHeader: AuthHeader = {
     "Content-Type": "application/json",
   };
 
   if (token) {
-    authHeader["Authorization"] = token; //`Bearer ${token}`normalde bu şekilde olmalı. ama şu an api den "Bearer" geliyor. bu nedenle sadece token al
+    authHeader["Authorization"] = token; // Token zaten 'Bearer ...' formatında geliyor
   }
+
   return authHeader;
 };
 
-//jwt yi parçalayacak fonk
+// 🔍 JWT Token'ı decode eden yardımcı fonksiyon
 interface JwtPayload {
   exp: number;
-  [key: string]: any;
+  [key: string]: unknown;
 }
 
 const parseJwt = (token: string): JwtPayload => {
-  //token.split('.') -> //token'i noktalardan böler ve 3 elemanlı dizi oluşturur
-  //token.split('.')[1] -> 1. elemanı alır
-  //atob() -> base64 ile sifrelenmiş datayı decode eder.
-  //JSON.parse(...) -> decode edilen datayı json formatına çevirir
-
-  return JSON.parse(atob(token.split(".")[1]));
+  try {
+    const base64Payload = token.split(".")[1];
+    const decodedPayload = atob(base64Payload);
+    return JSON.parse(decodedPayload) as JwtPayload;
+  } catch (error) {
+    console.error("JWT parse hatası:", error);
+    return { exp: 0 };
+  }
 };
 
-type GetIsTokenValid = (token: string | null | undefined) => boolean;
-
-export const getIsTokenValid: GetIsTokenValid = (token) => {
+// ✅ Token süresi kontrolü
+export const getIsTokenValid = (token: string | null | undefined): boolean => {
   if (!token) return false;
 
-  const jwtExpireTimeStamp: number = parseJwt(token).exp;
-  //burada gelen exp değeri SANIYE cinsinden olur.1 Ocak 1971 tarihinden itibaren geçen saniye
+  const jwtExpireTimeStamp = parseJwt(token).exp;
+  const jwtExpireDateTime = new Date(jwtExpireTimeStamp * 1000);
 
-  const jwtExpireDateTime: Date = new Date(jwtExpireTimeStamp * 1000);
-  //SANIYE cinsinden exp değeri milisaniyeye çevrilir ve DateTime objesi oluşturulur.
-
-  return jwtExpireDateTime > new Date();
-  //elimizdeki zaman mevcut zamandan büyükse token geçerli demektir.
+  return jwtExpireDateTime > new Date(); // Mevcut zamanla karşılaştır
 };
 
-//bu method authorize olan kullanıcının yetki kontrolü için kullanılır.
+// 🚦 Kullanıcının yetkili olup olmadığını kontrol eden fonksiyon
 interface UserRight {
   urlRegex: RegExp;
   roles: string[];
@@ -57,10 +60,12 @@ export const getIsUserAuthorized = (
   targetPath: string | null | undefined
 ): boolean => {
   if (!role || !targetPath) return false;
-  const userRight: UserRight | undefined = appConfig.userRightsOnRoutes.find(
+
+  const userRight = appConfig.userRightsOnRoutes.find(
     (item: UserRight) => item.urlRegex.test(targetPath)
   );
 
   if (!userRight) return false;
+
   return userRight.roles.includes(role);
 };

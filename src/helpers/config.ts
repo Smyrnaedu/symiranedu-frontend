@@ -81,7 +81,7 @@ export const appConfig = {
       }
     },
   },
-  apiURL: "localhost:8080/",
+  apiURL: "http://localhost:8080/",
   educationTerms: [
     { label: "Fall", value: "FALL_SEMESTER" },
     { label: "Spring", value: "SPRING_SEMESTER" },

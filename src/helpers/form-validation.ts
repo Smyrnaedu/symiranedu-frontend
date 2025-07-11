@@ -19,25 +19,23 @@ export type JSONArray = JSONValue[];
 //
 // ✅ 2. FormData to JSONObject dönüştürücü
 //
-
 export const convertToJSONObject = (data: unknown): JSONObject => {
   if (typeof data === "object" && data !== null) {
-    // Eğer FormData ise
     if (data instanceof FormData) {
       return Object.fromEntries(data.entries()) as JSONObject;
     }
 
-    // Eğer iterable key-value pair ise
     if (Symbol.iterator in Object(data)) {
       try {
-        return Object.fromEntries(data as Iterable<[string, FormDataEntryValue]>) as JSONObject;
+        return Object.fromEntries(
+          data as Iterable<[string, FormDataEntryValue]>
+        ) as JSONObject;
       } catch (e) {
         console.error("Error converting iterable to JSONObject:", e);
         return {};
       }
     }
 
-    // Normal JS object
     return data as JSONObject;
   }
 
@@ -47,7 +45,6 @@ export const convertToJSONObject = (data: unknown): JSONObject => {
 //
 // ✅ 3. Genel Response tipi ve üreticisi
 //
-
 export interface Response<T = unknown, E = Record<string, string>> {
   ok: boolean;
   data: T;
@@ -70,28 +67,27 @@ export const response = <T = unknown, E = Record<string, string>>(
 //
 // ✅ 4. useActionState için uyumlu başlangıç state
 //
-
 export const initialState: Response<JSONObject> = response(false, {}, "", {});
 
 //
-// ✅ 5. Yup Hata Dönüştürücü
+// ✅ 5. Yup Hata Dönüştürücü (inner array ile uyumlu)
 //
-
-export interface TransformYupErrorsResponse<T = unknown> extends Response<T, Record<string, string>> {}
+export type TransformYupErrorsResponse<T = unknown> = Response<
+  T,
+  Record<string, string>
+>;
 
 export const transformYupErrors = (
-  errors: ValidationError[],
+  errors: ValidationError["inner"],
   data: JSONObject
 ): TransformYupErrorsResponse<JSONObject> => {
   const errObject: Record<string, string> = {};
 
-  errors
-    .filter((item): item is ValidationError & { path: string } =>
-      typeof item.path === "string" && item.path.length > 0
-    )
-    .forEach((item) => {
+  errors.forEach((item) => {
+    if (item.path) {
       errObject[item.path] = item.message;
-    });
+    }
+  });
 
   return response(false, data, "", errObject);
 };

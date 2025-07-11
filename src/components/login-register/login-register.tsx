@@ -5,22 +5,52 @@ import "./login-register-style.scss";
 import LoginForm from "./login-form";
 import RegisterForm from "./register-form";
 import LayoutTextSection from "./layout-text";
+
+interface CityOption {
+  label: string;
+  value: number;
+}
+
 interface LoginRegisterSectionProps {
   loginRegisterData: {
-    [key: string]: any;
     "layout-login-title": string;
     "layout-register-title": string;
     "layout-description-for-login": string;
     "layout-description-for-register": string;
     "login-button": string;
     "register-button": string;
-    login: Record<string, any>;
-    register: Record<string, any>;
+    login: {
+      title: string;
+      email: string;
+      password: string;
+      loginButton: string;
+    };
+    register: {
+      title: string;
+      name: string;
+      surname: string;
+      phoneNumber: string;
+      familyPhoneNumber: string;
+      email: string;
+      passwordLabel: string;
+      confirmPassword: string;
+      registerButton: string;
+      gender: {
+        title: string;
+        genders: Record<string, string>;
+      };
+      birthDate: string;
+      residence: string;
+      cityId: string;
+      highSchool: string;
+    };
   };
+  cities: CityOption[]; // ✅ dışarıdan gelen şehir listesi
 }
 
 const LoginRegisterSection: React.FC<LoginRegisterSectionProps> = ({
   loginRegisterData,
+  cities,
 }) => {
   const [isLogin, setIsLogin] = useState(true);
 
@@ -31,9 +61,26 @@ const LoginRegisterSection: React.FC<LoginRegisterSectionProps> = ({
     loginButton: loginRegisterData.login.loginButton,
   };
 
-  const register = loginRegisterData.register;
+  const register = {
+    title: loginRegisterData.register.title,
+    name: loginRegisterData.register.name,
+    surname: loginRegisterData.register.surname,
+    phoneNumber: loginRegisterData.register.phoneNumber,
+    familyPhoneNumber: loginRegisterData.register.familyPhoneNumber,
+    email: loginRegisterData.register.email,
+    passwordLabel: loginRegisterData.register.passwordLabel,
+    confirmPassword: loginRegisterData.register.confirmPassword,
+    registerButton: loginRegisterData.register.registerButton,
+    gender: {
+      title: loginRegisterData.register.gender.title,
+      genders: loginRegisterData.register.gender.genders,
+    },
+    birthDate: loginRegisterData.register.birthDate,
+    residence: loginRegisterData.register.residence,
+    cityId: loginRegisterData.register.cityId,
+    highSchool: loginRegisterData.register.highSchool,
+  };
 
-  // Extract layout and button texts from loginRegisterData
   const layoutLoginTitle = loginRegisterData["layout-login-title"];
   const layoutRegisterTitle = loginRegisterData["layout-register-title"];
   const layoutDescriptionForLogin =
@@ -50,7 +97,7 @@ const LoginRegisterSection: React.FC<LoginRegisterSectionProps> = ({
           <LoginForm login={login} />
         </Col>
         <Col md={6} className="register-section">
-          <RegisterForm register={register} />
+          <RegisterForm register={register} cities={cities} />
         </Col>
         <Col
           md={6}

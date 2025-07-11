@@ -18,20 +18,20 @@ export const loginAction = async (
 ): Promise<TransformYupErrorsResponse<JSONObject>> => {
   const fields: JSONObject = convertToJSONObject(formData);
 
+  console.log("FORM DATA", fields);
   try {
     // 1 - Doğrulama
-    AuthSchema.validateSync(fields);
+    AuthSchema.validateSync(fields, { abortEarly: false }); // ✅ Tüm hataları alır
 
-
-
-    // 2 - Giriş API çağrısı (bu sadece örnek, sunucuda signIn çalışmayabilir)
+    console.log("FORM DATA2", fields);
+    // 2 - Giriş API çağrısı 
     await signIn("credentials", {
       redirect: false,
       ...fields,
     });
 
     // 3 - Başarılı cevap
-    return response(true, fields, "Giriş başarılı", {});
+    return response(true, fields, "Success", {});
   } catch (error) {
     if (error instanceof ValidationError) {
       return transformYupErrors(error.inner, fields);
