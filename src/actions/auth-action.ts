@@ -1,3 +1,5 @@
+
+import { redirect } from "next/navigation";
 import {
   convertToJSONObject,
   response,
@@ -19,26 +21,41 @@ export const loginAction = async (
   const fields: JSONObject = convertToJSONObject(formData);
 
   console.log("FORM DATA", fields);
+
   try {
-    // 1 - Doğrulama
-    AuthSchema.validateSync(fields, { abortEarly: false }); // ✅ Tüm hataları alır
+    // ✅ 1. Doğrulama
+    AuthSchema.validateSync(fields, { abortEarly: false });
 
     console.log("FORM DATA2", fields);
-    // 2 - Giriş API çağrısı 
-    await signIn("credentials", {
-      redirect: false,
+
+    // ✅ 2. Giriş işlemi
+    const res = await signIn("credentials", {
+ 
       ...fields,
+      callbackUrl: "/dashboard",
     });
 
-    // 3 - Başarılı cevap
-    return response(true, fields, "Success", {});
-  } catch (error) {
-    if (error instanceof ValidationError) {
-      return transformYupErrors(error.inner, fields);
-    } else if (error instanceof AuthError) {
-      return response(false, {}, "Invalid Credentials", {});
+    // ✅ 3. Başarılıysa yönlendirme
+    if (res?.ok && res.url) {
+      redirect(res.url);
     }
 
-    throw error;
+    // ❌ Hatalı giriş
+    return response(false, fields, "Email veya şifre hatalı", {});
+
+  } catch (error) {
+    // ❌ Yup validasyon hataları
+    if (error instanceof ValidationError) {
+      return transformYupErrors(error.inner, fields);
+    }
+
+    // ❌ Kimlik doğrulama hatası
+    if (error instanceof AuthError) {
+      return response(false, fields, "Invalid credentials", {});
+    }
+
+    // ❌ Diğer hatalar
+    console.error("Login hata:", error);
+    return response(false, fields, "Login failed", {});
   }
 };

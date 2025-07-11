@@ -75,11 +75,17 @@ const config: NextAuthConfig = {
     authorized({ auth, request }) {
       const { pathname, searchParams, origin } = request.nextUrl;
 
+      console.log("ORIGIN URL: ",origin);
+
       const userRole = auth?.user?.role as string;
       const isLoggedIn = !!userRole;
       const isLoginPage = pathname.startsWith("/login");
       const isInDashboardPages = pathname.startsWith("/dashboard");
       const isAPITokenValid = getIsTokenValid(auth?.accessToken as string);
+      console.log("isAPITOKENVALID",isAPITokenValid);
+      console.log("isLoggedIn:" , isLoggedIn);
+      console.log("IsLoginPage:", isLoginPage);
+      
 
       if (isLoggedIn && isAPITokenValid) {
         if (isLoginPage) {

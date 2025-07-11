@@ -74,14 +74,14 @@ export const appConfig = {
       },
 
       linkedin: {
-        url: "https://www.linkedin.com/company/smyrna-edu/",
+        url: "https://www.linkedin.com/company/smyrna-edu",
         icon: FiLinkedin,
         title: "Follow on LinkdIn",
         text: "LinkdIn",
       }
     },
   },
-  apiURL: "http://localhost:8080/",
+  apiURL: "https://afternoon-dawn-55316-e8529341562a.herokuapp.com",
   educationTerms: [
     { label: "Fall", value: "FALL_SEMESTER" },
     { label: "Spring", value: "SPRING_SEMESTER" },

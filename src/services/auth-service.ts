@@ -12,7 +12,7 @@ interface LoginPayload {
 }
 
 export const login = (payload: LoginPayload): Promise<Response> => {
-    console.log(payload);
+    console.log("LOGIN Method: ",payload);
     return fetch(LOGIN_API_ROUTE, {
         method: 'POST',
         headers: {
