@@ -15,8 +15,8 @@ export const swAlert = (
 
 // Onay kutusu (evet/hayır) için kullanılır
 export const swConfirm = (
-  title: string,
-  text: string,
+  title?: string,
+  text?: string,
   icon: SweetAlertIcon = "question",
   confirmButtonText: string = "Yes",
   cancelButtonText: string = "Cancel" // eklendi: eksik parametreydi

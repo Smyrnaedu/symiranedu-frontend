@@ -1,0 +1,87 @@
+@use "@/styles/variables" as *;
+@use "@/styles/mixins" as *;
+
+.sidebar {
+  width: 60px;
+  height: 100vh;
+  background: $mainColor-blue;
+  color: $mainColor-white;
+  @include flexbox($fd: column, $jc: center, $ai: center);
+  transition: width 0.3s ease;
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+
+  &:hover {
+    width: 350px;
+
+    .sidebar-label,
+    .sidebar-logout {
+      opacity: 1;
+      pointer-events: auto;
+    }
+
+    .sidebar-user-name {
+      opacity: 1;
+      pointer-events: auto;
+    }
+  }
+
+  &-user {
+    width: 100%;
+    padding: 20px;
+    @include flexbox($ai: center, $jc: start);
+    gap: 10px;
+
+    i {
+      font-size: 1.5rem;
+    }
+
+    .sidebar-user-name {
+      opacity: 0;
+      white-space: nowrap;
+      transition: opacity 0.3s ease;
+    }
+  }
+
+  &-menu {
+    width: 100%;
+  }
+
+  &-item {
+    width: 100%;
+    border: none;
+    background: none;
+    color: $mainColor-white;
+    @include flexbox($ai: center, $jc: start);
+    padding: 10px;
+    cursor: pointer;
+    @include transition(background 0.2s ease);
+
+    &:hover,
+    &.active {
+      background: $mainColor3-op-30;
+    }
+
+    i {
+      margin-right: 10px;
+    }
+
+    .sidebar-label {
+      white-space: nowrap;
+      opacity: 0;
+      transition: opacity 0.3s ease;
+    }
+  }
+
+  &-logout {
+    width: 100%;
+    padding: 20px;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s ease;
+  }
+}
+
