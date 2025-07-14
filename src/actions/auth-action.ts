@@ -6,7 +6,7 @@ import {
   transformYupErrors,
 } from "@/helpers/form-validation";
 import { AuthSchema } from "@/helpers/schemes/auth-schema";
-import { signIn } from "next-auth/react";
+import { signIn, signOut } from "next-auth/react";
 import { ValidationError } from "yup";
 import type {
   TransformYupErrorsResponse,
@@ -58,4 +58,8 @@ export const loginAction = async (
     console.error("Login hata:", error);
     return response(false, fields, "Login failed", {});
   }
+};
+
+export const logoutAction = async (redirectTo = "/") => {
+  await signOut({ redirectTo });
 };
