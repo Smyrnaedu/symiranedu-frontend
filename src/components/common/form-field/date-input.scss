@@ -1,0 +1,49 @@
+@use "@/styles/variables.scss" as *;
+@use "@/styles/mixins.scss" as *;
+
+.date-input-base {
+    position: relative;
+    right: -15px;
+
+    .form-label{
+       position: relative;
+       z-index: 2;
+       bottom: -15px;
+    }
+
+  .p-inputtext {
+    border: none;
+    @include borderRadius(0px);
+    border-bottom: 1px solid $mainColor3;
+    // margin-top: 1rem;
+    // margin-right: 1rem;
+    color: $mainColor3;
+    box-shadow: none;
+  }
+
+  button{
+    background-color: transparent;
+    color: $mainColor-red;
+    border: none;
+    border-bottom: 1px solid $mainColor3;
+
+    svg{
+        width: 1.3rem;
+        height: 1.3rem;
+    }
+  }
+
+  span{
+    position: absolute;
+    right: 15px;
+    top: 60%;
+    
+    i{
+        font-size: 1.3rem;
+        color: $mainColor3;
+        cursor: pointer;
+        transform: translateY(-50%);
+    }
+  }
+
+}
