@@ -1,28 +1,25 @@
 "use client";
-import React, { useEffect } from "react";
+import React from "react";
 import { usePathname, useRouter } from "next/navigation";
-import { useSession } from "next-auth/react";
 import userMenuData from "@/helpers/data/user-menu.json";
 import ButtonLogout from "./button-logout";
 import "./sidebar.scss";
 
-const UserSidebar: React.FC = () => {
+type UserMenuAuthProps = {
+  session: {
+    user: {
+      name: string;
+      role: keyof typeof userMenuData;
+    };
+  };
+};
+
+const UserSidebar: React.FC<UserMenuAuthProps> = ({ session }) => {
   const router = useRouter();
   const pathname = usePathname();
-  const { data: session, status } = useSession();
-
-  useEffect(() => {
-    if (!session && status !== "loading") {
-      router.push("/login");
-    }
-  }, [session, status, router]);
-
-  if (!session?.user?.role) return null;
-
   const { name, role } = session.user;
-  const userMenu = userMenuData[
-    role.toLowerCase() as keyof typeof userMenuData
-  ];
+  const userMenu =
+    userMenuData[role.toLowerCase() as keyof typeof userMenuData];
 
   const handleClick = (link: string) => {
     router.push(link);
@@ -40,9 +37,7 @@ const UserSidebar: React.FC = () => {
           <button
             key={item.link}
             onClick={() => handleClick(item.link)}
-            className={`sidebar-item ${
-              pathname === item.link ? "active" : ""
-            }`}
+            className={`sidebar-item ${pathname === item.link ? "active" : ""}`}
             title={item.title}
           >
             <i className="pi pi-angle-right"></i>

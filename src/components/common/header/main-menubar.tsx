@@ -7,11 +7,11 @@ import { appConfig } from "@/helpers/config";
 import MainLogo from "./main-logo";
 import "./main-menu.scss";
 import ButtonComponent from "../button/button-component";
+
 import UserMenuAuth from "./user-menu-auth";
-import { Session } from "next-auth";
 
 interface MainMenubarProps {
-  session: Session | null;
+  session: any;
 }
 
 const MainMenubar: React.FC<MainMenubarProps> = ({ session }) => {
@@ -43,13 +43,16 @@ const MainMenubar: React.FC<MainMenubarProps> = ({ session }) => {
           <Offcanvas.Body className="align-items-center">
             <MainMenu className="justify-content-center flex-grow-1" />
             {session?.user?.role ? (
-              <UserMenuAuth />
+
+              <UserMenuAuth session={session} />
             ) : (
               <ButtonComponent
                 link="/login-register"
                 title="Login / Register"
               />
             )}
+
+           
           </Offcanvas.Body>
         </Navbar.Offcanvas>
       </Container>

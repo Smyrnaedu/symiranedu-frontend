@@ -5,7 +5,6 @@
     "allowJs": true,
     "skipLibCheck": true,
     "strict": true,
-    "noImplicitAny": false,
     "noEmit": true,
     "esModuleInterop": true,
     "module": "esnext",
@@ -25,7 +24,7 @@
   },
   "include": [
     "next-env.d.ts",
-    "types",
+    "types", // ✅ bunu ekliyoruz
     "**/*.ts",
     "**/*.tsx",
     ".next/types/**/*.ts"
