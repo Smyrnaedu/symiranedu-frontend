@@ -43,21 +43,7 @@ const MainMenubar: React.FC<MainMenubarProps> = ({ session }) => {
           <Offcanvas.Body className="align-items-center">
             <MainMenu className="justify-content-center flex-grow-1" />
             {session?.user?.role ? (
-              <UserMenuAuth
-                session={
-                  session as {
-                    user: {
-                      name: string;
-                      role:
-                        | "manager"
-                        | "admin"
-                        | "assistantmanager"
-                        | "teacher"
-                        | "student";
-                    };
-                  }
-                }
-              />
+              <UserMenuAuth />
             ) : (
               <ButtonComponent
                 link="/login-register"
