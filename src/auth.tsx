@@ -26,13 +26,13 @@ const config: NextAuthConfig = {
         password: { label: "Password", type: "password" },
       },
       authorize: async (credentials) => {
-        console.log("[AUTH] Credentials received:", credentials);
+        // console.log("[AUTH] Credentials received:", credentials);
 
         if (
           typeof credentials?.email !== "string" ||
           typeof credentials?.password !== "string"
         ) {
-          console.error("[AUTH] Invalid credential types.");
+          // console.error("[AUTH] Invalid credential types.");
           return null;
         }
 
@@ -45,8 +45,8 @@ const config: NextAuthConfig = {
           const res = await login(payload);
           const data = await res.json();
 
-          console.log("[AUTH] Login response status:", res.status);
-          console.log("[AUTH] Login response data:", data);
+          // console.log("[AUTH] Login response status:", res.status);
+          // console.log("[AUTH] Login response data:", data);
 
           if (!res.ok || !data.object) {
             console.error("[AUTH] Login failed or response malformed.");
