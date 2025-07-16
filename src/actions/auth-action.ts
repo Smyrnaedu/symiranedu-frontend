@@ -61,5 +61,5 @@ export const loginAction = async (
 };
 
 export const logoutAction = async (redirectTo = "/") => {
-  await signOut({ redirectTo });
+  await signOut({ callbackUrl: redirectTo });
 };
