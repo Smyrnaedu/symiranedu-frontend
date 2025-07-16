@@ -20,13 +20,13 @@ export const loginAction = async (
 ): Promise<TransformYupErrorsResponse<JSONObject>> => {
   const fields: JSONObject = convertToJSONObject(formData);
 
-  console.log("FORM DATA", fields);
+  // console.log("FORM DATA", fields);
 
   try {
     // ✅ 1. Doğrulama
     AuthSchema.validateSync(fields, { abortEarly: false });
 
-    console.log("FORM DATA2", fields);
+    // console.log("FORM DATA2", fields);
 
     // ✅ 2. Giriş işlemi
     const res = await signIn("credentials", {
@@ -55,11 +55,11 @@ export const loginAction = async (
     }
 
     // ❌ Diğer hatalar
-    console.error("Login hata:", error);
+    // console.error("Login hata:", error);
     return response(false, fields, "Login failed", {});
   }
 };
 
 export const logoutAction = async (redirectTo = "/") => {
-  await signOut({ redirectTo });
+  await signOut({ callbackUrl: redirectTo });
 };

@@ -1,18 +1,49 @@
 "use client";
+import { createContactAction } from "@/actions/contact-action";
+import { initialState } from "@/helpers/form-validation";
+import { swAlert } from "@/helpers/swal";
+import { stat } from "fs";
 import Image from "next/image";
-import React from "react";
+import React, { useActionState, useEffect, useRef } from "react";
 import { Button, Col, FloatingLabel, Form, Row } from "react-bootstrap";
 
 const ContactForm: React.FC = () => {
+
+   const [state, formAction] = useActionState(createContactAction, initialState);
+   const refForm = useRef<HTMLFormElement>(null);
+   console.log("/*/*/*/*/*/*/*/*/*/*/*/",state);
+   
+   useEffect(() => {
+    if (state.message) {
+      if (state.ok) {
+        swAlert(state.message, "success");
+        // Küçük bir gecikme ile formu sıfırla
+        setTimeout(() => {
+          if (refForm.current) {
+            refForm.current.reset(); // Formu temizle
+          }
+        }, 10);
+      } else {
+        swAlert(state.message, "error");
+      }
+    }
+   
+
+  }, [state]); // <-- Close useEffect and add dependency array
+
   return (
     <div className="contact-form">
-      <Form>
+      <Form ref={refForm} action={formAction} noValidate>
         <Row className="">
           <Col lg={6}>
             <FloatingLabel controlId="floatingInput" label="Adınız">
-              <Form.Control type="text" placeholder="Adınız" name="firstName" />
+              <Form.Control 
+                type="text" 
+                placeholder="Adınız" 
+                name="firstName" 
+                isInvalid={!!state?.errors?.firstName} />
               <Form.Control.Feedback type="invalid">
-                Lütfen adınızı giriniz. 
+                {state.errors?.firstName}
               </Form.Control.Feedback>
             </FloatingLabel>
           </Col>
@@ -22,9 +53,10 @@ const ContactForm: React.FC = () => {
                 type="text"
                 placeholder="Soyadınız"
                 name="lastName"
+                isInvalid={!!state?.errors?.lastName}
               />
               <Form.Control.Feedback type="invalid">
-                Lütfen soy adınızı giriniz. 
+                {state.errors?.lastName} 
               </Form.Control.Feedback>
             </FloatingLabel>
           </Col>
@@ -34,33 +66,36 @@ const ContactForm: React.FC = () => {
                 type="email"
                 placeholder="Email Adresiniz"
                 name="email"
+                isInvalid={!!state?.errors?.email}
               />
               <Form.Control.Feedback type="invalid">
-                Lütfen email adresinizi giriniz. 
+                {state.errors?.email} 
               </Form.Control.Feedback>
             </FloatingLabel>
           </Col>
-           <Col lg={6}>
+           {/* <Col lg={6}>
             <FloatingLabel controlId="floatingInput" label="Telefon Numaranız">
               <Form.Control
                 type="phoneNumber"
                 placeholder="Telefon Numaranız"
                 name="phoneNumber"
+                isInvalid={!!state?.errors?.phoneNumber}
               />
               <Form.Control.Feedback type="invalid">
-                Lütfen telefon numaranızı giriniz. 
+                {state.errors?.phoneNumber} 
               </Form.Control.Feedback>
             </FloatingLabel>
-          </Col>
+          </Col> */}
           <Col lg={12}>
             <FloatingLabel controlId="floatingInput" label="Mesajınız">
               <Form.Control
                 type="textarea"
                 placeholder="Mesajınız"
                 name="message"
+                isInvalid={!!state?.errors?.message}
               />
               <Form.Control.Feedback type="invalid">
-                Lütfen mesajınızı giriniz. 
+                {state.errors?.message}
               </Form.Control.Feedback>
             </FloatingLabel>
           </Col>
