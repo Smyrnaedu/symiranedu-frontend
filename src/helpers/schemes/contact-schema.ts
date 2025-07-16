@@ -1,6 +1,4 @@
 //burada Yup için schemas oluşturulacak
-
-import { p } from "framer-motion/client";
 import * as Yup from "yup";
 
 export const ContactSchema = Yup.object({
