@@ -8,8 +8,7 @@ import {
 } from "@/helpers/form-validation";
 import { ContactSchema } from "@/helpers/schemes/contact-schema";
 import { createContactMessage } from "@/services/contact-service";
-import { ContactFormPayload, FormState } from "../../types/contact";
-import { log } from "console";
+import { ContactFormPayload} from "../../types/contact";
 
 // JSON-compatible objeyi tanımla
 type JSONObject = { [key: string]: any };
