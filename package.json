@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@netlify/next-runtime": "^5.0.0-alpha.25",
     "bootstrap": "^5.3.3",
     "flag-icons": "^7.3.2",
     "framer-motion": "^12.5.0",
