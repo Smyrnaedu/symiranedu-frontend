@@ -1,10 +1,11 @@
 "use client";
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { Col, Row } from "react-bootstrap";
 import "./login-register-style.scss";
 import LoginForm from "./login-form";
 import RegisterForm from "./register-form";
 import LayoutTextSection from "./layout-text";
+import { getAllCities } from "@/services/cities-service";
 
 interface CityOption {
   label: string;
@@ -45,50 +46,36 @@ interface LoginRegisterSectionProps {
       highSchool: string;
     };
   };
-  cities: CityOption[]; // ✅ dışarıdan gelen şehir listesi
 }
 
-const LoginRegisterSection: React.FC<LoginRegisterSectionProps> = ({
-  loginRegisterData,
-  cities,
-}) => {
+const LoginRegisterSection: React.FC<LoginRegisterSectionProps> = ({ loginRegisterData }) => {
   const [isLogin, setIsLogin] = useState(true);
+  const [cities, setCities] = useState<CityOption[]>([]);
 
-  const login = {
-    title: loginRegisterData.login.title,
-    email: loginRegisterData.login.email,
-    password: loginRegisterData.login.password,
-    loginButton: loginRegisterData.login.loginButton,
-  };
+  useEffect(() => {
+    const fetchCities = async () => {
+      try {
+        const response = await getAllCities();
+        if (!response.ok) throw new Error("Şehir verisi alınamadı");
 
-  const register = {
-    title: loginRegisterData.register.title,
-    name: loginRegisterData.register.name,
-    surname: loginRegisterData.register.surname,
-    phoneNumber: loginRegisterData.register.phoneNumber,
-    familyPhoneNumber: loginRegisterData.register.familyPhoneNumber,
-    email: loginRegisterData.register.email,
-    passwordLabel: loginRegisterData.register.passwordLabel,
-    confirmPassword: loginRegisterData.register.confirmPassword,
-    registerButton: loginRegisterData.register.registerButton,
-    gender: {
-      title: loginRegisterData.register.gender.title,
-      genders: loginRegisterData.register.gender.genders,
-    },
-    birthDate: loginRegisterData.register.birthDate,
-    residence: loginRegisterData.register.residence,
-    cityId: loginRegisterData.register.cityId,
-    highSchool: loginRegisterData.register.highSchool,
-  };
+        const json = await response.json();
+        const citiesList = Array.isArray(json)
+          ? json.map((city: any) => ({ label: city.name, value: city.id }))
+          : Array.isArray(json.data)
+          ? json.data.map((city: any) => ({ label: city.name, value: city.id }))
+          : [];
 
-  const layoutLoginTitle = loginRegisterData["layout-login-title"];
-  const layoutRegisterTitle = loginRegisterData["layout-register-title"];
-  const layoutDescriptionForLogin =
-    loginRegisterData["layout-description-for-login"];
-  const layoutDescriptionForRegister =
-    loginRegisterData["layout-description-for-register"];
-  const loginButtonText = loginRegisterData["login-button"];
-  const registerButtonText = loginRegisterData["register-button"];
+        setCities(citiesList);
+      } catch (error) {
+        console.error("❌ Client Fetch Error:", error);
+      }
+    };
+
+    fetchCities();
+  }, []);
+
+  const login = loginRegisterData.login;
+  const register = loginRegisterData.register;
 
   return (
     <section className="container login-register-container">
@@ -110,12 +97,12 @@ const LoginRegisterSection: React.FC<LoginRegisterSectionProps> = ({
           <LayoutTextSection
             onSwitch={() => setIsLogin((prev) => !prev)}
             isLogin={isLogin}
-            layoutLoginTitle={layoutLoginTitle}
-            layoutRegisterTitle={layoutRegisterTitle}
-            layoutDescriptionForLogin={layoutDescriptionForLogin}
-            layoutDescriptionForRegister={layoutDescriptionForRegister}
-            loginButtonText={loginButtonText}
-            registerButtonText={registerButtonText}
+            layoutLoginTitle={loginRegisterData["layout-login-title"]}
+            layoutRegisterTitle={loginRegisterData["layout-register-title"]}
+            layoutDescriptionForLogin={loginRegisterData["layout-description-for-login"]}
+            layoutDescriptionForRegister={loginRegisterData["layout-description-for-register"]}
+            loginButtonText={loginRegisterData["login-button"]}
+            registerButtonText={loginRegisterData["register-button"]}
           />
         </Col>
       </Row>

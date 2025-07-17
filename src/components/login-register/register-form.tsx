@@ -55,6 +55,14 @@ const RegisterForm: React.FC<RegisterFormProps> = ({ register, cities }) => {
   const [password, setPassword] = useState("");
   const [selectedCityId, setSelectedCityId] = useState<number | null>(null);
 
+  console.log("cities on register form: ", cities);
+
+  // Placeholder'lı şehir listesi
+  const cityOptionsWithPlaceholder = [
+    { value: 0, label: "Şehir Seçiniz" },
+    ...cities,
+  ];
+
   return (
     <Form className="login-form">
       <h4>{title}</h4>
@@ -107,8 +115,8 @@ const RegisterForm: React.FC<RegisterFormProps> = ({ register, cities }) => {
             required
             optionLabel="label"
             optionValue="value"
-            options={cities}
-            value={selectedCityId ?? ""}
+            options={cityOptionsWithPlaceholder}
+            value={selectedCityId !== null ? selectedCityId : 0}
             onChange={(e: React.ChangeEvent<HTMLSelectElement>) =>
               setSelectedCityId(Number(e.target.value))
             }
