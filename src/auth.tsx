@@ -26,7 +26,6 @@ const config: NextAuthConfig = {
         password: { label: "Password", type: "password" },
       },
       authorize: async (credentials) => {
-        console.log("[AUTH] Credentials received:", credentials);
 
         if (
           typeof credentials?.email !== "string" ||
@@ -44,9 +43,6 @@ const config: NextAuthConfig = {
         try {
           const res = await login(payload);
           const data = await res.json();
-
-          console.log("[AUTH] Login response status:", res.status);
-          console.log("[AUTH] Login response data:", data);
 
           if (!res.ok || !data.object) {
             console.error("[AUTH] Login failed or response malformed.");
@@ -75,16 +71,13 @@ const config: NextAuthConfig = {
     authorized({ auth, request }) {
       const { pathname, searchParams, origin } = request.nextUrl;
 
-      console.log("ORIGIN URL: ",origin);
 
       const userRole = auth?.user?.role as string;
       const isLoggedIn = !!userRole;
       const isLoginPage = pathname.startsWith("/login");
       const isInDashboardPages = pathname.startsWith("/dashboard");
       const isAPITokenValid = getIsTokenValid(auth?.accessToken as string);
-      console.log("isAPITOKENVALID",isAPITokenValid);
-      console.log("isLoggedIn:" , isLoggedIn);
-      console.log("IsLoginPage:", isLoginPage);
+    
       
 
       if (isLoggedIn && isAPITokenValid) {

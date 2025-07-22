@@ -20,13 +20,10 @@ export const loginAction = async (
 ): Promise<TransformYupErrorsResponse<JSONObject>> => {
   const fields: JSONObject = convertToJSONObject(formData);
 
-  console.log("FORM DATA", fields);
 
   try {
     // ✅ 1. Doğrulama
     AuthSchema.validateSync(fields, { abortEarly: false });
-
-    console.log("FORM DATA2", fields);
 
     // ✅ 2. Giriş işlemi
     const res = await signIn("credentials", {

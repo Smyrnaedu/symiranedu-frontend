@@ -1,21 +1,16 @@
-"use client";
 import React, { InputHTMLAttributes } from "react";
-import {
-  FormControl,
-  FormFloating,
-  FormGroup,
-  FormLabel,
-} from "react-bootstrap";
-import { InputMask } from "primereact/inputmask";
+import { FormGroup, FormLabel, FormFloating } from "react-bootstrap";
+import { InputMask, InputMaskProps } from "primereact/inputmask";
 
 type MaskedInputProps = {
   label: string;
-  name: string; // ✅ zorunlu tanım
+  name: string;
   error?: string;
   className?: string;
   value?: string;
   size?: "sm" | "lg";
-} & Omit<InputHTMLAttributes<HTMLInputElement>, "size" | "name">;
+} & Omit<InputHTMLAttributes<HTMLInputElement>, "size" | "name"> &
+  Partial<InputMaskProps>;
 
 export const MaskedInput: React.FC<MaskedInputProps> = ({
   label,
@@ -29,17 +24,14 @@ export const MaskedInput: React.FC<MaskedInputProps> = ({
   return (
     <FormGroup className={className} controlId={name}>
       <FormFloating>
-        <FormControl
-          as={InputMask}
-          isInvalid={!!error}
-          size={size}
-          name={name}
+        <InputMask
           {...rest}
+          name={name}
           value={value ?? ""}
-          placeholder={label}
+          className={`form-control form-control-${size} ${error ? "is-invalid" : ""}`}
         />
         <FormLabel>{label}</FormLabel>
-        <FormControl.Feedback type="invalid">{error}</FormControl.Feedback>
+        {error && <div className="invalid-feedback">{error}</div>}
       </FormFloating>
     </FormGroup>
   );

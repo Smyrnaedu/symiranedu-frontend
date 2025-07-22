@@ -48,7 +48,9 @@ interface LoginRegisterSectionProps {
   };
 }
 
-const LoginRegisterSection: React.FC<LoginRegisterSectionProps> = ({ loginRegisterData }) => {
+const LoginRegisterSection: React.FC<LoginRegisterSectionProps> = ({
+  loginRegisterData,
+}) => {
   const [isLogin, setIsLogin] = useState(true);
   const [cities, setCities] = useState<CityOption[]>([]);
 
@@ -59,11 +61,19 @@ const LoginRegisterSection: React.FC<LoginRegisterSectionProps> = ({ loginRegist
         if (!response.ok) throw new Error("Şehir verisi alınamadı");
 
         const json = await response.json();
-        const citiesList = Array.isArray(json)
-          ? json.map((city: any) => ({ label: city.name, value: city.id }))
-          : Array.isArray(json.data)
-          ? json.data.map((city: any) => ({ label: city.name, value: city.id }))
-          : [];
+        let citiesList: CityOption[] = [];
+
+        if (Array.isArray(json)) {
+          citiesList = json.map((city: any) => ({
+            label: city.name,
+            value: city.id,
+          }));
+        } else if (Array.isArray(json.data)) {
+          citiesList = json.data.map((city: any) => ({
+            label: city.name,
+            value: city.id,
+          }));
+        }
 
         setCities(citiesList);
       } catch (error) {
@@ -84,7 +94,11 @@ const LoginRegisterSection: React.FC<LoginRegisterSectionProps> = ({ loginRegist
           <LoginForm login={login} />
         </Col>
         <Col md={6} className="register-section">
-          <RegisterForm register={register} cities={cities} />
+          <RegisterForm
+            register={register}
+            cities={cities}
+            onSuccess={() => setIsLogin(true)} // örnek: kayıt sonrası login formuna geçiş
+          />
         </Col>
         <Col
           md={6}
@@ -99,8 +113,12 @@ const LoginRegisterSection: React.FC<LoginRegisterSectionProps> = ({ loginRegist
             isLogin={isLogin}
             layoutLoginTitle={loginRegisterData["layout-login-title"]}
             layoutRegisterTitle={loginRegisterData["layout-register-title"]}
-            layoutDescriptionForLogin={loginRegisterData["layout-description-for-login"]}
-            layoutDescriptionForRegister={loginRegisterData["layout-description-for-register"]}
+            layoutDescriptionForLogin={
+              loginRegisterData["layout-description-for-login"]
+            }
+            layoutDescriptionForRegister={
+              loginRegisterData["layout-description-for-register"]
+            }
             loginButtonText={loginRegisterData["login-button"]}
             registerButtonText={loginRegisterData["register-button"]}
           />

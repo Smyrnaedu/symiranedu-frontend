@@ -12,7 +12,6 @@ interface LoginPayload {
 }
 
 export const login = (payload: LoginPayload): Promise<Response> => {
-    console.log("LOGIN Method: ",payload);
     return fetch(LOGIN_API_ROUTE, {
         method: 'POST',
         headers: {
@@ -24,24 +23,31 @@ export const login = (payload: LoginPayload): Promise<Response> => {
     });
 };
 //register
-interface RegisterPayload {
+export interface RegisterPayload {
   username: string;
   password: string;
   email: string;
   name: string;
   surname: string;
   phoneNumber: string;
+  gender: string;
+  birthDate: string;
+  residence: string;
+  highSchool: string;
   familyPhoneNumber: string;
-  residance: string;
   cityId: number;
 }
 
-export const register = (payload: RegisterPayload): Promise<Response> => {
-    return fetch(REGISTER_API_ROUTE, {
-        method: 'POST',
-        headers: {
-            'Content-Type': 'application/json',
-        },
-        body: JSON.stringify(payload),
-    });
-}
+
+
+export const register = async (payload: RegisterPayload): Promise<Response> => {
+  console.log("Register payload:", payload);
+  return fetch(REGISTER_API_ROUTE, {
+    method: 'POST',
+    headers: {
+      'Content-Type': 'application/json',
+    },
+    body: JSON.stringify(payload),
+    credentials: 'include',
+  });
+};
