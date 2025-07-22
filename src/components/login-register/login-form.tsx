@@ -24,8 +24,6 @@ type LoginFormProps = {
 const LoginForm: React.FC<LoginFormProps> = ({ login }) => {
   const [state, formAction] = useActionState(loginAction, initialState);
 
-  console.log("state", state);
-
   const [emailValue, setEmailValue] = useState("anihalersoy@gmail.com");
   const [passwordValue, setPasswordValue] = useState("Aa1234567.");
 
@@ -61,7 +59,6 @@ const LoginForm: React.FC<LoginFormProps> = ({ login }) => {
       <PasswordInput
         label={passwordLabel}
         name="password"
-        
         defaultValue={passwordValue}
         error={state?.errors?.password}
       />
