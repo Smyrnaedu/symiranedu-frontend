@@ -20,10 +20,11 @@ export const loginAction = async (
 ): Promise<TransformYupErrorsResponse<JSONObject>> => {
   const fields: JSONObject = convertToJSONObject(formData);
 
-
   try {
     // ✅ 1. Doğrulama
     AuthSchema.validateSync(fields, { abortEarly: false });
+
+
 
     // ✅ 2. Giriş işlemi
     const res = await signIn("credentials", {
@@ -52,7 +53,7 @@ export const loginAction = async (
     }
 
     // ❌ Diğer hatalar
-    console.error("Login hata:", error);
+    // console.error("Login hata:", error);
     return response(false, fields, "Login failed", {});
   }
 };

@@ -31,7 +31,7 @@ const config: NextAuthConfig = {
           typeof credentials?.email !== "string" ||
           typeof credentials?.password !== "string"
         ) {
-          console.error("[AUTH] Invalid credential types.");
+          // console.error("[AUTH] Invalid credential types.");
           return null;
         }
 

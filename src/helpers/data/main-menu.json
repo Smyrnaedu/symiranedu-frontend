@@ -4,10 +4,6 @@
     "link": "/"
   },
   {
-    "title": "Hakkımızda",
-    "link": "/about-us"
-  },
-  {
     "title": "Akademik Programlar",
     "link": "/academic-programs",
     "subLinks": [
