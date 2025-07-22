@@ -64,8 +64,6 @@ export const createContactAction = async (
         errors: yupErrorResult.errors,
       };
     }
-
-    // bilinmeyen hatayı dışarı fırlat
     throw err;
   }
 };
