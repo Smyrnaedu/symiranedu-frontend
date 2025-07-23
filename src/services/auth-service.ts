@@ -24,18 +24,20 @@ export const login = (payload: LoginPayload): Promise<Response> => {
 };
 //register
 export interface RegisterPayload {
-  username: string;
-  password: string;
-  email: string;
   name: string;
   surname: string;
-  phoneNumber: string;
-  gender: string;
-  birthDate: string;
+  genderId: string;
+  email: string;
   residence: string;
-  highSchool: string;
+  birthDay: string;
+  phoneNumber: string;
+  motherName: string;
+  fatherName: string;
   familyPhoneNumber: string;
-  cityId: number;
+  highSchool: string;
+  grade: string;
+  birthCityId: number;
+  password: string;
 }
 
 

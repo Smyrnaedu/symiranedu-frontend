@@ -1494,7 +1494,7 @@
         "name": "Adınız",
         "surname": "Soyadınız",
         "residence": "Adresiniz",
-        "cityId": "Şehir",
+        "birthCityId": "Doğum Şehiri",
         "phoneNumber": "Telefon Numarası",
         "familyPhoneNumber": "Aile Telefon Numarası",
         "gender": {
@@ -1505,8 +1505,11 @@
           }
         },
         "highSchool": "Lise",
-        "birthDate": "Dogum Tarihi",
+        "birthDay": "Dogum Tarihi",
         "email": "E-posta Adresiniz",
+        "motherName": "Anne Adı",
+        "fatherName": "Baba Adı",
+        "grade": "Sınıf",
         "passwordLabel": "Şifreniz",
         "confirmPassword": "Şifreyi Onayla",
         "registerButton": "Kayıt Ol"
