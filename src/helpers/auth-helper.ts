@@ -18,7 +18,7 @@ export const getAuthHeader = async (): Promise<AuthHeader> => {
   };
 
   if (token) {
-    authHeader["Authorization"] = token; // Token zaten 'Bearer ...' formatında geliyor
+    authHeader["Authorization"] = "Bearer " + token; // Token zaten 'Bearer ...' formatında geliyor
   }
 
   return authHeader;

@@ -4,6 +4,7 @@ export interface ContactFormPayload {
   lastName: string;
   email: string;
   message: string;
+  phone: string;
 }
 
 // Form state için genel bir tip örneği (uygunsa özelleştir)

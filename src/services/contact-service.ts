@@ -22,6 +22,7 @@ export const getAllMessagesByPage = async (
   const qs = `page=${page}&size=${size}&sort=${sort}&type=${type}`;
 
   return fetch(`${CONTACT_GET_ALL_BY_PAGE_API_ROUTE}?${qs}`, {
+    method: "GET",
     headers: await getAuthHeader(),
   });
 };

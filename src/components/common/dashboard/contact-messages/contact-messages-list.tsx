@@ -41,7 +41,6 @@ export const MessageList: React.FC<MessageListProps> = ({ data }) => {
     router.push(`${pagePath}?page=${page}`);
   };
 
-  const header = <DataListHeader title="Messages" />;
 
   return (
     <Container>
@@ -55,22 +54,19 @@ export const MessageList: React.FC<MessageListProps> = ({ data }) => {
         rows={size}
         totalRecords={totalElements}
         onPage={onPage}
-        first={offset}
-        header={header}
-      >
+        first={offset}      >
         <Column
           header="#"
           body={(_rowData, options) => options.rowIndex + 1}
           headerStyle={{ width: "20px" }}
           bodyClassName="index"
         />
-        <Column field="name" header="Contact Name" bodyClassName="Contact Name" />
+        <Column body={(rowData) => `${rowData.firstName} ${rowData.lastName}`} header="İsim / Soyisim" bodyClassName="İsim / Soyisim"/>
         <Column field="email" header="Email" bodyClassName="Email" />
-        <Column field="subject" header="Subject" bodyClassName="Subject" />
-        <Column field="message" header="Message" bodyClassName="Message" />
+        <Column field="phone" header="Telefon Numarası" bodyClassName="Telefon Numarası" />
+        <Column field="message" header="Mesaj" bodyClassName="Mesaj" />
       </DataTable>
     </Container>
   );
 };
-
 export default MessageList;

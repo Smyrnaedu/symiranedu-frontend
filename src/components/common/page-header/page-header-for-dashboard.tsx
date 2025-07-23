@@ -1,4 +1,6 @@
+import { section } from 'framer-motion/client';
 import React from 'react'
+import { Spacer } from '../spacer';
 
 type PageHeaderForDashboardProps = {
   title: string;
@@ -6,7 +8,11 @@ type PageHeaderForDashboardProps = {
 
 const PageHeaderForDashboard: React.FC<PageHeaderForDashboardProps> = ({title}: PageHeaderForDashboardProps) => {
   return (
-    <h1>{title}</h1>
+   <section className='container text-center'>
+      <Spacer />
+     <h1>{title}</h1>
+      <Spacer />
+   </section>
   )
 }
 

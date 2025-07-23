@@ -13,7 +13,6 @@ const DashboardContactMessagesPage = async ({ searchParams }: DashboardContactMe
     const { page } = await searchParams;
     const res = await getAllMessagesByPage(page);
     const data = await res.json();
-    console.log(data);
       // data.content = data.content.map((item: any, index: number) => ({ ...item, id: index }));
 
   if (!res.ok) throw new Error(data.message);
@@ -21,7 +20,7 @@ const DashboardContactMessagesPage = async ({ searchParams }: DashboardContactMe
   return (
     <>
         <PageHeaderForDashboard
-        title={"Contact Messages"}
+        title={"İletişim Formu Mesajları"}
         />
         <section className='container'>
           <DashboardContactMessagesList data={data} />

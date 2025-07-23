@@ -25,6 +25,7 @@ export const createContactAction = async (
     lastName: fields.lastName,
     email: fields.email,
     message: fields.message,
+    phone: fields.phone,
     // add other properties if ContactFormPayload has more
   };
   console.log("***************contactPayload:", fields);
