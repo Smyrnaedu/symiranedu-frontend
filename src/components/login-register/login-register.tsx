@@ -40,10 +40,13 @@ interface LoginRegisterSectionProps {
         title: string;
         genders: Record<string, string>;
       };
-      birthDate: string;
+      birthDay: string;
       residence: string;
-      cityId: string;
+      birthCityId: string;
       highSchool: string;
+      motherName: string;
+      fatherName: string;
+      grade: string;
     };
   };
 }

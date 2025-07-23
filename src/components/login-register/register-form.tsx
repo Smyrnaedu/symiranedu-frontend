@@ -1,11 +1,11 @@
 "use client";
-import React, { useActionState, useState, useEffect } from "react";
+import React, { useActionState, useEffect } from "react";
 import { Col, Form, Row } from "react-bootstrap";
 
 import { TextInput } from "../common/form-field/text-input";
 import { PasswordInput } from "../common/form-field/password-input";
 import { SubmitButton } from "../common/form-field/submit-button";
-import { MaskedInput } from "../common/form-field/masked-input";
+import { MaskedInput }  from "../common/form-field/masked-input";
 import { SelectInput } from "../common/form-field/select-input";
 import { DateInput } from "../common/form-field/date-input";
 import { registerAction } from "@/actions/register-action";
@@ -28,10 +28,13 @@ type RegisterFormProps = {
       title: string;
       genders: Record<string, string>;
     };
-    birthDate: string;
+    birthDay: string;
     residence: string;
-    cityId: string;
+    birthCityId: string;
     highSchool: string;
+    motherName: string;
+    fatherName: string;
+    grade: string;
   };
   cities: CityOption[];
   onSuccess?: () => void;
@@ -47,22 +50,22 @@ const RegisterForm: React.FC<RegisterFormProps> = ({
     name,
     surname,
     phoneNumber,
-    familyPhoneNumber,
+    gender: { title: genderTitle, genders },
     email,
+    residence,
+    birthDay,
+    motherName,
+    fatherName,
+    familyPhoneNumber,
+    highSchool,
+    grade,
     passwordLabel,
+    birthCityId,
     confirmPassword,
     registerButton,
-    gender: { title: genderTitle, genders },
-    birthDate,
-    residence,
-    cityId,
-    highSchool,
   } = register;
 
   const [state, formAction] = useActionState(registerAction, initialState);
-  console.log("REGISTER STATE", state);
-
-  const [selectedCityId, setSelectedCityId] = useState<number | null>(null);
 
   useEffect(() => {
     if (state?.ok && onSuccess) {
@@ -76,7 +79,7 @@ const RegisterForm: React.FC<RegisterFormProps> = ({
   ];
 
   return (
-    <Form action={formAction} className="login-form">
+    <Form action={formAction} className="login-form" noValidate>
       <h4>{title}</h4>
 
       <Row>
@@ -85,7 +88,7 @@ const RegisterForm: React.FC<RegisterFormProps> = ({
             label={name}
             name="name"
             type="text"
-            required
+            defaultValue=""
             error={state?.errors?.name}
           />
         </Col>
@@ -94,7 +97,7 @@ const RegisterForm: React.FC<RegisterFormProps> = ({
             label={surname}
             name="surname"
             type="text"
-            required
+            defaultValue=""
             error={state?.errors?.surname}
           />
         </Col>
@@ -106,6 +109,7 @@ const RegisterForm: React.FC<RegisterFormProps> = ({
             label={phoneNumber}
             name="phoneNumber"
             mask="(999) 999 99 99"
+            defaultValue=""
             required
             error={state?.errors?.phoneNumber}
           />
@@ -115,8 +119,61 @@ const RegisterForm: React.FC<RegisterFormProps> = ({
             label={familyPhoneNumber}
             name="familyPhoneNumber"
             mask="(999) 999 99 99"
+            defaultValue=""
             required
             error={state?.errors?.familyPhoneNumber}
+          />
+        </Col>
+      </Row>
+
+      <TextInput
+        label={email}
+        name="email"
+        type="email"
+        defaultValue=""
+        error={state?.errors?.email}
+      />
+
+      <SelectInput
+        name="genderId"
+        label={genderTitle}
+        required
+        defaultValue=""
+        optionLabel="label"
+        optionValue="value"
+        options={Object.entries(genders).map(([value, label]) => ({
+          value,
+          label,
+        }))}
+        error={state?.errors?.genderId}
+      />
+
+      <TextInput
+        label={highSchool}
+        name="highSchool"
+        as="textarea"
+        defaultValue=""
+        error={state?.errors?.highSchool}
+      />
+      <TextInput
+        label={residence}
+        name="residence"
+        as="textarea"
+        defaultValue=""
+        error={state?.errors?.residence}
+      />
+
+      <Row>
+        <Col md={12}>
+          <SelectInput
+            name={birthCityId}
+            label="Doğum Şehri"
+            required
+            defaultValue=""
+            optionLabel="label"
+            optionValue="value"
+            options={cityOptionsWithPlaceholder}
+            error={state?.errors?.birthCityId}
           />
         </Col>
       </Row>
@@ -124,76 +181,46 @@ const RegisterForm: React.FC<RegisterFormProps> = ({
       <Row>
         <Col md={6}>
           <TextInput
-            label={email}
-            name="email"
-            type="email"
-            required
-            error={state?.errors?.email}
+            label={motherName}
+            name="motherName"
+            type="text"
+            defaultValue=""
+            error={state?.errors?.motherName}
           />
         </Col>
         <Col md={6}>
-          <SelectInput
-            name="genderId"
-            label={genderTitle}
-            required
-            optionLabel="label"
-            optionValue="value"
-            options={Object.entries(genders).map(([value, label]) => ({
-              value,
-              label,
-            }))}
-            error={state?.errors?.gender}
+          <TextInput
+            label={fatherName}
+            name="fatherName"
+            type="text"
+            defaultValue=""
+            error={state?.errors?.fatherName}
           />
         </Col>
       </Row>
 
       <TextInput
-        label={highSchool}
-        name="highSchool"
-        as="textarea"
-        required
-        error={state?.errors?.highSchool}
-      />
-      <TextInput
-        label={residence}
-        name="residence"
-        as="textarea"
-        required
-        error={state?.errors?.residence}
+        label={grade}
+        name="grade"
+        type="text"
+        defaultValue=""
+        error={state?.errors?.grade}
       />
 
-      <Row>
-        <Col md={6}>
-          <SelectInput
-            name="residenceCityId"
-            label={cityId}
-            required
-            optionLabel="label"
-            optionValue="value"
-            options={cityOptionsWithPlaceholder}
-            value={selectedCityId !== null ? selectedCityId : 0}
-            onChange={(e: React.ChangeEvent<HTMLSelectElement>) =>
-              setSelectedCityId(Number(e.target.value))
-            }
-            error={state?.errors?.cityId}
-          />
-        </Col>
-        <Col md={6}>
-          <DateInput
-            label={birthDate}
-            name="birthDay"
-            dateFormat="yy-mm-dd"
-            required
-            error={state?.errors?.birthDay}
-          />
-        </Col>
-      </Row>
+      <DateInput
+        label={birthDay}
+        name="birthDay"
+        dateFormat="yy-mm-dd"
+        required
+        error={state?.errors?.birthDay}
+      />
 
       <Row>
         <Col md={6}>
           <PasswordInput
             label={passwordLabel}
             name="password"
+            defaultValue=""
             required
             error={state?.errors?.password}
           />
@@ -202,6 +229,7 @@ const RegisterForm: React.FC<RegisterFormProps> = ({
           <PasswordInput
             label={confirmPassword}
             name="confirmPassword"
+            defaultValue=""
             required
             error={state?.errors?.confirmPassword}
           />
