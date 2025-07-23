@@ -1,9 +1,9 @@
 "use client";
-import React from "react";
-import { usePathname, useRouter } from "next/navigation";
+import React, { useState } from "react";
+import { Nav, Offcanvas, Button } from "react-bootstrap";
 import userMenuData from "@/helpers/data/user-menu.json";
+import { usePathname, useRouter } from "next/navigation";
 import ButtonLogout from "./button-logout";
-import "./sidebar.scss";
 
 type UserMenuAuthProps = {
   session: {
@@ -14,43 +14,49 @@ type UserMenuAuthProps = {
   };
 };
 
-const UserSidebar: React.FC<UserMenuAuthProps> = ({ session }) => {
+export const UserMenuAuth: React.FC<UserMenuAuthProps> = ({ session }) => {
   const router = useRouter();
   const pathname = usePathname();
   const { name, role } = session.user;
-  const userMenu =
-    userMenuData[role.toLowerCase() as keyof typeof userMenuData];
+  const userMenu = userMenuData[role.toLowerCase() as keyof typeof userMenuData];
 
   const handleClick = (link: string) => {
     router.push(link);
+    handleClose();
   };
 
+  const [show, setShow] = useState(false);
+  const handleClose = () => setShow(false);
+  const handleShow = () => setShow(true);
+
   return (
-    <div className="sidebar">
-      <div className="sidebar-user" title={name}>
-        <i className="pi pi-user"></i>
-        <span className="sidebar-user-name">{name}</span>
-      </div>
+    <>
+      <Button variant="light" onClick={handleShow} title={name} className="d-flex align-items-center">
+        <i className="pi pi-user me-2"></i>
+        <span>{name}</span>
+      </Button>
 
-      <div className="sidebar-menu">
-        {userMenu.map((item) => (
-          <button
-            key={item.link}
-            onClick={() => handleClick(item.link)}
-            className={`sidebar-item ${pathname === item.link ? "active" : ""}`}
-            title={item.title}
-          >
-            <i className="pi pi-angle-right"></i>
-            <span className="sidebar-label">{item.title}</span>
-          </button>
-        ))}
-      </div>
-
-      <div className="sidebar-logout">
-        <ButtonLogout className="w-100" variant="danger" size="lg" />
-      </div>
-    </div>
+      <Offcanvas show={show} onHide={handleClose} placement="end">
+        <Offcanvas.Header closeButton>
+          <Offcanvas.Title>{name}</Offcanvas.Title>
+        </Offcanvas.Header>
+        <Offcanvas.Body>
+          <Nav className="flex-column">
+            {userMenu?.map((item) => (
+              <button
+                key={item.link}
+                onClick={() => handleClick(item.link)}
+                className={`nav-link text-start btn btn-link ${pathname === item.link ? "active" : ""}`}
+              >
+                {item.title}
+              </button>
+            ))}
+            <ButtonLogout className="mt-4" />
+          </Nav>
+        </Offcanvas.Body>
+      </Offcanvas>
+    </>
   );
 };
 
-export default UserSidebar;
+export default UserMenuAuth;

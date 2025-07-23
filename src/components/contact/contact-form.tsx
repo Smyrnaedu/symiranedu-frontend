@@ -72,19 +72,19 @@ const ContactForm: React.FC = () => {
               </Form.Control.Feedback>
             </FloatingLabel>
           </Col>
-           {/* <Col lg={6}>
+           <Col lg={6}>
             <FloatingLabel controlId="floatingInput" label="Telefon Numaranız">
               <Form.Control
-                type="phoneNumber"
+                type="phone"
                 placeholder="Telefon Numaranız"
-                name="phoneNumber"
-                isInvalid={!!state?.errors?.phoneNumber}
+                name="phone"
+                isInvalid={!!state?.errors?.phone}
               />
               <Form.Control.Feedback type="invalid">
-                {state.errors?.phoneNumber} 
+                {state.errors?.phone} 
               </Form.Control.Feedback>
             </FloatingLabel>
-          </Col> */}
+          </Col>
           <Col lg={12}>
             <FloatingLabel controlId="floatingInput" label="Mesajınız">
               <Form.Control

@@ -8,15 +8,17 @@ interface AuthHeader {
 
 // 🔐 Token'ı header olarak hazırlayan fonksiyon
 export const getAuthHeader = async (): Promise<AuthHeader> => {
+  
   const session = await auth(); // API'den gelen token'ı session içinden al
   const token = (session as { accessToken?: string } | null)?.accessToken;
-
+  console.log("token",token);
+  
   const authHeader: AuthHeader = {
     "Content-Type": "application/json",
   };
 
   if (token) {
-    authHeader["Authorization"] = token; // Token zaten 'Bearer ...' formatında geliyor
+    authHeader["Authorization"] = "Bearer " + token; // Token zaten 'Bearer ...' formatında geliyor
   }
 
   return authHeader;

@@ -3,7 +3,7 @@ import { appConfig } from "./config";
 
 //COMMON ENDOINTS
 export const CONTACT_CREATE_API_ROUTE = `${appConfig.apiURL}/contact-messages/create`;
-export const CONTACT_GET_ALL_BY_PAGE_API_ROUTE = `${appConfig.apiURL}/contactMessages/getAll`;
+export const CONTACT_GET_ALL_BY_PAGE_API_ROUTE = `${appConfig.apiURL}/contact-messages/get`;
 
 
 export const LOGIN_API_ROUTE = `${appConfig.apiURL}/auth/login`;

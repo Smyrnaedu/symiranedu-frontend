@@ -9,7 +9,7 @@
         { "title": "Program Management", "link": "/dashboard/program"},
         { "title": "Teacher Management", "link": "/dashboard/teacher"},
         { "title": "Student Management", "link": "/dashboard/student"},
-        { "title": "Contact Message", "link": "/dashboard/contact-message"}
+        { "title": "Contact Message", "link": "/dashboard/contact-messages"}
     ],
     "manager" : [
         { "title": "Dashboard", "link": "/dashboard"},
@@ -23,7 +23,7 @@
         { "title": "Program Management", "link": "/dashboard/program"},
         { "title": "Teacher Management", "link": "/dashboard/teacher"},
         { "title": "Student Management", "link": "/dashboard/student"},
-        { "title": "Contact Message", "link": "/dashboard/contact-message"}
+        { "title": "Contact Message", "link": "/dashboard/contact-messages"}
     ],
     "teacher" : [
         { "title": "Dashboard", "link": "/dashboard"},

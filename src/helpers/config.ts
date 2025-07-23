@@ -176,7 +176,7 @@ export const appConfig = {
     { urlRegex: /\/dashboard\/meet\/new$/, roles: ["TEACHER"] },
     { urlRegex: /\/dashboard\/meet\/\d+$/, roles: ["TEACHER"] },
     {
-      urlRegex: /\/dashboard\/contact-message$/,
+      urlRegex: /\/dashboard\/contact-messages$/,
       roles: ["ADMIN", "MANAGER", "ASSISTANTMANAGER"],
     },
     { urlRegex: /\/dashboard\/choose-lesson$/, roles: ["STUDENT"] },
