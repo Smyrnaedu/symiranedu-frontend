@@ -26,7 +26,7 @@ export const login = (payload: LoginPayload): Promise<Response> => {
 export interface RegisterPayload {
   name: string;
   surname: string;
-  genderId: string;
+  genderId: number; // ✅ string → number
   email: string;
   residence: string;
   birthDay: string;
@@ -39,8 +39,6 @@ export interface RegisterPayload {
   birthCityId: number;
   password: string;
 }
-
-
 
 export const register = async (payload: RegisterPayload): Promise<Response> => {
   console.log("Register payload:", payload);
