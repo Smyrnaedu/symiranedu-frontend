@@ -87,8 +87,10 @@ export const appConfig = {
     { label: "Spring", value: "SPRING_SEMESTER" },
   ],
   genders: [
-    { label: "Female", value: "FEMALE" , id: 1},
-    { label: "Male", value: "MALE", id: 2},
+    { label: "Erkek", value: "MALE", id: 1},
+    { label: "Kadın", value: "FEMALE" , id: 2},
+    { label: "Diğer", value: "OTHER", id: 0},
+    
   ],
   days: [
     { value: "MONDAY", label: "Monday" },

@@ -23,6 +23,7 @@ export const registerAction = async (
   console.log("✅ registerAction tetiklendi. Gelen form verisi:", fields);
 
   try {
+    
     // Validasyon
     RegisterSchema.validateSync(fields, { abortEarly: false });
     console.log("✅ Validasyon başarılı");
