@@ -47,6 +47,7 @@ export const UserMenuAuth: React.FC<UserMenuAuthProps> = ({ session }) => {
                 key={item.link}
                 onClick={() => handleClick(item.link)}
                 className={`nav-link text-start btn btn-link ${pathname === item.link ? "active" : ""}`}
+                disabled={item.link !== "/dashboard/contact-messages" && item.link !== "/dashboard/student-management"}
               >
                 {item.title}
               </button>
