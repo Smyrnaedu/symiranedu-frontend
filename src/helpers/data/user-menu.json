@@ -1,19 +1,20 @@
 {
     "admin" : [
-        { "title": "Dashboard", "link": "/dashboard"},
-        { "title": "Admin Management", "link": "/dashboard/admin"},
-        { "title": "Manager Management", "link": "/dashboard/manager"},
-        { "title": "Assistant Manager Management", "link": "/dashboard/assistant-manager"},
-        { "title": "Education Terms", "link": "/dashboard/education-term"},
-        { "title": "Lesson Management", "link": "/dashboard/lesson"},
-        { "title": "Program Management", "link": "/dashboard/program"},
-        { "title": "Teacher Management", "link": "/dashboard/teacher"},
-        { "title": "Student Management", "link": "/dashboard/student"},
-        { "title": "Contact Message", "link": "/dashboard/contact-messages"}
+        { "title": "Yönetim Paneli", "link": "/dashboard"},
+        { "title": "Admin Yönetimi", "link": "/dashboard/admin"},
+        { "title": "Müdür Yönetimi", "link": "/dashboard/manager"},
+        { "title": "Assistant Manager Yönetimi", "link": "/dashboard/assistant-manager"},
+        { "title": "Eğitim Dönemş", "link": "/dashboard/education-term"},
+        { "title": "Ders Yönetimi", "link": "/dashboard/lesson"},
+        { "title": "Program Yönetimi", "link": "/dashboard/program"},
+        { "title": "Öğretmen Yönetimi", "link": "/dashboard/teacher"},
+        { "title": "Öğrenci Yönetimi", "link": "/dashboard/student-management"},
+        { "title": "İletişim Mesajları", "link": "/dashboard/contact-messages"}
     ],
     "manager" : [
         { "title": "Dashboard", "link": "/dashboard"},
         { "title": "Assistant Manager Management", "link": "/dashboard/assistant-manager"},
+        { "title": "Student Management", "link": "/dashboard/student-management"},
         { "title": "Contact Message", "link": "/dashboard/contact-message"}
     ],
     "assistantmanager" : [
@@ -23,6 +24,7 @@
         { "title": "Program Management", "link": "/dashboard/program"},
         { "title": "Teacher Management", "link": "/dashboard/teacher"},
         { "title": "Student Management", "link": "/dashboard/student"},
+        { "title": "Student Management", "link": "/dashboard/student-management"},
         { "title": "Contact Message", "link": "/dashboard/contact-messages"}
     ],
     "teacher" : [

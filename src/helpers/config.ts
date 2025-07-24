@@ -105,6 +105,7 @@ export const appConfig = {
       roles: ["ADMIN", "MANAGER", "ASSISTANTMANAGER", "TEACHER", "STUDENT"],
     },
     { urlRegex: /\/dashboard\/admin$/, roles: ["ADMIN"] },
+    { urlRegex: /\/dashboard\/student-management$/, roles: ["ADMIN"] },
     { urlRegex: /\/dashboard\/admin\/new$/, roles: ["ADMIN"] },
     { urlRegex: /\/dashboard\/manager$/, roles: ["ADMIN"] },
     { urlRegex: /\/dashboard\/manager\/new$/, roles: ["ADMIN"] },
