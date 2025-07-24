@@ -2,7 +2,8 @@ import { appConfig } from "./config";
 
 // Gender değerlerini döner → örneğin: ["male", "female"]
 export const getGenderValues = (): string[] =>
-  appConfig.genders.map((item) => item.value);
+  appConfig.genders.map((item) => String(item.id));
+
 
 // Eğitim dönemlerinin value'larını döner → örn: ["fall", "spring"]
 export const getTermValues = (): string[] =>

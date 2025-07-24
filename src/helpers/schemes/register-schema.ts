@@ -19,7 +19,6 @@ export const RegisterSchema = Yup.object({
     .required("Phone number is required"),
 
   genderId: Yup.string()
-    .transform((val) => val?.toUpperCase())
     .oneOf(genderValues, "Invalid gender")
     .required("Gender is required"),
 
